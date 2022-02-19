@@ -1,4 +1,4 @@
-const CONFIG_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/services.json";
+const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/services.json";
 const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
 let g_listeners = [];
@@ -31,7 +31,7 @@ async function updateConfig() {
 	
 	console.log("updating service list...");
 
-	let response = await fetch(CONFIG_URL);
+	let response = await fetch(SERVICES_URL);
 	if(!response.ok) {
 		console.error("updating service failed!");
 		return;
