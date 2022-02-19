@@ -1,0 +1,93 @@
+[
+	{
+		"orig": ["*://*.twitter.com/*"],
+		"instances": [
+			"https://nitter.sethforprivacy.com",
+			"https://nit.13ad.de",
+			"https://nitter.snopyta.org",
+			"https://nitter.42l.fr",
+			"https://nitter.nixnet.services",
+			"https://nitter.pussthecat.org",
+			"https://nitter.fdn.fr",
+			"https://nitter.1d4.us",
+			"https://nitter.kavin.rocks",
+			"https://nitter.unixfox.eu",
+			"https://bird.trom.tf",
+			"http://3nzoldnxplag42gqjs23xvghtzf6t6yzssrtytnntc6ppc7xxuoneoad.onion",
+			"https://nitter.actionsack.com",
+			"https://nitter.namazso.eu",
+			"https://nitter.moomoo.me",
+			"https://nitter.silkky.cloud"
+		]
+	},
+	{
+		"orig": ["*://*.youtube.com/*"],
+		"instances": [
+			"https://yt.artemislena.eu",
+			"https://invidious.sethforprivacy.com",
+			"https://invidious.kavin.rocks",
+			"https://invidious.snopyta.org"
+		]
+	},
+	{
+		"orig": ["*://google.com/*", "*://www.google.com/*"],
+		"documentOnly": true,
+		"instances": [
+			"https://search.disroot.org",
+			"https://searx.tuxcloud.net",
+			"https://searx.be"
+		]
+	},
+	{
+		"orig": ["*://translate.google.com/*"],
+		"instances": [
+			"https://simplytranslate.org",
+			"https://st.alefvanoon.xyz",
+			"https://translate.riverside.rocks",
+			"https://translate.namazso.eu",
+			"https://translate.josias.dev"
+		]
+	},
+	{
+		"orig": ["*://*.instagram.com/*"],
+		"instances": [
+			"https://bibliogram.fdn.fr",
+			"https://bibliogram.pussthecat.org",
+			"https://bibliogram.ethibox.fr",
+			"https://biblio.alefvanoon.xyz"
+		]
+	},
+	{
+		"orig": ["*://*.medium.com/*"],
+		"instances": [
+			"https://scribe.rip",
+			"https://scribe.nixnet.services",
+			"https://scribe.citizen4.eu"
+		]
+	},
+	{
+		"orig": ["*://*.reddit.com/*"],
+		"instances": [
+			"https://reddit.artemislena.eu",
+			"https://teddit.net",
+			"https://teddit.ggc-project.de",
+			"https://teddit.kavin.rocks",
+			"https://teddit.zaggy.nl",
+			"https://teddit.namazso.eu",
+			"http://ibarajztopxnuhabfu7fg6gbudynxofbnmvis3ltj6lfx47b6fhrd5qd.onion",
+			"https://teddit.pussthecat.org",
+			"https://teddit.alefvanoon.xyz",
+			"https://teddit.sethforprivacy.com",
+			"http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion"
+		]
+	},
+	{
+		"orig": ["*://*.wikipedia.org/*"],
+		"instances": [
+			"https://wikiless.sethforprivacy.com",
+			"https://wikiless.org",
+			"https://wikiless.alefvanoon.xyz",
+			"http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion"
+		]
+	}
+]

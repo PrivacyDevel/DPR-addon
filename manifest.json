@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Dynamic Privacy Redirect",
+	"version": "1.0.0",
+	
+	"background": {
+		"scripts": ["background.js"]
+	},
+	
+	"permissions": [
+		"<all_urls>",
+		"webRequestBlocking",
+		"webRequest",
+		"storage",
+		"alarms"
+	]
+}
