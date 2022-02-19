@@ -1,4 +1,4 @@
-const CONFIG_URL = "PLACEHOLDER";
+const CONFIG_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/services.json";
 const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
 let g_listeners = [];
