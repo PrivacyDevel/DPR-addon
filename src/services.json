@@ -57,6 +57,7 @@
 	},
 	{
 		"orig": ["*://*.medium.com/*"],
+		"documentOnly": true,
 		"instances": [
 			"https://scribe.rip",
 			"https://scribe.nixnet.services",
