@@ -2,18 +2,15 @@
 	{
 		"orig": ["*://*.twitter.com/*"],
 		"instances": [
-			"https://nitter.sethforprivacy.com",
 			"https://nitter.snopyta.org",
-			"https://nitter.42l.fr",
-			"https://nitter.nixnet.services",
 			"https://nitter.pussthecat.org",
-			"https://nitter.fdn.fr",
 			"https://nitter.1d4.us",
-			"https://nitter.unixfox.eu",
-			"https://nitter.net",
-			"http://3nzoldnxplag42gqjs23xvghtzf6t6yzssrtytnntc6ppc7xxuoneoad.onion",
 			"https://nitter.namazso.eu",
-			"https://nitter.moomoo.me"
+			"https://twitter.censors.us",
+			"https://nttr.stream",
+			"https://nitter.esmailelbob.xyz",
+			"https://tw.artemislena.eu",
+			"https://de.nttr.stream"
 		]
 	},
 	{
@@ -23,7 +20,19 @@
 			"https://invidious.sethforprivacy.com",
 			"https://invidious.snopyta.org",
 			"https://invidious.namazso.eu",
-			"https://inv.riverside.rocks"
+			"https://inv.riverside.rocks",
+			"https://yewtu.be",
+			"https://vid.puffyan.us",
+			"https://invidio.xamh.de",
+			"https://invidious.osi.kr",
+			"https://tube.cthd.icu",
+			"https://invidious.flokinet.to",
+			"https://youtube.076.ne.jp",
+			"https://invidious.privacy.gd",
+			"http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion",
+			"http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion",
+			"http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion",
+			"http://2rorw2w54tr7jkasn53l5swbjnbvz3ubebhswscnc54yac6gmkxaeeqd.onion"
 		]
 	},
 	{
@@ -42,7 +51,11 @@
 			"https://st.alefvanoon.xyz",
 			"https://translate.riverside.rocks",
 			"https://translate.namazso.eu",
-			"https://translate.josias.dev"
+			"https://translate.josias.dev",
+			"https://translate.bus-hit.me",
+			"https://simplytranslate.pussthecat.org",
+			"https://translate.northboot.xyz",
+			"https://translate.tiekoetter.com"
 		]
 	},
 	{
@@ -51,7 +64,9 @@
 			"https://bibliogram.fdn.fr",
 			"https://bibliogram.pussthecat.org",
 			"https://bibliogram.ethibox.fr",
-			"https://biblio.alefvanoon.xyz"
+			"https://biblio.alefvanoon.xyz",
+			"https://insta.trom.tf",
+			"ttps://bibliogram.esmailelbob.xyz"
 		]
 	},
 	{
@@ -60,7 +75,8 @@
 		"instances": [
 			"https://scribe.rip",
 			"https://scribe.nixnet.services",
-			"https://scribe.citizen4.eu"
+			"https://scribe.citizen4.eu",
+			"https://scribe.bus-hit.me"
 		]
 	},
 	{
@@ -69,12 +85,10 @@
 			"https://reddit.artemislena.eu",
 			"https://teddit.net",
 			"https://teddit.ggc-project.de",
-			"https://teddit.zaggy.nl",
 			"https://teddit.namazso.eu",
-			"https://teddit.pussthecat.org",
-			"https://teddit.alefvanoon.xyz",
 			"https://teddit.sethforprivacy.com",
 			"http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion"
+			"https://teddit.adminforge.de"
 		]
 	},
 	{
