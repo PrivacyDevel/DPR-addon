@@ -3,7 +3,6 @@
 		"orig": ["*://*.twitter.com/*"],
 		"instances": [
 			"https://nitter.sethforprivacy.com",
-			"https://nit.13ad.de",
 			"https://nitter.snopyta.org",
 			"https://nitter.42l.fr",
 			"https://nitter.nixnet.services",
