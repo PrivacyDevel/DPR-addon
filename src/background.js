@@ -21,7 +21,7 @@ function createListeners(services) {
 			url.protocol = instance.protocol;
 			return {"redirectUrl": url.toString()};
 		};
-		browser.webRequest.onBeforeRequest.addListener(listener, {"urls": service.orig}, ["blocking"]);
+		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": service.orig}, ["blocking"]);
 		listeners.push(listener);
 	}
 	return listeners;
@@ -37,37 +37,37 @@ async function updateConfig() {
 		return;
 	}
 	let services = await response.json();
-	await browser.storage.local.set({"config": {"lastUpdated": Date.now(), "services": services}});
+	chrome.storage.local.set({"config": {"lastUpdated": Date.now(), "services": services}});
 	
 	let listeners = createListeners(services);
 	for(let listener of g_listeners) {
-		browser.webRequest.onBeforeRequest.removeListener(listener);
+		chrome.webRequest.onBeforeRequest.removeListener(listener);
 	}
 	g_listeners = listeners;
 
 	console.log("service list updated successfully!");
 }
 
-browser.alarms.onAlarm.addListener(alarm => {
+function wrappedUpdateConfig() {
 	updateConfig().catch(errorHandler);
-});
+}
 
-(async() => {
+chrome.alarms.onAlarm.addListener(wrappedUpdateConfig);
 
-	console.log("initializing addon...");
-	
-	let config = (await browser.storage.local.get("config")).config;
+console.log("initializing addon...");
+
+chrome.storage.local.get("config", async items => {
+	let config = items.config;
 	if(!config) {
 		let services = await (await fetch("services.json")).json();
 		config = {"services": services};
-		await browser.storage.local.set({"config": config});
-		updateConfig().catch(errorHandler);
+		chrome.storage.local.set({"config": config}, wrappedUpdateConfig);
 	}
 
 	let nextUpdateTimestamp = Math.max((config.lastUpdated || 0) + (1000 * UPDATE_INTERVAL_MINUTES), Date.now() + (1000 * 30));
 	console.log("next update is scheduled for: " + new Date(nextUpdateTimestamp).toString());
 
-	browser.alarms.create({
+	chrome.alarms.create({
 		"periodInMinutes": UPDATE_INTERVAL_MINUTES,
 		"when": nextUpdateTimestamp
 	});
@@ -75,5 +75,4 @@ browser.alarms.onAlarm.addListener(alarm => {
 	g_listeners = createListeners(config.services);
 
 	console.log("addon initialized successfully!");
-
-})().catch(errorHandler);
+});
