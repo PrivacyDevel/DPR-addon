@@ -27,11 +27,7 @@
 			"https://tube.cthd.icu",
 			"https://invidious.flokinet.to",
 			"https://youtube.076.ne.jp",
-			"https://invidious.privacy.gd",
-			"http://c7hqkpkpemu6e7emz5b4vyz7idjgdvgaaa3dyimmeojqbgpea3xqjoid.onion",
-			"http://grwp24hodrefzvjjuccrkw3mjq4tzhaaq32amf33dzpmuxe7ilepcmad.onion",
-			"http://u2cvlit75owumwpy4dj2hsmvkq7nvrclkpht7xgyye2pyoxhpmclkrad.onion",
-			"http://2rorw2w54tr7jkasn53l5swbjnbvz3ubebhswscnc54yac6gmkxaeeqd.onion"
+			"https://invidious.privacy.gd"
 		]
 	},
 	{
@@ -87,7 +83,6 @@
 			"https://teddit.ggc-project.de",
 			"https://teddit.namazso.eu",
 			"https://teddit.sethforprivacy.com",
-			"http://qtpvyiaqhmwccxwzsqubd23xhmmrt75tdyw35kp43w4hvamsgl3x27ad.onion",
 			"https://teddit.adminforge.de"
 		]
 	},
@@ -96,8 +91,7 @@
 		"instances": [
 			"https://wikiless.sethforprivacy.com",
 			"https://wikiless.org",
-			"https://wikiless.alefvanoon.xyz",
-			"http://dj2tbh2nqfxyfmvq33cjmhuw7nb6am7thzd3zsjvizeqf374fixbrxyd.onion"
+			"https://wikiless.alefvanoon.xyz"
 		]
 	}
 ]
