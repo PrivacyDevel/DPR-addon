@@ -90,8 +90,7 @@
 		"orig": ["*://*.wikipedia.org/*"],
 		"instances": [
 			"https://wikiless.sethforprivacy.com",
-			"https://wikiless.org",
-			"https://wikiless.alefvanoon.xyz"
+			"https://wikiless.org"
 		]
 	}
 ]
