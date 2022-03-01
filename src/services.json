@@ -7,7 +7,6 @@
 			"https://nitter.1d4.us",
 			"https://nitter.namazso.eu",
 			"https://twitter.censors.us",
-			"https://nttr.stream",
 			"https://nitter.esmailelbob.xyz",
 			"https://tw.artemislena.eu"
 		]
@@ -43,7 +42,6 @@
 		"orig": ["*://translate.google.com/*"],
 		"instances": [
 			"https://simplytranslate.org",
-			"https://st.alefvanoon.xyz",
 			"https://translate.riverside.rocks",
 			"https://translate.namazso.eu",
 			"https://translate.josias.dev",
@@ -56,12 +54,8 @@
 	{
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
-			"https://bibliogram.fdn.fr",
 			"https://bibliogram.pussthecat.org",
-			"https://bibliogram.ethibox.fr",
-			"https://biblio.alefvanoon.xyz",
-			"https://insta.trom.tf",
-			"https://bibliogram.esmailelbob.xyz"
+			"https://bib.actionsack.com"
 		]
 	},
 	{
