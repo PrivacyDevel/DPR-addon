@@ -54,8 +54,7 @@
 	{
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
-			"https://bibliogram.pussthecat.org",
-			"https://bib.actionsack.com"
+			"https://bibliogram.pussthecat.org"
 		]
 	},
 	{
