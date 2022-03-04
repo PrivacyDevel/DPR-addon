@@ -18,6 +18,7 @@ function transformUrl(srcUrlStr, instances) {
 
 	url.hostname = instance.hostname;
 	url.protocol = instance.protocol;
+	url.port = instance.port;
 	return url;
 }
 
