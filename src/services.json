@@ -48,14 +48,16 @@
 			"https://translate.bus-hit.me",
 			"https://simplytranslate.pussthecat.org",
 			"https://translate.northboot.xyz",
-			"https://translate.tiekoetter.com"
+			"https://translate.tiekoetter.com",
+			"https://manerakai.asuscomm.com:447"
 		]
 	},
 	{
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://bib.actionsack.com"
+			"https://bib.actionsack.com",
+			"https://manerakai.asuscomm.com:450"
 		]
 	},
 	{
