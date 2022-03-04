@@ -26,7 +26,9 @@
 			"https://tube.cthd.icu",
 			"https://invidious.flokinet.to",
 			"https://youtube.076.ne.jp",
-			"https://invidious.privacy.gd"
+			"https://invidious.privacy.gd",
+			"https://iv.catgirl.cloud",
+			"https://invidious.sp-codes.de"
 		]
 	},
 	{
@@ -34,7 +36,25 @@
 		"documentOnly": true,
 		"instances": [
 			"https://searx.tuxcloud.net",
-			"https://searx.be"
+			"https://search.ononoki.org",
+			"https://search.stinpriza.org",
+			"https://searx.theanonymouse.xyz",
+			"https://searx.gnu.style",
+			"https://www.gruble.de",
+			"https://searx.stuehieyr.com",
+			"https://searx.bissisoft.com",
+			"https://procurx.pt",
+			"https://searx.prvcy.eu",
+			"https://searx.sp-codes.de",
+			"https://searx.rasp.fr",
+			"https://searx.nevrlands.de",
+			"https://sx.catgirl.cloud",
+			"https://search.trom.tf",
+			"https://suche.tromdienste.de",
+			"https://searx.tyil.nl",
+			"https://search.zdechov.net",
+			"https://searx.roughs.ru",
+			"https://searx.ninja"
 		]
 	},
 	{
@@ -77,7 +97,8 @@
 			"https://teddit.ggc-project.de",
 			"https://teddit.namazso.eu",
 			"https://teddit.sethforprivacy.com",
-			"https://teddit.adminforge.de"
+			"https://teddit.adminforge.de",
+			"https://reddit.alt.tyil.nl"
 		]
 	},
 	{
