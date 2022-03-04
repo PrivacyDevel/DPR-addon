@@ -8,7 +8,8 @@
 			"https://nitter.namazso.eu",
 			"https://twitter.censors.us",
 			"https://nitter.esmailelbob.xyz",
-			"https://tw.artemislena.eu"
+			"https://tw.artemislena.eu",
+			"https://nitter.it"
 		]
 	},
 	{
@@ -28,7 +29,8 @@
 			"https://youtube.076.ne.jp",
 			"https://invidious.privacy.gd",
 			"https://iv.catgirl.cloud",
-			"https://invidious.sp-codes.de"
+			"https://invidious.sp-codes.de",
+			"https://tube.mha.fi"
 		]
 	},
 	{
@@ -46,15 +48,24 @@
 			"https://procurx.pt",
 			"https://searx.prvcy.eu",
 			"https://searx.sp-codes.de",
-			"https://searx.rasp.fr",
 			"https://searx.nevrlands.de",
 			"https://sx.catgirl.cloud",
 			"https://search.trom.tf",
 			"https://suche.tromdienste.de",
-			"https://searx.tyil.nl",
 			"https://search.zdechov.net",
 			"https://searx.roughs.ru",
-			"https://searx.ninja"
+			"https://searx.ninja",
+
+			"https://searx.rasp.fr",
+
+			"https://searx.be",
+			"https://searx-private-search.de",
+			"https://search.bus-hit.me",
+			"https://searx.mha.fi",
+			"https://searx.gnous.eu",
+			"https://search.neet.works",
+			"https://s.zhaocloud.net",
+			"https://metasearch.nl"
 		]
 	},
 	{
@@ -75,7 +86,8 @@
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://manerakai.asuscomm.com:450"
+			"https://manerakai.asuscomm.com:450",
+			"https://gram.mha.fi"
 		]
 	},
 	{
@@ -98,7 +110,8 @@
 			"https://teddit.namazso.eu",
 			"https://teddit.sethforprivacy.com",
 			"https://teddit.adminforge.de",
-			"https://reddit.alt.tyil.nl"
+			"https://reddit.alt.tyil.nl",
+			"https://teddit.mha.fi"
 		]
 	},
 	{
