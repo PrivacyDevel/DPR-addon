@@ -7,8 +7,8 @@ function errorHandler(error) {
 	console.error(error);
 }
 
-function addListener(url, listeners, listener) {
-	chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": url}, ["blocking"]);
+function addListener(urls, listeners, listener) {
+	chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": urls}, ["blocking"]);
 	listeners.push(listener);
 }
 
@@ -18,18 +18,26 @@ function transformUrl(srcUrlStr, instances) {
 
 	url.hostname = instance.hostname;
 	url.protocol = instance.protocol;
+	return url;
 }
 
 function createListeners(services) {
 	let listeners = [];
 	for(let service of services) {
-		addListener(service.org, listeners, details => {
-			if(service.documentOnly && details.documentUrl)
-				return;
-			return {"redirectUrl": transformUrl(details.url, service.instances).toString()};
-		});
-		if(service.orig == "*://*.youtube.com/*") {
-			addListener("*://youtu.be/*", listeners, details => {
+		if(service.orig.includes("*://*.instagram.com/*")) {
+			addListener(["*://*.instagram.com/*"], listeners, details => {
+				let url = transformUrl(details.url, service.instances);
+				console.log("insta:" + url.toString());
+
+				// if pathname doesn't contain any slashes, we assume that we are trying to check out a user profile
+				if(!url.pathname.slice(1).includes("/"))
+					url.pathname = "/u" + url.pathname;
+
+				return {"redirectUrl": url.toString()};
+			});
+			continue
+		} else if(service.orig.includes("*://*.youtube.com/*")) {
+			addListener(["*://youtu.be/*"], listeners, details => {
 				let url = transformUrl(details.url, service.instances);
 				let oldSearch = url.search.slice(1);
 				url.search = "?v=" + url.pathname.slice(1);
@@ -39,6 +47,11 @@ function createListeners(services) {
 				return {"redirectUrl": url.toString()};
 			});
 		}
+		addListener(service.orig, listeners, details => {
+			if(service.documentOnly && details.documentUrl)
+				return;
+			return {"redirectUrl": transformUrl(details.url, service.instances).toString()};
+		});
 	}
 	return listeners;
 }
