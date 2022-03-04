@@ -56,7 +56,6 @@
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://bib.actionsack.com",
 			"https://manerakai.asuscomm.com:450"
 		]
 	},
