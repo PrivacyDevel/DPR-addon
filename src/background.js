@@ -7,22 +7,38 @@ function errorHandler(error) {
 	console.error(error);
 }
 
+function addListener(url, listeners, listener) {
+	chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": url}, ["blocking"]);
+	listeners.push(listener);
+}
+
+function transformUrl(srcUrlStr, instances) {
+	let instance = new URL(instances[Math.floor(Math.random() * instances.length)]);
+	let url = new URL(srcUrlStr);
+
+	url.hostname = instance.hostname;
+	url.protocol = instance.protocol;
+}
+
 function createListeners(services) {
 	let listeners = [];
 	for(let service of services) {
-		let listener = details => {
-			let instance = new URL(service.instances[Math.floor(Math.random() * service.instances.length)]);
-			let url = new URL(details.url);
-
+		addListener(service.org, listeners, details => {
 			if(service.documentOnly && details.documentUrl)
 				return;
-
-			url.hostname = instance.hostname;
-			url.protocol = instance.protocol;
-			return {"redirectUrl": url.toString()};
-		};
-		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": service.orig}, ["blocking"]);
-		listeners.push(listener);
+			return {"redirectUrl": transformUrl(details.url, service.instances).toString()};
+		});
+		if(service.orig == "*://*.youtube.com/*") {
+			addListener("*://youtu.be/*", listeners, details => {
+				let url = transformUrl(details.url, service.instances);
+				let oldSearch = url.search.slice(1);
+				url.search = "?v=" + url.pathname.slice(1);
+				if(oldSearch.length)
+					url.search += "&" + oldSearch;
+				url.pathname = "/watch";
+				return {"redirectUrl": url.toString()};
+			});
+		}
 	}
 	return listeners;
 }
