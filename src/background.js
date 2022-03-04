@@ -25,9 +25,8 @@ function createListeners(services) {
 	let listeners = [];
 	for(let service of services) {
 		if(service.orig.includes("*://*.instagram.com/*")) {
-			addListener(["*://*.instagram.com/*"], listeners, details => {
+			addListener(service.orig, listeners, details => {
 				let url = transformUrl(details.url, service.instances);
-				console.log("insta:" + url.toString());
 
 				// if pathname doesn't contain any slashes, we assume that we are trying to check out a user profile
 				if(!url.pathname.slice(1).includes("/"))
@@ -35,7 +34,21 @@ function createListeners(services) {
 
 				return {"redirectUrl": url.toString()};
 			});
-			continue
+			continue;
+		} else if(service.orig.includes("*://google.com/*")) {
+			addListener(service.orig, listeners, details => {
+				let url = transformUrl(details.url, service.instances);
+
+				//TODO remove code duplicate
+				if(service.documentOnly && details.documentUrl)
+					return;
+
+				if(url.pathname.startsWith("/maps"))
+					return;
+
+				return {"redirectUrl": url.toString()};
+			});
+			continue;
 		} else if(service.orig.includes("*://*.youtube.com/*")) {
 			addListener(["*://youtu.be/*"], listeners, details => {
 				let url = transformUrl(details.url, service.instances);
