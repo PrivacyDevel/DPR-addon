@@ -33,7 +33,6 @@
 		"orig": ["*://google.com/*", "*://www.google.com/*"],
 		"documentOnly": true,
 		"instances": [
-			"https://search.disroot.org",
 			"https://searx.tuxcloud.net",
 			"https://searx.be"
 		]
