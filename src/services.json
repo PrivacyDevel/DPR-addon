@@ -105,7 +105,8 @@
 		"orig": ["*://*.wikipedia.org/*"],
 		"instances": [
 			"https://wikiless.sethforprivacy.com",
-			"https://wikiless.org"
+			"https://wikiless.org",
+			"https://wiki.604kph.xyz"
 		]
 	}
 ]
