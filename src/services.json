@@ -118,5 +118,15 @@
 			"https://wikiless.sethforprivacy.com",
 			"https://wikiless.org"
 		]
+	},
+	{
+		"orig": ["*://*.imgur.com/*"],
+		"instances": [
+			"https://i.bcow.xyz",
+			"https://rimgo.pussthecat.org",
+			"https://rimgo.totaldarkness.net",
+			"https://rimgo.bus-hit.me",
+			"https://rimgo.esmailelbob.xyz"
+		]
 	}
 ]
