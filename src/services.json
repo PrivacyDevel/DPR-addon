@@ -128,5 +128,14 @@
 			"https://rimgo.bus-hit.me",
 			"https://rimgo.esmailelbob.xyz"
 		]
+	},
+	{
+		"orig": ["*://*.odysee.com/*"],
+		"instances": [
+			"https://lbry.bcow.xyz",
+			"https://librarian.pussthecat.org",
+			"https://lbry.mutahar.rocks",
+			"https://librarian.esmailelbob.xyz"
+		]
 	}
 ]
