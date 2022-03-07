@@ -29,8 +29,9 @@ function createListeners(services) {
 			addListener(service.orig, listeners, details => {
 				let url = transformUrl(details.url, service.instances);
 
-				// if pathname doesn't contain any slashes, we assume that we are trying to check out a user profile
-				if(!url.pathname.slice(1).includes("/"))
+				// if pathname doesn't contain any slashes and isn't blank, we assume that we are trying to check out a user profile
+				let path = url.pathname.slice(1);
+				if(!path && !path.includes("/"))
 					url.pathname = "/u" + url.pathname;
 
 				return {"redirectUrl": url.toString()};
