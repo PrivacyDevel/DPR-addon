@@ -2,14 +2,12 @@
 	{
 		"orig": ["*://*.twitter.com/*"],
 		"instances": [
-			"https://nitter.snopyta.org",
 			"https://nitter.pussthecat.org",
 			"https://nitter.1d4.us",
 			"https://nitter.namazso.eu",
 			"https://twitter.censors.us",
 			"https://nitter.esmailelbob.xyz",
-			"https://tw.artemislena.eu",
-			"https://nitter.it"
+			"https://tw.artemislena.eu"
 		]
 	},
 	{
@@ -83,8 +81,7 @@
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://manerakai.asuscomm.com:450",
-			"https://gram.mha.fi"
+			"https://manerakai.asuscomm.com:450"
 		]
 	},
 	{
