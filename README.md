@@ -14,12 +14,10 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |translate.google.com   | [SimplyTranslate](https://sr.ht/~metalune/SimplyTranslate/)   						|
 |instagram.com          | [Bibliogram](https://sr.ht/~cadence/bibliogram/)              						|
 |medium.com             | [Scribe](https://sr.ht/~edwardloveall/scribe/)                						|
-|reddit.com             | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)\*	|
+|reddit.com             | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)		|
 |wikipedia.org          | [Wikiless](https://codeberg.org/orenom/Wikiless)              						|
 |imgur.com              | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)         						|
 |odysee.com             | [Librarian](https://codeberg.org/librarian/librarian)         						|
-
-\* Teddit is preferred but currently there is also one Libreddit instance in use.
 
 ## Similar projects
 [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect)\
