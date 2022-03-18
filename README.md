@@ -6,18 +6,18 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 [Download for Firefox](https://addons.mozilla.org/en-US/firefox/addon/dynamic-privacy-redirect/)
 
 ## Redirects
-|From                   |To                                                             						|
-|-----------------------|---------------------------------------------------------------------------------------------------------------|
-|twitter.com            | [Nitter](https://github.com/zedeus/nitter)                    						|
-|youtube.com            | [Invidious](https://github.com/iv-org/invidious)              						|
-|google.com             | [searX](https://github.com/searx/searx)                       						|
-|translate.google.com   | [SimplyTranslate](https://sr.ht/~metalune/SimplyTranslate/)   						|
-|instagram.com          | [Bibliogram](https://sr.ht/~cadence/bibliogram/)              						|
-|medium.com             | [Scribe](https://sr.ht/~edwardloveall/scribe/)                						|
-|reddit.com             | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)		|
-|wikipedia.org          | [Wikiless](https://codeberg.org/orenom/Wikiless)              						|
-|imgur.com              | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)         						|
-|odysee.com             | [Librarian](https://codeberg.org/librarian/librarian)         						|
+|From                   				|To                                                             						|
+|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|[Twitter](https://twitter.com)				| [Nitter](https://github.com/zedeus/nitter)                    						|
+|[YouTube](https://youtube.com)				| [Invidious](https://github.com/iv-org/invidious)              						|
+|[Google](https://google.com)				| [searX](https://github.com/searx/searx) and [SearXNG](https://github.com/searxng/searxng)			|
+|[Google Translate](https://translate.google.com)	| [SimplyTranslate](https://sr.ht/~metalune/SimplyTranslate/)   						|
+|[Instagram](https://instagram.com)			| [Bibliogram](https://sr.ht/~cadence/bibliogram/)              						|
+|[Medium](https://medium.com)				| [Scribe](https://sr.ht/~edwardloveall/scribe/)                						|
+|[Reddit](https://reddit.com)				| [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)		|
+|[Wikipedia](https://wikipedia.org)			| [Wikiless](https://codeberg.org/orenom/Wikiless)              						|
+|[Imgur](https://imgur.com)				| [rimgo](https://codeberg.org/video-prize-ranch/rimgo)         						|
+|[Odysee](https://odysee.com)				| [Librarian](https://codeberg.org/librarian/librarian)         						|
 
 ## Similar projects
 [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect)\
@@ -25,5 +25,5 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 [Alter](https://github.com/w3bdev1/alter)
 
 ## Donations
-XMR: `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f`
+[Monero (XMR)](https://www.getmonero.org/): `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f`
 
