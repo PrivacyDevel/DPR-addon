@@ -71,7 +71,8 @@
 			"https://simplytranslate.pussthecat.org",
 			"https://translate.northboot.xyz",
 			"https://translate.tiekoetter.com",
-			"https://manerakai.asuscomm.com:447"
+			"https://manerakai.asuscomm.com:447",
+			"https://translate.autarkic.org"
 		]
 	},
 	{
@@ -97,6 +98,10 @@
 		"orig": ["*://*.reddit.com/*"],
 		"instances": [
 			"https://reddit.artemislena.eu",
+			"https://libreddit.autarkic.org",
+			"https://lr.cowfee.moe",
+			"https://libreddit.nl",
+
 			"https://teddit.net",
 			"https://teddit.ggc-project.de",
 			"https://teddit.namazso.eu",
