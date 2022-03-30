@@ -13,24 +13,8 @@
 	{
 		"orig": ["*://*.youtube.com/*"],
 		"instances": [
-			"https://yt.artemislena.eu",
 			"https://invidious.sethforprivacy.com",
-			"https://invidious.snopyta.org",
-			"https://invidious.namazso.eu",
-			"https://inv.riverside.rocks",
-			"https://vid.puffyan.us",
-			"https://invidio.xamh.de",
-			"https://invidious.osi.kr",
-			"https://tube.cthd.icu",
-			"https://invidious.flokinet.to",
-			"https://youtube.076.ne.jp",
-			"https://invidious.privacy.gd",
-			"https://iv.catgirl.cloud",
-			"https://invidious.sp-codes.de",
-			"https://invidious.mutahar.rocks",
-			"https://invidious.kitten.software",
-			"https://invidious.esmailelbob.xyz",
-			"https://inv.totaldarkness.net"
+			"https://yewtu.be"
 		]
 	},
 	{
