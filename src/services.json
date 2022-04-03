@@ -53,7 +53,8 @@
 			"https://translate.northboot.xyz",
 			"https://translate.tiekoetter.com",
 			"https://manerakai.asuscomm.com:447",
-			"https://translate.autarkic.org"
+			"https://translate.autarkic.org",
+			"https://st.alefvanoon.xyz"
 		]
 	},
 	{
@@ -98,7 +99,8 @@
 	{
 		"orig": ["*://*.wikipedia.org/*"],
 		"instances": [
-			"https://wikiless.org"
+			"https://wikiless.org",
+			"https://wikiless.alefvanoon.xyz"
 		]
 	},
 	{
