@@ -14,31 +14,20 @@
 		"orig": ["*://*.youtube.com/*"],
 		"instances": [
 			"https://invidious.sethforprivacy.com",
-			"https://yewtu.be"
+			"https://yewtu.be",
+			"https://y.com.sb"
 		]
 	},
 	{
 		"orig": ["*://google.com/*", "*://www.google.com/*"],
 		"documentOnly": true,
 		"instances": [
-			"https://searx.tuxcloud.net",
-			"https://search.ononoki.org",
-			"https://search.stinpriza.org",
-			"https://searx.theanonymouse.xyz",
-			"https://searx.gnu.style",
-			"https://www.gruble.de",
-			"https://searx.sp-codes.de",
-			"https://search.trom.tf",
-			"https://suche.tromdienste.de",
-			"https://search.zdechov.net",
-			"https://searx.ninja",
-
 			"https://searx.rasp.fr",
-
 			"https://searx.be",
-			"https://search.bus-hit.me",
 			"https://searx.gnous.eu",
-			"https://s.zhaocloud.net"
+
+			"https://whoogle.dcs0.hu",
+			"https://gowogle.voring.me"
 		]
 	},
 	{
@@ -52,16 +41,15 @@
 			"https://simplytranslate.pussthecat.org",
 			"https://translate.northboot.xyz",
 			"https://translate.tiekoetter.com",
-			"https://manerakai.asuscomm.com:447",
-			"https://translate.autarkic.org",
-			"https://st.alefvanoon.xyz"
+			"https://st.alefvanoon.xyz",
+			"https://st.manerakai.com"
 		]
 	},
 	{
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://manerakai.asuscomm.com:450"
+			"https://bibliogram.froth.zone"
 		]
 	},
 	{
@@ -73,23 +61,21 @@
 			"https://scribe.citizen4.eu",
 			"https://scribe.bus-hit.me",
 			"https://scribe.esmailelbob.xyz",
-			"https://scribe.bcow.xyz"
+			"https://scribe.bcow.xyz",
+			"https://scribe.froth.zone"
 		]
 	},
 	{
 		"orig": ["*://*.reddit.com/*"],
 		"instances": [
 			"https://reddit.artemislena.eu",
-			"https://libreddit.autarkic.org",
 			"https://libreddit.nl",
-			"https://r.walkx.org",
 
 			"https://teddit.net",
 			"https://teddit.ggc-project.de",
 			"https://teddit.namazso.eu",
 			"https://teddit.sethforprivacy.com",
 			"https://teddit.adminforge.de",
-			"https://teddit.kitten.software",
 			"https://teddit.alefvanoon.xyz",
 			"https://reddit.lol",
 			"https://teddit.froth.zone",
@@ -100,7 +86,9 @@
 		"orig": ["*://*.wikipedia.org/*"],
 		"instances": [
 			"https://wikiless.org",
-			"https://wikiless.alefvanoon.xyz"
+			"https://wikiless.alefvanoon.xyz",
+			"https://wiki.froth.zone",
+			"https://wikiless.manerakai.com"
 		]
 	},
 	{
