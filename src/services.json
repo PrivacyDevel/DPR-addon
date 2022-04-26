@@ -51,7 +51,8 @@
 		"orig": ["*://*.instagram.com/*"],
 		"instances": [
 			"https://bibliogram.pussthecat.org",
-			"https://bibliogram.froth.zone"
+			"https://bibliogram.froth.zone",
+			"https://bibliogram.manerakai.com"
 		]
 	},
 	{
