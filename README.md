@@ -20,9 +20,11 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                   |
 
 ## Similar projects
-[Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect)\
-[LibRedirect](https://github.com/libredirect/libredirect/)\
-[Alter](https://github.com/w3bdev1/alter)
+|Project          |Mirrors                                                                                                         |
+|-----------------|----------------------------------------------------------------------------------------------------------------|
+|Privacy Redirect |[Github](https://github.com/SimonBrazell/privacy-redirect)                                                      |
+|LibRedirect      |[Github](https://github.com/libredirect/libredirect/), [Codeberg](https://codeberg.org/LibRedirect/libredirect) |
+|Alter            |[Github](https://github.com/w3bdev1/alter)                                                                      |
 
 ## Donations
 [Monero (XMR)](https://www.getmonero.org/): `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f`
