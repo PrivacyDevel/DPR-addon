@@ -6,18 +6,18 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 [Download for Firefox](https://addons.mozilla.org/en-US/firefox/addon/dynamic-privacy-redirect/)
 
 ## Redirects
-|From                                                  |To                                                                                                                                                       |
-|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-|[Twitter](https://twitter.com)                        | [Nitter](https://github.com/zedeus/nitter)                                                                                                              |
-|[YouTube](https://youtube.com)                        | [Invidious](https://github.com/iv-org/invidious)                                                                                                        |
-|[Google](https://google.com)                          | [searX](https://github.com/searx/searx), [SearXNG](https://github.com/searxng/searxng) and [Whoogle Search](https://github.com/benbusby/whoogle-search) |
-|[Google Translate](https://translate.google.com)      | [SimplyTranslate](https://sr.ht/~metalune/SimplyTranslate/)                                                                                             |
-|[Instagram](https://instagram.com)                    | [Bibliogram](https://sr.ht/~cadence/bibliogram/)                                                                                                        |
-|[Medium](https://medium.com)                          | [Scribe](https://sr.ht/~edwardloveall/scribe/)                                                                                                          |
-|[Reddit](https://reddit.com)                          | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)                                                   |
-|[Wikipedia](https://wikipedia.org)                    | [Wikiless](https://codeberg.org/orenom/Wikiless)                                                                                                        |
-|[Imgur](https://imgur.com)                            | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)                                                                                                   |
-|[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                   |
+|From                                                  |To                                                                                                              |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|[Twitter](https://twitter.com)                        | [Nitter](https://github.com/zedeus/nitter)                                                                     |
+|[YouTube](https://youtube.com)                        | [Invidious](https://github.com/iv-org/invidious)                                                               |
+|[Google](https://google.com)                          | [SearXNG](https://github.com/searxng/searxng) and [Whoogle Search](https://github.com/benbusby/whoogle-search) |
+|[Google Translate](https://translate.google.com)      | [SimplyTranslate](https://sr.ht/~metalune/SimplyTranslate/)                                                    |
+|[Instagram](https://instagram.com)                    | [Bibliogram](https://sr.ht/~cadence/bibliogram/)                                                               |
+|[Medium](https://medium.com)                          | [Scribe](https://sr.ht/~edwardloveall/scribe/)                                                                 |
+|[Reddit](https://reddit.com)                          | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)          |
+|[Wikipedia](https://wikipedia.org)                    | [Wikiless](https://codeberg.org/orenom/Wikiless)                                                               |
+|[Imgur](https://imgur.com)                            | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)                                                          |
+|[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                          |
 
 ## Similar projects
 |Project          |Mirrors                                                                                                         |
