@@ -1,123 +1,198 @@
 [
 	{
-		"orig": ["*://*.twitter.com/*"],
-		"instances": [
-			"https://nitter.pussthecat.org",
-			"https://nitter.1d4.us",
-			"https://nitter.namazso.eu",
-			"https://twitter.censors.us",
-			"https://nitter.esmailelbob.xyz",
-			"https://tw.artemislena.eu",
-			"https://nitter.alefvanoon.xyz"
-		]
+		"transformations": [
+			{
+				"domain": "twitter.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": [ "{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"nitter.pussthecat.org",
+			"nitter.1d4.us",
+			"nitter.namazso.eu",
+			"twitter.censors.us",
+			"nitter.esmailelbob.xyz",
+			"tw.artemislena.eu",
+			"nitter.alefvanoon.xyz"
+		]]
 	},
 	{
-		"orig": ["*://*.youtube.com/*"],
-		"instances": [
-			"https://invidious.sethforprivacy.com",
-			"https://yewtu.be",
-			"https://y.com.sb"
-		]
+		"transformations": [
+			{
+				"domain": "youtube.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["{{instance}}$1"]
+			},
+			{
+				"domain": "youtu.be",
+				"pattern": "{{domain}}/([^?]+)(?:\\?(.*))?",
+				"replacements": ["{{instance}}/watch?v=$1&$2"]
+			}
+		],
+		"instances": [[
+			"invidious.sethforprivacy.com",
+			"yewtu.be",
+			"y.com.sb"
+		]]
 	},
 	{
-		"orig": ["*://google.com/*", "*://www.google.com/*"],
-		"documentOnly": true,
+		"transformations": [
+			{
+				"domain": "www.google.com",
+				"pattern": "{{domain}}/search(\\?q=.*)",
+				"replacements": [
+					"{{instance}}/search.php$1",
+					"{{instance}}/search$1"
+				]
+			},
+			{
+				"domain": "www.google.com",
+				"pattern": "({{domain}}/maps(?:.*))",
+				"replacements": ["$1", "$1"]
+			},
+			{
+				"domain": "www.google.com",
+				"pattern": "{{domain}}",
+				"replacements": [
+					"{{instance}}",
+					"{{instance}}"
+				]
+			}
+		],
 		"instances": [
-			"https://searx.rasp.fr",
-			"https://searx.be",
-			"https://search.privacyguides.net",
-			"https://searx.one",
+			[
+				"search.davidovski.xyz",
+				"librex.elpengu.com"
+			],
+			[
+				"searx.rasp.fr",
+				"searx.be",
+				"search.privacyguides.net",
+				"searx.one",
+				"searx.namejeff.xyz/searx",
 
-			"https://www.whoogle.click",
-			"https://s.kwadrat.pw",
-			"https://whoogle.chrisphillips.dev",
-			"https://wmdsearch.com"
-		]
+				"www.whoogle.click",
+				"s.kwadrat.pw",
+				"whoogle.chrisphillips.dev",
+				"wmdsearch.com"
+			]
+		],
+		"documentOnly": true
 	},
 	{
-		"orig": ["*://translate.google.com/*"],
-		"instances": [
-			"https://simplytranslate.org",
-			"https://translate.riverside.rocks",
-			"https://translate.namazso.eu",
-			"https://translate.josias.dev",
-			"https://translate.bus-hit.me",
-			"https://simplytranslate.pussthecat.org",
-			"https://translate.northboot.xyz",
-			"https://translate.tiekoetter.com",
-			"https://st.alefvanoon.xyz",
-			"https://st.manerakai.com",
-			"https://simplytranslate.esmailelbob.xyz"
-		]
+		"transformations": [
+			{
+				"domain": "translate.google.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"simplytranslate.org",
+			"translate.riverside.rocks",
+			"translate.namazso.eu",
+			"translate.josias.dev",
+			"translate.bus-hit.me",
+			"simplytranslate.pussthecat.org",
+			"translate.northboot.xyz",
+			"translate.tiekoetter.com",
+			"st.alefvanoon.xyz",
+			"st.manerakai.com",
+			"simplytranslate.esmailelbob.xyz"
+		]]
 	},
 	{
-		"orig": ["*://*.instagram.com/*"],
-		"instances": [
-			"https://bibliogram.pussthecat.org",
-			"https://bibliogram.froth.zone",
-			"https://bibliogram.manerakai.com"
-		]
+		"transformations": [
+			{
+				"domain": "instagram.com",
+				"pattern": "{{domain}}(/.+)",
+				"replacements": ["bibliogram.{{instance}}/u$1"]
+			},
+			{
+				"domain": "instagram.com",
+				"pattern": "{{domain}}",
+				"replacements": ["bibliogram.{{instance}}"]
+			}
+		],
+		"instances": [[
+			"pussthecat.org"
+		]]
 	},
 	{
-		"orig": ["*://*.medium.com/*"],
+		"transformations": [
+			{
+				"domain": "medium.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["scribe.{{instance}}$1"]
+			}
+		],
 		"documentOnly": true,
-		"instances": [
-			"https://scribe.rip",
-			"https://scribe.nixnet.services",
-			"https://scribe.citizen4.eu",
-			"https://scribe.bus-hit.me",
-			"https://scribe.esmailelbob.xyz",
-			"https://scribe.bcow.xyz",
-			"https://scribe.froth.zone",
-			"https://scribe.pussthecat.org"
-		]
+		"instances": [[
+			"rip",
+			"nixnet.services",
+			"citizen4.eu",
+			"bus-hit.me",
+			"esmailelbob.xyz",
+			"bcow.xyz",
+			"froth.zone",
+			"pussthecat.org"
+		]]
 	},
 	{
-		"orig": ["*://*.reddit.com/*"],
-		"instances": [
-			"https://reddit.artemislena.eu",
-			"https://libreddit.nl",
+		"transformations": [
+			{
+				"domain": "reddit.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"reddit.artemislena.eu",
+			"libreddit.nl",
 
-			"https://teddit.net",
-			"https://teddit.ggc-project.de",
-			"https://teddit.namazso.eu",
-			"https://teddit.sethforprivacy.com",
-			"https://teddit.adminforge.de",
-			"https://teddit.alefvanoon.xyz",
-			"https://reddit.lol",
-			"https://teddit.froth.zone",
-			"https://rdt.trom.tf"
-		]
+			"teddit.net",
+			"teddit.ggc-project.de",
+			"teddit.namazso.eu",
+			"teddit.sethforprivacy.com",
+			"teddit.adminforge.de",
+			"teddit.alefvanoon.xyz",
+			"reddit.lol",
+			"teddit.froth.zone",
+			"rdt.trom.tf"
+		]]
 	},
 	{
-		"orig": ["*://*.wikipedia.org/*"],
-		"instances": [
-			"https://wikiless.org",
-			"https://wikiless.alefvanoon.xyz",
-			"https://wiki.froth.zone",
-			"https://wikiless.manerakai.com"
-		]
+		"transformations": [
+			{
+				"domain": "imgur.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"i.bcow.xyz",
+			"rimgo.pussthecat.org",
+			"rimgo.totaldarkness.net",
+			"rimgo.bus-hit.me",
+			"rimgo.esmailelbob.xyz"
+		]]
 	},
 	{
-		"orig": ["*://*.imgur.com/*"],
-		"instances": [
-			"https://i.bcow.xyz",
-			"https://rimgo.pussthecat.org",
-			"https://rimgo.totaldarkness.net",
-			"https://rimgo.bus-hit.me",
-			"https://rimgo.esmailelbob.xyz",
-			"https://img.riverside.rocks"
-		]
-	},
-	{
-		"orig": ["*://*.odysee.com/*"],
-		"instances": [
-			"https://lbry.bcow.xyz",
-			"https://librarian.pussthecat.org",
-			"https://lbry.mutahar.rocks",
-			"https://librarian.esmailelbob.xyz",
-			"https://odysee.076.ne.jp",
-			"https://lbry.ix.tc"
-		]
+		"transformations": [
+			{
+				"domain": "odysee.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"lbry.bcow.xyz",
+			"librarian.pussthecat.org",
+			"lbry.mutahar.rocks",
+			"librarian.esmailelbob.xyz",
+			"odysee.076.ne.jp",
+			"lbry.ix.tc"
+		]]
 	}
 ]

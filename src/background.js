@@ -12,62 +12,43 @@ function addListener(urls, listeners, listener) {
 	listeners.push(listener);
 }
 
-function transformUrl(srcUrlStr, instances) {
-	let instance = new URL(instances[Math.floor(Math.random() * instances.length)]);
-	let url = new URL(srcUrlStr);
+function transformUrl(srcUrlStr, service) {
+	// select random instance
+	let instances = service.instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
+	let [instance, index] = instances[Math.floor(Math.random() * instances.length)];
 
-	url.hostname = instance.hostname;
-	url.protocol = instance.protocol;
-	url.port = instance.port;
-	return url;
+	// search for longest pattern match and use the corresponding transformation
+	let matches = {};
+	service.transformations.forEach(transformation => {
+		let pattern = new RegExp("^.*?://(?:.*?\\.)?" + transformation.pattern.replace("{{domain}}", transformation.domain.replace(".", "\\.")));
+		let match = srcUrlStr.match(pattern);
+		if(match) matches[match[0]] = [pattern, transformation.replacements[index]];
+	});
+	let longestMatch = Object.keys(matches).reduce((a, b) => {
+		if(a.length < b.length) return b;
+		return a;
+	});
+	let [pattern, replacement] = matches[longestMatch];
+
+	// perform transformation
+	let dstUrlStr = srcUrlStr.replace(pattern, "https://" + replacement.replace("{{instance}}", instance));
+	return dstUrlStr;
 }
 
 function createListeners(services) {
 	let listeners = [];
-	for(let service of services) {
-		if(service.orig.includes("*://*.instagram.com/*")) {
-			addListener(service.orig, listeners, details => {
-				let url = transformUrl(details.url, service.instances);
-
-				// if pathname doesn't contain any slashes and isn't blank, we assume that we are trying to check out a user profile
-				let path = url.pathname.slice(1);
-				if(!path && !path.includes("/"))
-					url.pathname = "/u" + url.pathname;
-
-				return {"redirectUrl": url.toString()};
-			});
-			continue;
-		} else if(service.orig.includes("*://google.com/*")) {
-			addListener(service.orig, listeners, details => {
-				let url = transformUrl(details.url, service.instances);
-
-				//TODO remove code duplicate
-				if(service.documentOnly && details.documentUrl)
-					return;
-
-				if(url.pathname.startsWith("/maps"))
-					return;
-
-				return {"redirectUrl": url.toString()};
-			});
-			continue;
-		} else if(service.orig.includes("*://*.youtube.com/*")) {
-			addListener(["*://youtu.be/*"], listeners, details => {
-				let url = transformUrl(details.url, service.instances);
-				let oldSearch = url.search.slice(1);
-				url.search = "?v=" + url.pathname.slice(1);
-				if(oldSearch.length)
-					url.search += "&" + oldSearch;
-				url.pathname = "/watch";
-				return {"redirectUrl": url.toString()};
-			});
-		}
-		addListener(service.orig, listeners, details => {
+	services.forEach(service => {
+		let urls = new Set();
+		service.transformations.forEach(transformation => {
+			urls.add("*://*." + transformation.domain + "/*");
+		});
+		addListener(Array.from(urls), listeners, details => {
 			if(service.documentOnly && details.documentUrl)
 				return;
-			return {"redirectUrl": transformUrl(details.url, service.instances).toString()};
+
+			return {"redirectUrl": transformUrl(details.url, service)};
 		});
-	}
+	});
 	return listeners;
 }
 
@@ -84,9 +65,10 @@ async function updateConfig() {
 	chrome.storage.local.set({"config": {"lastUpdated": Date.now(), "services": services}});
 	
 	let listeners = createListeners(services);
-	for(let listener of g_listeners) {
+
+	g_listeners.forEach(listener => {
 		chrome.webRequest.onBeforeRequest.removeListener(listener);
-	}
+	});
 	g_listeners = listeners;
 
 	console.log("service list updated successfully!");
