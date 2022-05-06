@@ -15,7 +15,6 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Instagram](https://instagram.com)                    | [Bibliogram](https://sr.ht/~cadence/bibliogram/)                                                                                                         |
 |[Medium](https://medium.com)                          | [Scribe](https://sr.ht/~edwardloveall/scribe/)                                                                                                           |
 |[Reddit](https://reddit.com)                          | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)                                                    |
-|[Wikipedia](https://wikipedia.org)                    | [Wikiless](https://codeberg.org/orenom/Wikiless)                                                                                                         |
 |[Imgur](https://imgur.com)                            | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)                                                                                                    |
 |[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                    |
 
