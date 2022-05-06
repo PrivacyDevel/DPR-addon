@@ -199,5 +199,18 @@
 			"odysee.076.ne.jp",
 			"lbry.ix.tc"
 		]]
+	},
+	{
+		"transformations": [
+			{
+				"domain": "tiktok.com",
+				"pattern": "{{domain}}(/.*)?",
+				"replacements": ["proxitok.{{instance}}$1"]
+			}
+		],
+		"instances": [[
+			"herokuapp.com",
+			"pussthecat.org"
+		]]
 	}
 ]

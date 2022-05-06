@@ -17,6 +17,7 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Reddit](https://reddit.com)                          | [Teddit](https://codeberg.org/teddit/teddit) and [Libreddit](https://github.com/spikecodes/libreddit)                                                    |
 |[Imgur](https://imgur.com)                            | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)                                                                                                    |
 |[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                    |
+|[TikTok](https://tiktok.com)                          | [ProxiTok](https://github.com/pablouser1/ProxiTok)                                                                                                       |
 
 ## Similar projects
 |Project          |Mirrors                                                                                                         |
