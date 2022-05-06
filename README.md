@@ -21,8 +21,9 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 ## Similar projects
 |Project          |Mirrors                                                                                                         |
 |-----------------|----------------------------------------------------------------------------------------------------------------|
-|Privacy Redirect |[Github](https://github.com/SimonBrazell/privacy-redirect)                                                      |
 |LibRedirect      |[Github](https://github.com/libredirect/libredirect/), [Codeberg](https://codeberg.org/LibRedirect/libredirect) |
+|Redirector       |[Github](https://github.com/einaregilsson/Redirector)                                                           |
+|Privacy Redirect |[Github](https://github.com/SimonBrazell/privacy-redirect)                                                      |
 |Alter            |[Github](https://github.com/w3bdev1/alter)                                                                      |
 
 ## Donations
