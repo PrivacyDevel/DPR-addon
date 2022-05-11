@@ -11,10 +11,14 @@
 			"nitter.pussthecat.org",
 			"nitter.1d4.us",
 			"nitter.namazso.eu",
-			"twitter.censors.us",
 			"nitter.esmailelbob.xyz",
 			"tw.artemislena.eu",
-			"nitter.alefvanoon.xyz"
+			"nitter.kavin.rocks",
+			"bird.trom.tf",
+			"nitter.mstdn.social",
+			"nttr.stream",
+			"de.nttr.stream",
+			"nitter.it"
 		]]
 	},
 	{
@@ -33,7 +37,21 @@
 		"instances": [[
 			"invidious.sethforprivacy.com",
 			"yewtu.be",
-			"y.com.sb"
+			"y.com.sb",
+			"invidious.snopyta.org",
+			"invidious.kavin.rocks",
+			"vid.puffyan.us",
+			"invidious.namazso.eu",
+			"inv.riverside.rocks",
+			"invidious.osi.kr",
+			"yt.artemislena.eu",
+			"invidious.flokinet.to",
+			"invidious.weblibre.org",
+			"invidious.esmailelbob.xyz",
+			"invidious.tiekoetter.com",
+			"yt.beparanoid.de",
+			"invidio.xamh.de",
+			"ytb.trom.tf"
 		]]
 	},
 	{
@@ -100,7 +118,6 @@
 			"simplytranslate.pussthecat.org",
 			"translate.northboot.xyz",
 			"translate.tiekoetter.com",
-			"st.alefvanoon.xyz",
 			"st.manerakai.com",
 			"simplytranslate.esmailelbob.xyz"
 		]]
@@ -115,12 +132,14 @@
 			{
 				"domain": "instagram.com",
 				"pattern": "{{domain}}",
-				"replacements": ["bibliogram.{{instance}}"]
+				"replacements": ["{{instance}}"]
 			}
 		],
 		"instances": [[
-			"pussthecat.org",
-			"privacydev.net"
+			"bibliogram.pussthecat.org",
+			"bibliogram.privacydev.net",
+			"insta.trom.tf",
+			"bibliogram.mstdn.social"
 		]]
 	},
 	{
@@ -162,7 +181,6 @@
 			"teddit.namazso.eu",
 			"teddit.sethforprivacy.com",
 			"teddit.adminforge.de",
-			"teddit.alefvanoon.xyz",
 			"reddit.lol",
 			"teddit.froth.zone",
 			"rdt.trom.tf"
@@ -181,7 +199,8 @@
 			"rimgo.pussthecat.org",
 			"rimgo.totaldarkness.net",
 			"rimgo.bus-hit.me",
-			"rimgo.esmailelbob.xyz"
+			"rimgo.esmailelbob.xyz",
+			"img.riverside.rocks"
 		]]
 	},
 	{
