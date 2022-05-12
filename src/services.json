@@ -127,7 +127,7 @@
 			{
 				"domain": "instagram.com",
 				"pattern": "{{domain}}(/.+)",
-				"replacements": ["bibliogram.{{instance}}/u$1"]
+				"replacements": ["{{instance}}/u$1"]
 			},
 			{
 				"domain": "instagram.com",
