@@ -18,7 +18,8 @@
 			"nitter.mstdn.social",
 			"nttr.stream",
 			"de.nttr.stream",
-			"nitter.it"
+			"nitter.it",
+			"nitter.tokhmi.xyz"
 		]]
 	},
 	{
@@ -95,7 +96,8 @@
 
 				"www.whoogle.click",
 				"s.kwadrat.pw",
-				"whoogle.chrisphillips.dev"
+				"whoogle.chrisphillips.dev",
+				"s.tokhmi.xyz"
 			]
 		],
 		"documentOnly": true
@@ -138,7 +140,8 @@
 			"bibliogram.pussthecat.org",
 			"bibliogram.privacydev.net",
 			"insta.trom.tf",
-			"bibliogram.mstdn.social"
+			"bibliogram.mstdn.social",
+			"ig.tokhmi.xyz"
 		]]
 	},
 	{
@@ -230,7 +233,8 @@
 		"instances": [[
 			"herokuapp.com",
 			"pussthecat.org",
-			"esmailelbob.xyz"
+			"esmailelbob.xyz",
+			"tokhmi.xyz"
 		]]
 	}
 ]
