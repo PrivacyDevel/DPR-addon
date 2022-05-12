@@ -19,13 +19,16 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                    |
 |[TikTok](https://tiktok.com)                          | [ProxiTok](https://github.com/pablouser1/ProxiTok)                                                                                                       |
 
+## Mirrors
+[Codeberg](https://codeberg.org/PrivacyDev/DPR-addon), [GitHub](https://github.com/PrivacyDevel/DPR-addon)
+
 ## Similar projects
 |Project          |Mirrors                                                                                                         |
 |-----------------|----------------------------------------------------------------------------------------------------------------|
-|LibRedirect      |[Github](https://github.com/libredirect/libredirect/), [Codeberg](https://codeberg.org/LibRedirect/libredirect) |
-|Redirector       |[Github](https://github.com/einaregilsson/Redirector)                                                           |
-|Privacy Redirect |[Github](https://github.com/SimonBrazell/privacy-redirect)                                                      |
-|Alter            |[Github](https://github.com/w3bdev1/alter)                                                                      |
+|LibRedirect      |[GitHub](https://github.com/libredirect/libredirect/), [Codeberg](https://codeberg.org/LibRedirect/libredirect) |
+|Redirector       |[GitHub](https://github.com/einaregilsson/Redirector)                                                           |
+|Privacy Redirect |[GitHub](https://github.com/SimonBrazell/privacy-redirect)                                                      |
+|Alter            |[GitHub](https://github.com/w3bdev1/alter)                                                                      |
 
 ## Donations
 [Monero (XMR)](https://www.getmonero.org/): `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f`
