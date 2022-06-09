@@ -7,6 +7,7 @@
 				"replacements": ["{{instance}}$1"]
 			}
 		],
+		"cookies": ["hlsPlayback=on"],
 		"instances": [[
 			"nitter.pussthecat.org",
 			"nitter.namazso.eu",
@@ -86,7 +87,7 @@
 			}
 		],
 		"cookies": [
-			"disabled_engines: bing__general;"
+			"disabled_engines=bing__general"
 		],
 		"instances": [
 			[
@@ -191,7 +192,7 @@
 			}
 		],
 		"cookies": [
-			"theme=dark; layout=card; wide=off; show_nsfw=on;"
+			"theme=dark; layout=card; wide=off; show_nsfw=on"
 		],
 		"instances": [
 			[
