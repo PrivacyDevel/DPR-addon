@@ -90,8 +90,8 @@
 				"domain": "www.google.com",
 				"pattern": "{{domain}}/search(\\?q=.*)",
 				"replacements": [
-					"{{instance}}/search.php$1",
 					"{{instance}}/search$1",
+					"{{instance}}/search.php$1",
 					"{{instance}}/search$1"
 				]
 			},
@@ -111,22 +111,27 @@
 			}
 		],
 		"cookies": [
-			"disabled_engines=bing__general"
+			"disabled_engines=bing__general; enabled_engines=google__general"
 		],
 		"instances": [
 			[
 				"searx.rasp.fr",
 				"searx.be",
-				"search.privacyguides.net",
 				"searx.one",
 				"searx.namejeff.xyz/searx",
-				"searx.loafland.xyz",
 				"etsi.me",
 				"searx.orion-hub.fr",
-				"search.zzls.xyz",
-				"searx.sev.monster",
 				"searx.ppeb.me",
-				"search.antonkling.se/searx"
+				"serx.ml",
+				"search.ononoki.org",
+				"search.chemicals-in-the-water.eu",
+				"s.zhaocloud.net",
+				"asowneryt.cloudns.nz",
+				"search.bus-hit.me",
+				"searx.esmailelbob.xyz",
+				"searxng.ir",
+				"search.neet.works",
+				"dynabyte.ca"
 			],
 			[
 				"librex.beparanoid.de",
