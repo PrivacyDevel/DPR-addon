@@ -67,28 +67,29 @@
 				"pattern": "{{domain}}/search(\\?q=.*)",
 				"replacements": [
 					"{{instance}}/search.php$1",
+					"{{instance}}/search$1",
 					"{{instance}}/search$1"
 				]
 			},
 			{
 				"domain": "www.google.com",
 				"pattern": "({{domain}}/maps(?:.*))",
-				"replacements": ["$1", "$1"]
+				"replacements": ["$1", "$1", "$1"]
 			},
 			{
 				"domain": "www.google.com",
 				"pattern": "{{domain}}",
 				"replacements": [
 					"{{instance}}",
+					"{{instance}}",
 					"{{instance}}"
 				]
 			}
 		],
+		"cookies": [
+			"disabled_engines: bing__general;"
+		],
 		"instances": [
-			[
-				"librex.beparanoid.de",
-				"search.davidovski.xyz"
-			],
 			[
 				"searx.rasp.fr",
 				"searx.be",
@@ -101,8 +102,13 @@
 				"search.zzls.xyz",
 				"searx.sev.monster",
 				"searx.ppeb.me",
-				"search.antonkling.se/searx",
-
+				"search.antonkling.se/searx"
+			],
+			[
+				"librex.beparanoid.de",
+				"search.davidovski.xyz"
+			],
+			[
 				"www.whoogle.click",
 				"s.kwadrat.pw",
 				"whoogle.chrisphillips.dev",
@@ -182,24 +188,58 @@
 			{
 				"domain": "reddit.com",
 				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
+				"replacements": ["{{instance}}$1", "{{instance}}$1"]
 			}
 		],
-		"instances": [[
-			"reddit.artemislena.eu",
-			"libreddit.nl",
-			"libreddit.dcs0.hu",
-			"libreddit.privacydev.net",
-
-			"teddit.net",
-			"teddit.ggc-project.de",
-			"teddit.namazso.eu",
-			"teddit.sethforprivacy.com",
-			"teddit.adminforge.de",
-			"reddit.lol",
-			"teddit.froth.zone",
-			"rdt.trom.tf"
-		]]
+		"cookies": [
+			"theme=dark; layout=card; wide=off; show_nsfw=on;"
+		],
+		"instances": [
+			[
+				"reddit.artemislena.eu",
+				"libreddit.nl",
+				"libreddit.dcs0.hu",
+				"libreddit.privacydev.net",
+				"reddit.rtrace.io",
+				"libreddit.privacydev.net",
+				"libreddit.notyourcomputer.net",
+				"r.ahwx.org",
+				"reddit.beparanoid.de",
+				"rd.jae.su",
+				"libredd.it",
+				"libreddit.spike.codes",
+				"libreddit.dothq.co",
+				"libreddit.kavin.rocks",
+				"reddit.invak.id",
+				"lr.riverside.rocks",
+				"libreddit.strongthany.cc",
+				"libreddit.privacy.com.de",
+				"libreddit.domain.glass",
+				"libreddit.some-things.org",
+				"lr.mint.lgbt",
+				"libreddit.igna.rocks",
+				"libreddit.projectsegfau.lt",
+				"libreddit.northboot.xyz",
+				"leddit.xyz",
+				"de.leddit.xyz",
+				"libreddit.totaldarkness.net",
+				"libreddit.esmailelbob.xyz",
+				"lr.vern.cc",
+				"libreddit.bus-hit.me",
+				"libreddit.kylrth.com",
+				"libreddit.tiekoetter.com"
+			],
+			[
+				"teddit.net",
+				"teddit.ggc-project.de",
+				"teddit.namazso.eu",
+				"teddit.sethforprivacy.com",
+				"teddit.adminforge.de",
+				"reddit.lol",
+				"teddit.froth.zone",
+				"rdt.trom.tf"
+			]
+		]
 	},
 	{
 		"transformations": [

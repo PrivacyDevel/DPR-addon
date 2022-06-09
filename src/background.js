@@ -1,25 +1,20 @@
 const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
 const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
-let g_listeners = [];
+let g_beforeRequestListeners = [];
+let g_beforeSendHeadersListeners = [];
 
 function errorHandler(error) {
 	console.error(error);
 }
 
-function addListener(urls, listeners, listener) {
-	chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": urls}, ["blocking"]);
-	listeners.push(listener);
-}
-
-function transformUrl(srcUrlStr, service) {
+function transformUrl(srcUrlStr, instances, transformations) {
 	// select random instance
-	let instances = service.instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
 	let [instance, index] = instances[Math.floor(Math.random() * instances.length)];
 
 	// search for longest pattern match and use the corresponding transformation
 	let matches = {};
-	service.transformations.forEach(transformation => {
+	transformations.forEach(transformation => {
 		let pattern = new RegExp("^.*?://(?:.*?\\.)?" + transformation.pattern.replace("{{domain}}", transformation.domain.replace(".", "\\.")));
 		let match = srcUrlStr.match(pattern);
 		if(match) matches[match[0]] = [pattern, transformation.replacements[index]];
@@ -36,20 +31,45 @@ function transformUrl(srcUrlStr, service) {
 }
 
 function createListeners(services) {
-	let listeners = [];
+	let beforeRequestListeners = [];
+	let beforeSendHeadersListeners = [];
 	services.forEach(service => {
+
+		let instances = service.instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
+
 		let urls = new Set();
 		service.transformations.forEach(transformation => {
 			urls.add("*://*." + transformation.domain + "/*");
 		});
-		addListener(Array.from(urls), listeners, details => {
+		let listener = details => {
 			if(service.documentOnly && details.documentUrl)
 				return;
 
-			return {"redirectUrl": transformUrl(details.url, service)};
-		});
+			return {"redirectUrl": transformUrl(details.url, instances, service.transformations)};
+		};
+		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": Array.from(urls)}, ["blocking"]);
+		beforeRequestListeners.push(listener);
+
+		listener = details => {
+			let newHeaders = [];
+			details.requestHeaders.forEach(header => {
+				if(header.name.toLowerCase() != "cookies")
+					newHeaders.push(header);
+			});
+			for(let [instance, index] of instances) {
+				if(details.url.startsWith("https://" + instance) && service.cookies) {
+					cookies = service.cookies[index];
+					if(cookies)
+						newHeaders.push({"name": "Cookie", "value": cookies});
+					break;
+				}
+			}
+			return {"requestHeaders": newHeaders};
+		};
+		chrome.webRequest.onBeforeSendHeaders.addListener(listener, {"urls": instances.map(instance => "*://" + instance[0] + "/*")}, ["blocking", "requestHeaders"]);
+		beforeSendHeadersListeners.push(listener);
 	});
-	return listeners;
+	return [beforeRequestListeners, beforeSendHeadersListeners];
 }
 
 async function updateConfig() {
@@ -64,12 +84,18 @@ async function updateConfig() {
 	let services = await response.json();
 	chrome.storage.local.set({"config": {"lastUpdated": Date.now(), "services": services}});
 	
-	let listeners = createListeners(services);
+	let [beforeRequestListeners, beforeSendHeadersListeners] = createListeners(services);
 
-	g_listeners.forEach(listener => {
+	g_beforeRequestListeners.forEach(listener => {
 		chrome.webRequest.onBeforeRequest.removeListener(listener);
 	});
-	g_listeners = listeners;
+	g_beforeRequestListeners = beforeRequestListeners;
+
+	g_beforeSendHeadersListeners.forEach(listener => {
+		chrome.webRequest.onBeforeSendHeaders.removeListener(listener);
+	});
+	g_beforeSendHeadersListeners = beforeSendHeadersListeners;
+
 
 	console.log("service list updated successfully!");
 }
@@ -98,7 +124,7 @@ chrome.storage.local.get("config", async items => {
 		"when": nextUpdateTimestamp
 	});
 
-	g_listeners = createListeners(config.services);
+	[g_beforeRequestListeners, g_beforeSendHeadersListener] = createListeners(config.services);
 
 	console.log("addon initialized successfully!");
 });
