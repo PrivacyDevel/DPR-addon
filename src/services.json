@@ -46,7 +46,8 @@
 			"nitter.fdn.fr",
 			"nitter.42l.fr",
 			"nitter.ca",
-			"nitter.1d4.us"
+			"nitter.1d4.us",
+			"nitter.projectsegfau.lt"
 		]]
 	},
 	{
@@ -80,7 +81,9 @@
 			"invidio.xamh.de",
 			"ytb.trom.tf",
 			"inv.vern.cc",
-			"invidious.slipfox.xyz"
+			"invidious.slipfox.xyz",
+			"invidious.fdn.fr",
+			"inv.totaldarkness.net"
 		]]
 	},
 	{
@@ -208,7 +211,8 @@
 			"esmailelbob.xyz",
 			"bcow.xyz",
 			"froth.zone",
-			"pussthecat.org"
+			"pussthecat.org",
+			"vern.cc"
 		]]
 	},
 	{
@@ -242,7 +246,6 @@
 				"lr.riverside.rocks",
 				"libreddit.strongthany.cc",
 				"libreddit.privacy.com.de",
-				"libreddit.domain.glass",
 				"libreddit.some-things.org",
 				"lr.mint.lgbt",
 				"libreddit.igna.rocks",
@@ -265,7 +268,8 @@
 				"teddit.adminforge.de",
 				"reddit.lol",
 				"teddit.froth.zone",
-				"rdt.trom.tf"
+				"rdt.trom.tf",
+				"teddit.totaldarkness.net"
 			]
 		]
 	},
@@ -285,7 +289,8 @@
 			"rimgo.esmailelbob.xyz",
 			"img.riverside.rocks",
 			"rimgo.privacydev.net",
-			"imgur.artemislena.eu"
+			"imgur.artemislena.eu",
+			"rimgo.vern.cc"
 		]]
 	},
 	{
