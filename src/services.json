@@ -132,7 +132,8 @@
 				"searx.youshitsune.me",
 				"searx.becomesovran.com",
 				"search.ashs.club",
-				"asowneryt.cloudns.nz"
+				"asowneryt.cloudns.nz",
+				"searx.zaggy.nl"
 			],
 			[
 				"librex.beparanoid.de",
@@ -232,7 +233,8 @@
 			}
 		],
 		"cookies": [
-			"theme=dark; layout=card; wide=off; show_nsfw=on"
+			"theme=dark; layout=card; wide=off; show_nsfw=on",
+			"nsfw_enabled=true"
 		],
 		"instances": [
 			[
@@ -281,7 +283,13 @@
 				"teddit.froth.zone",
 				"rdt.trom.tf",
 				"teddit.totaldarkness.net",
-				"i.opnxng.com"
+				"i.opnxng.com",
+				"teddit.zaggy.nl",
+				"teddit.httpjames.space",
+				"teddit.pussthecat.org",
+				"teddit.bus-hit.me",
+				"teddit.froth.zone",
+				"teddit.encrypted-data.xyz"
 			]
 		]
 	},
