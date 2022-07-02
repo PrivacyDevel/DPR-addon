@@ -95,18 +95,20 @@
 				"replacements": [
 					"{{instance}}/search$1",
 					"{{instance}}/search.php$1",
-					"{{instance}}/search$1"
+					"{{instance}}/search$1",
+					"{{instance}}/web.jsp?MT=$1"
 				]
 			},
 			{
 				"domain": "www.google.com",
 				"pattern": "({{domain}}/maps(?:.*))",
-				"replacements": ["$1", "$1", "$1"]
+				"replacements": ["$1", "$1", "$1", "$1"]
 			},
 			{
 				"domain": "www.google.com",
 				"pattern": "{{domain}}",
 				"replacements": [
+					"{{instance}}",
 					"{{instance}}",
 					"{{instance}}",
 					"{{instance}}"
@@ -165,6 +167,9 @@
 				"gowogle.voring.me",
 				"w.opnxng.com",
 				"search.wef.lol"
+			],
+			[
+				"search.goo.ne.jp"
 			]
 		],
 		"documentOnly": true
