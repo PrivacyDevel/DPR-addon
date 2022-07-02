@@ -48,7 +48,8 @@
 			"nitter.1d4.us",
 			"nitter.projectsegfau.lt",
 			"nt.vern.cc",
-			"t.com.sb"
+			"t.com.sb",
+			"nitter.wef.lol"
 		]]
 	},
 	{
@@ -134,7 +135,9 @@
 				"searx.becomesovran.com",
 				"search.ashs.club",
 				"searx.zaggy.nl",
-				"search.chemicals-in-the-water.eu"
+				"search.chemicals-in-the-water.eu",
+				"searx.kujonello.cf",
+				"searxng.au/searx"
 			],
 			[
 				"librex.beparanoid.de",
@@ -158,7 +161,10 @@
 				"universe-whoogle.herokuapp.com",
 				"bnyro.herokuapp.com",
 				"g00gl3.herokuapp.com",
-				"whoogle.chautari.net"
+				"whoogle.chautari.net",
+				"gowogle.voring.me",
+				"w.opnxng.com",
+				"search.wef.lol"
 			]
 		],
 		"documentOnly": true
@@ -271,7 +277,8 @@
 				"libreddit.eu.org",
 				"libreddit.encrypted-data.xyz",
 				"lr.slipfox.xyz",
-				"l.opnxng.com"
+				"l.opnxng.com",
+				"libreddit.wef.lol"
 			],
 			[
 				"teddit.net",
