@@ -49,7 +49,8 @@
 			"nitter.projectsegfau.lt",
 			"nt.vern.cc",
 			"t.com.sb",
-			"nitter.wef.lol"
+			"nitter.wef.lol",
+			"nitter.catalyst.sx"
 		]]
 	},
 	{
@@ -139,11 +140,22 @@
 				"searx.zaggy.nl",
 				"search.chemicals-in-the-water.eu",
 				"searx.kujonello.cf",
-				"searxng.au/searx"
+				"searxng.au/searx",
+				"search.teamriverbubbles.com",
+				"search.gcomm.ch/searx",
+				"icanfindit.online",
+				"s.frlt.one",
+				"srx.cosmohub.io",
+				"searx.mistli.net/searx",
+				"searx.vimproved.me",
+				"privatus.live",
+				"search.bingowaves.xyz",
+				"searxng.zackptg5.com"
 			],
 			[
 				"librex.beparanoid.de",
-				"search.davidovski.xyz"
+				"search.davidovski.xyz",
+				"librex.catalyst.sx"
 			],
 			[
 				"www.whoogle.click",
@@ -165,7 +177,6 @@
 				"g00gl3.herokuapp.com",
 				"whoogle.chautari.net",
 				"gowogle.voring.me",
-				"w.opnxng.com",
 				"search.wef.lol"
 			],
 			[
@@ -213,7 +224,8 @@
 		"instances": [[
 			"bibliogram.pussthecat.org",
 			"bibliogram.privacydev.net",
-			"ig.beparanoid.de"
+			"ig.beparanoid.de",
+			"bibliogram.catalyst.sx"
 		]]
 	},
 	{
@@ -282,7 +294,8 @@
 				"libreddit.encrypted-data.xyz",
 				"lr.slipfox.xyz",
 				"l.opnxng.com",
-				"libreddit.wef.lol"
+				"libreddit.wef.lol",
+				"libreddit.catalyst.sx"
 			],
 			[
 				"teddit.net",
