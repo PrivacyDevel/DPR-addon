@@ -49,7 +49,11 @@
 			"t.com.sb",
 			"nitter.wef.lol",
 			"nitter.catalyst.sx",
-			"twitter.elpengu.com"
+			"twitter.elpengu.com",
+			"unofficialbird.com",
+			"twt.funami.tech",
+			"nitter.fprivacy.com",
+			"singapore.unofficialbird.com"
 		]]
 	},
 	{
@@ -84,7 +88,9 @@
 			"inv.vern.cc",
 			"invidious.slipfox.xyz",
 			"invidious.fdn.fr",
-			"yt.elpengu.com"
+			"yt.elpengu.com",
+			"invidious.nerdvpn.de",
+			"tube.mha.fi"
 		]]
 	},
 	{
@@ -182,7 +188,8 @@
 				"wooble.herokuapp.com",
 				"whoogleah.herokuapp.com",
 				"gentle-garden-59017.herokuapp.com",
-				"pigzy-whoogle-search.herokuapp.com"
+				"pigzy-whoogle-search.herokuapp.com",
+				"whoogle.fprivacy.com"
 			],
 			[
 				"search.goo.ne.jp"
@@ -211,7 +218,8 @@
 			"tl.vern.cc",
 			"translate.beparanoid.de",
 			"st.privacydev.net",
-			"translate.josias.dev"
+			"translate.josias.dev",
+			"translate.mha.fi"
 		]]
 	},
 	{
@@ -302,7 +310,10 @@
 				"l.opnxng.com",
 				"libreddit.wef.lol",
 				"libreddit.catalyst.sx",
-				"reddit.elpengu.com"
+				"reddit.elpengu.com",
+				"rd.funami.tech",
+				"libreddit.stephenson.systems",
+				"libreddit.mha.fi"
 			],
 			[
 				"teddit.net",
@@ -319,7 +330,8 @@
 				"teddit.pussthecat.org",
 				"teddit.bus-hit.me",
 				"teddit.froth.zone",
-				"teddit.encrypted-data.xyz"
+				"teddit.encrypted-data.xyz",
+				"teddit.fprivacy.com"
 			]
 		]
 	},
@@ -340,7 +352,9 @@
 			"img.riverside.rocks",
 			"rimgo.privacydev.net",
 			"imgur.artemislena.eu",
-			"rimgo.vern.cc"
+			"rimgo.vern.cc",
+			"rimgo.fprivacy.com",
+			"rimgo.mha.fi"
 		]]
 	},
 	{
@@ -373,7 +387,8 @@
 			"herokuapp.com",
 			"pussthecat.org",
 			"privacydev.net",
-			"esmailelbob.xyz"
+			"esmailelbob.xyz",
+			"proxitok.mha.fi"
 		]]
 	}
 ]
