@@ -93,12 +93,12 @@
 		"transformations": [
 			{
 				"domain": "www.google.com",
-				"pattern": "{{domain}}/search(\\?q=.*)",
+				"pattern": "{{domain}}/search\\?q(=.*)",
 				"replacements": [
-					"{{instance}}/search$1",
-					"{{instance}}/search.php$1",
-					"{{instance}}/search$1",
-					"{{instance}}/web.jsp?MT=$1"
+					"{{instance}}/search?q$1",
+					"{{instance}}/search.php?q$1",
+					"{{instance}}/search?q$1",
+					"{{instance}}/web.jsp?MT$1"
 				]
 			},
 			{
