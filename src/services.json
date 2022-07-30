@@ -49,7 +49,8 @@
 			"unofficialbird.com",
 			"twt.funami.tech",
 			"nitter.fprivacy.com",
-			"singapore.unofficialbird.com"
+			"singapore.unofficialbird.com",
+			"nitter.foss.wtf"
 		]]
 	},
 	{
@@ -84,7 +85,8 @@
 			"invidious.fdn.fr",
 			"yt.elpengu.com",
 			"invidious.nerdvpn.de",
-			"tube.mha.fi"
+			"tube.mha.fi",
+			"tube.foss.wtf"
 		]]
 	},
 	{
@@ -144,7 +146,8 @@
 				"searx.mistli.net/searx",
 				"privatus.live",
 				"search.bingowaves.xyz",
-				"searxng.zackptg5.com"
+				"searxng.zackptg5.com",
+				"search.projectsegfau.lt"
 			],
 			[
 				"librex.beparanoid.de",
@@ -309,7 +312,8 @@
 				"rd.funami.tech",
 				"libreddit.stephenson.systems",
 				"libreddit.mha.fi",
-				"lib-red.herokuapp.com"
+				"lib-red.herokuapp.com",
+				"libreddit.foss.wtf"
 			],
 			[
 				"teddit.net",
@@ -327,7 +331,8 @@
 				"teddit.bus-hit.me",
 				"teddit.froth.zone",
 				"teddit.encrypted-data.xyz",
-				"teddit.fprivacy.com"
+				"teddit.fprivacy.com",
+				"teddit.foss.wtf"
 			]
 		]
 	},
@@ -350,7 +355,8 @@
 			"imgur.artemislena.eu",
 			"rimgo.vern.cc",
 			"rimgo.fprivacy.com",
-			"rimgo.mha.fi"
+			"rimgo.mha.fi",
+			"img.foss.wtf"
 		]]
 	},
 	{
@@ -368,7 +374,8 @@
 			"librarian.esmailelbob.xyz",
 			"odysee.076.ne.jp",
 			"lbry.ix.tc",
-			"lbry.vern.cc"
+			"lbry.vern.cc",
+			"lbry.projectsegfau.lt"
 		]]
 	},
 	{
