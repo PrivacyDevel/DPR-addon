@@ -220,17 +220,23 @@
 			{
 				"domain": "instagram.com",
 				"pattern": "{{domain}}(/.+)",
-				"replacements": ["{{instance}}/u$1"]
+				"replacements": ["{{instance}}/u$1", "{{instance}}$1"]
 			},
 			{
 				"domain": "instagram.com",
 				"pattern": "{{domain}}",
-				"replacements": ["{{instance}}"]
+				"replacements": ["{{instance}}", "{{instance}}"]
 			}
 		],
-		"instances": [[
-			"bibliogram.privacydev.net"
-		]]
+		"instances": [
+			[
+				"bibliogram.privacydev.net",
+				"ig.funami.tech"
+			],
+			[
+				"imginn.com"
+			]
+		]
 	},
 	{
 		"transformations": [
