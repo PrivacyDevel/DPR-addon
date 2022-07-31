@@ -182,7 +182,8 @@
 				"whoogle-m.herokuapp.com",
 				"molf-whoogle.herokuapp.com",
 				"thezone.herokuapp.com",
-				"whoogle.greeklinux.com"
+				"whoogle.greeklinux.com",
+				"whoogle.byzero.dev"
 			],
 			[
 				"search.goo.ne.jp"
@@ -231,7 +232,7 @@
 		"instances": [
 			[
 				"bibliogram.privacydev.net",
-				"ig.funami.tech"
+				"bibliogram.froth.zone"
 			],
 			[
 				"imginn.com"
