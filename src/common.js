@@ -1,5 +1,5 @@
 const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
-const UPDATE_INTERVAL_MINUTES = 60 * 2;
+const UPDATE_INTERVAL_MINUTES = 60 * 2 * 1000;
 
 function flattenInstanceList(instances) {
 	return instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
@@ -39,4 +39,6 @@ function startAutoUpdate(lastUpdated, updateFunction) {
 if(exports) {
 	exports.flattenInstanceList = flattenInstanceList;
 	exports.transformUrl = transformUrl;
+	exports.startAutoUpdate = startAutoUpdate;
+	exports.SERVICES_URL = SERVICES_URL;
 }
