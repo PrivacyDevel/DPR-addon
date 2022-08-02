@@ -75,6 +75,8 @@ function wrappedUpdateConfig() {
 	updateConfig().catch(console.error);
 }
 
+chrome.alarms.onAlarm.addListener(wrappedUpdateConfig);
+
 console.log("initializing addon...");
 
 chrome.storage.local.get("config", async items => {
@@ -85,7 +87,12 @@ chrome.storage.local.get("config", async items => {
 		chrome.storage.local.set({"config": config}, wrappedUpdateConfig);
 	}
 	
-	startAutoUpdate(config.lastUpdated, wrappedUpdateConfig);
+	startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
+		chrome.alarms.create({
+		"periodInMinutes": UPDATE_INTERVAL_MINUTES,
+		"when": nextUpdateTimestamp
+		});
+	});
 	
 	[g_beforeRequestListeners, g_beforeSendHeadersListener] = createListeners(config.services);
 

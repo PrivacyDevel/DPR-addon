@@ -1,5 +1,5 @@
 const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
-const UPDATE_INTERVAL_MINUTES = 60 * 2 * 1000;
+const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
 function flattenInstanceList(instances) {
 	return instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
@@ -30,10 +30,7 @@ function transformUrl(srcUrlStr, instances, transformations) {
 function startAutoUpdate(lastUpdated, updateFunction) {
 	let nextUpdateTimestamp = Math.max((lastUpdated || 0) + (1000 * UPDATE_INTERVAL_MINUTES), Date.now() + (1000 * 30));
 	console.log("next update is scheduled for: " + new Date(nextUpdateTimestamp).toString());
-
-	setTimeout(() => {
-		setInterval(updateFunction, UPDATE_INTERVAL_MINUTES);
-	}, nextUpdateTimestamp);
+	updateFunction(nextUpdateTimestamp);
 }
 
 if(exports) {

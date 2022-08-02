@@ -7,8 +7,7 @@ const common = require("./src/common");
 
 let services = JSON.parse(fs.readFileSync("src/services.json"));
 
-
-common.startAutoUpdate(0, () => {
+function updateConfig() {
 	https.get(common.SERVICES_URL, res => {
 		let body = "";
 		res.on("data", data => {
@@ -19,6 +18,13 @@ common.startAutoUpdate(0, () => {
 			console.log(services);
 		});
 	});
+}
+
+common.startAutoUpdate(0, nextUpdateTimestamp => {
+	setTimeout(() => {
+		setInterval(updateConfig, UPDATE_INTERVAL_MINUTES * 1000);
+		updateConfig();
+	}, nextUpdateTimestamp);
 });
 
 http.createServer((req, res) => {
