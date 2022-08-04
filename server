@@ -43,24 +43,32 @@ http.createServer((req, res) => {
 
 	res.setHeader("Content-Type", "text/plain");
 
-	let url = req.url.slice(1);
+	let oldUrl = req.url.slice(1);
+	let url;
 	try {
-		for(let service of config.services) {
-			for(let transformation of service.transformations) {
-				if(new URL(url).host.endsWith(new URL("https://" + transformation.domain).host)) {
-					let instances = common.flattenInstanceList(service.instances);
-					let newUrl = common.transformUrl(url, instances, service.transformations);
-					res.writeHead(200).end(newUrl);
-					//res.writeHead(302, {Location: "http://192.168.6.2"}).end(newUrl);
-					console.log(newUrl);
-					return;
-				}
-			}
-		}
+		url = new URL(oldUrl);
 	} catch(error) {
-		res.writeHead(400).end(JSON.stringify(error));
-		return;
+		try {
+			oldUrl = "https://" + oldUrl;
+			url = new URL(oldUrl);
+		} catch(error) {
+			res.writeHead(400).end(JSON.stringify(error));
+			return;
+		}
 	}
 
-	res.writeHead(404).end(url + " not found");
+	for(let service of config.services) {
+		for(let transformation of service.transformations) {
+			if(url.host.endsWith(new URL("https://" + transformation.domain).host)) {
+				let instances = common.flattenInstanceList(service.instances);
+				let newUrl = common.transformUrl(oldUrl, instances, service.transformations);
+				res.writeHead(200).end(newUrl);
+				//res.writeHead(302, {Location: "http://192.168.6.2"}).end(newUrl);
+				console.log(newUrl);
+				return;
+			}
+		}
+	}
+
+	res.writeHead(404).end(oldUrl + " not found");
 }).listen(8080);
