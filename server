@@ -47,7 +47,7 @@ http.createServer((req, res) => {
 	try {
 		for(let service of config.services) {
 			for(let transformation of service.transformations) {
-				if(new URL(url).origin == new URL("https://" + transformation.domain).origin) {
+				if(new URL(url).host.endsWith(new URL("https://" + transformation.domain).host)) {
 					let instances = common.flattenInstanceList(service.instances);
 					let newUrl = common.transformUrl(url, instances, service.transformations);
 					res.writeHead(200).end(newUrl);
