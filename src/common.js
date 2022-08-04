@@ -38,4 +38,5 @@ if(exports) {
 	exports.transformUrl = transformUrl;
 	exports.startAutoUpdate = startAutoUpdate;
 	exports.SERVICES_URL = SERVICES_URL;
+	exports.UPDATE_INTERVAL_MINUTES = UPDATE_INTERVAL_MINUTES;
 }

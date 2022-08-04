@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const http = require("http");
 const https = require("https");
 const fs = require("fs");
@@ -5,7 +7,13 @@ const fs = require("fs");
 const common = require("./src/common");
 
 
-let services = JSON.parse(fs.readFileSync("src/services.json"));
+let config = {};
+
+if(fs.existsSync("config.json")) {
+	config = JSON.parse(fs.readFileSync("config.json"));
+} else {
+	config.services = JSON.parse(fs.readFileSync("src/services.json"));
+}
 
 function updateConfig() {
 	https.get(common.SERVICES_URL, res => {
@@ -14,17 +22,21 @@ function updateConfig() {
 			body += data;
 		});
 		res.on("end", () => {
-			services = JSON.parse(body);
-			console.log(services);
+			config = {
+				"services": JSON.parse(body),
+				"lastUpdated": Date.now()
+			};
+			fs.writeFileSync("config.json", JSON.stringify(config));
+			console.log("service list updated successfully!");
 		});
 	});
 }
 
-common.startAutoUpdate(0, nextUpdateTimestamp => {
+common.startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
 	setTimeout(() => {
-		setInterval(updateConfig, UPDATE_INTERVAL_MINUTES * 1000);
 		updateConfig();
-	}, nextUpdateTimestamp);
+		setInterval(updateConfig, common.UPDATE_INTERVAL_MINUTES * 1000 * 60);
+	}, nextUpdateTimestamp - Date.now());
 });
 
 http.createServer((req, res) => {
@@ -33,7 +45,7 @@ http.createServer((req, res) => {
 
 	let url = req.url.slice(1);
 	try {
-		for(let service of services) {
+		for(let service of config.services) {
 			for(let transformation of service.transformations) {
 				if(new URL(url).origin == new URL("https://" + transformation.domain).origin) {
 					let instances = common.flattenInstanceList(service.instances);
@@ -50,7 +62,5 @@ http.createServer((req, res) => {
 		return;
 	}
 
-	//res.writeHead(404).end(url + " not found");
-	res.writeHead(404).end(JSON.stringify(services));
+	res.writeHead(404).end(url + " not found");
 }).listen(8080);
-
