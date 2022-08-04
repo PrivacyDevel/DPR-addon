@@ -62,8 +62,7 @@ http.createServer((req, res) => {
 			if(url.host.endsWith(new URL("https://" + transformation.domain).host)) {
 				let instances = common.flattenInstanceList(service.instances);
 				let newUrl = common.transformUrl(oldUrl, instances, service.transformations);
-				res.writeHead(200).end(newUrl);
-				//res.writeHead(302, {Location: "http://192.168.6.2"}).end(newUrl);
+				res.writeHead(302, {Location: newUrl}).end();
 				console.log(newUrl);
 				return;
 			}
