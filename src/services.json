@@ -53,7 +53,8 @@
 			"nederland.unofficialbird.com",
 			"uk.unofficialbird.com",
 			"n.l5.ca",
-			"nitter.slipfox.xyz"
+			"nitter.slipfox.xyz",
+			"twitter.jae.su"
 		]]
 	},
 	{
@@ -70,24 +71,23 @@
 			}
 		],
 		"instances": [[
-			"invidious.sethforprivacy.com",
-			"yewtu.be",
-			"y.com.sb",
-			"vid.puffyan.us",
-			"invidious.namazso.eu",
-			"inv.riverside.rocks",
-			"invidious.osi.kr",
-			"yt.artemislena.eu",
-			"invidious.flokinet.to",
-			"invidious.weblibre.org",
-			"invidio.xamh.de",
-			"ytb.trom.tf",
-			"inv.vern.cc",
-			"invidious.slipfox.xyz",
-			"invidious.fdn.fr",
-			"yt.elpengu.com",
-			"invidious.nerdvpn.de",
-			"tube.foss.wtf"
+			"il.ax",
+			"yt.jae.fi",
+			"piped.mint.lgbt",
+			"piped.esmailelbob.xyz",
+			"piped.projectsegfau.lt",
+			"youtube.censors.us",
+			"piped.mha.fi",
+			"watch.whatever.social",
+
+			"piped-material.xn--17b.net",
+			"piped-material.ftp.sh",
+			"piped-staging.ftp.sh",
+			"ui.piped.xn--17b.net",
+			"piped-nextgen.xn--17b.net",
+
+			"yt.beparanoid.de",
+			"tube.cadence.moe"
 		]]
 	},
 	{
@@ -140,7 +140,6 @@
 				"search.chemicals-in-the-water.eu",
 				"searxng.au/searx",
 				"search.teamriverbubbles.com",
-				"icanfindit.online",
 				"s.frlt.one",
 				"srx.cosmohub.io",
 				"searx.mistli.net/searx",
@@ -149,7 +148,8 @@
 				"searxng.zackptg5.com",
 				"search.projectsegfau.lt",
 				"xo.wtf",
-				"sh0.it"
+				"sh0.it",
+				"search.jae.fi"
 			],
 			[
 				"librex.beparanoid.de",
@@ -313,7 +313,8 @@
 				"libreddit.stephenson.systems",
 				"libreddit.mha.fi",
 				"lib-red.herokuapp.com",
-				"libreddit.foss.wtf"
+				"libreddit.foss.wtf",
+				"reddit.privacy.com.de"
 			],
 			[
 				"teddit.net",
@@ -356,7 +357,8 @@
 			"rimgo.vern.cc",
 			"rimgo.fprivacy.com",
 			"rimgo.mha.fi",
-			"img.foss.wtf"
+			"img.foss.wtf",
+			"imgur.jae.fi"
 		]]
 	},
 	{
