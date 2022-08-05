@@ -369,20 +369,4 @@
 			"lbry.slipfox.xyz"
 		]]
 	},
-	{
-		"transformations": [
-			{
-				"domain": "tiktok.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["proxitok.{{instance}}$1"]
-			}
-		],
-		"instances": [[
-			"herokuapp.com",
-			"pussthecat.org",
-			"privacydev.net",
-			"esmailelbob.xyz",
-			"mha.fi"
-		]]
-	}
 ]
