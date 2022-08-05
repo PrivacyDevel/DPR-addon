@@ -225,21 +225,12 @@
 			{
 				"domain": "instagram.com",
 				"pattern": "{{domain}}(/.+)",
-				"replacements": ["{{instance}}/u$1", "{{instance}}$1"]
-			},
-			{
-				"domain": "instagram.com",
-				"pattern": "{{domain}}",
-				"replacements": ["{{instance}}", "{{instance}}"]
+				"replacements": ["{{instance}}$1"]
 			}
 		],
-		"instances": [
-			[
-			],
-			[
-				"imginn.com"
-			]
-		]
+		"instances": [[
+			"imginn.com"
+		]]
 	},
 	{
 		"transformations": [
