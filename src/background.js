@@ -6,39 +6,28 @@ function createListeners(services) {
 	let beforeSendHeadersListeners = [];
 	services.forEach(service => {
 
-		let instances = flattenInstanceList(service.instances);
+		let instances = flattenInstanceList(service.frontends);
 
-		let urls = new Set();
-		service.transformations.forEach(transformation => {
-			urls.add("*://*." + transformation.domain + "/*");
-		});
+		let urls = service.upstream.map(domain => "*://*." + domain + "/*");
 		let listener = details => {
-			if(service.documentOnly && details.documentUrl)
-				return;
-
-			return {"redirectUrl": transformUrl(details.url, instances, service.transformations)};
+			if(!(service.documentOnly && details.documentUrl))
+				return {"redirectUrl": transformUrl(details.url, instances)};
 		};
-		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": Array.from(urls)}, ["blocking"]);
+		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": urls}, ["blocking"]);
 		beforeRequestListeners.push(listener);
 
-		listener = details => {
-			let newHeaders = [];
-			details.requestHeaders.forEach(header => {
-				if(header.name.toLowerCase() != "cookies")
-					newHeaders.push(header);
-			});
-			for(let [instance, index] of instances) {
-				if(details.url.startsWith("https://" + instance) && service.cookies) {
-					cookies = service.cookies[index];
-					if(cookies)
-						newHeaders.push({"name": "Cookie", "value": cookies});
-					break;
-				}
+		Object.keys(service.frontends).forEach(frontend => {
+			let cookies = service.frontends[frontend].cookies;
+			if(cookies) {
+				listener = details => {
+					let newHeaders = details.requestHeaders.filter(header => header.name.toLowerCase() != "cookies");
+					newHeaders.push({"name": "Cookie", "value": cookies});
+					return {"requestHeaders": newHeaders};
+				};
+				chrome.webRequest.onBeforeSendHeaders.addListener(listener, {"urls": service.frontends[frontend].instances.map(instance => "*://" + instance + "/*")}, ["blocking", "requestHeaders"]);
+				beforeSendHeadersListeners.push(listener);
 			}
-			return {"requestHeaders": newHeaders};
-		};
-		chrome.webRequest.onBeforeSendHeaders.addListener(listener, {"urls": instances.map(instance => "*://" + instance[0] + "/*")}, ["blocking", "requestHeaders"]);
-		beforeSendHeadersListeners.push(listener);
+		});
 	});
 	return [beforeRequestListeners, beforeSendHeadersListeners];
 }

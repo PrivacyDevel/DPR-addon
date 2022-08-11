@@ -1,30 +1,74 @@
 const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
 const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
-function flattenInstanceList(instances) {
-	return instances.map((instances, i) => instances.map(instance => [instance, i])).reduce((a, b) => a.concat(b));
+function flattenInstanceList(frontends) {
+	return Object.keys(frontends).map(frontend => frontends[frontend].instances.map(instance => [instance, frontend]));
 }
 
-function transformUrl(srcUrlStr, instances, transformations) {
+function transformUrl(srcUrlStr, instances) {
 	// select random instance
-	let [instance, index] = instances[Math.floor(Math.random() * instances.length)];
+	let [instance, frontend] = instances[Math.floor(Math.random() * instances.length)];
+	let instanceUrl = new URL("https://" + instance);
 
-	// search for longest pattern match and use the corresponding transformation
-	let matches = {};
-	transformations.forEach(transformation => {
-		let pattern = new RegExp("^.*?://(?:.*?\\.)?" + transformation.pattern.replace("{{domain}}", transformation.domain.replace(".", "\\.")));
-		let match = srcUrlStr.match(pattern);
-		if(match) matches[match[0]] = [pattern, transformation.replacements[index]];
-	});
-	let longestMatch = Object.keys(matches).reduce((a, b) => {
-		if(a.length < b.length) return b;
-		return a;
-	});
-	let [pattern, replacement] = matches[longestMatch];
+	let url = new URL(srcUrlStr);
+	let search = new URLSearchParams(url.search);
+	switch(url.host) {
+		case "www.google.com":
+			if(url.pathname == "maps")
+				return srcUrlStr;
+			
+			switch(frontend) {
+				case "librex":
+					url.pathname = "search.php";
+					break;
+				case "goo":
+					url.pathname = "web.jsp";
+					search.append("MT", search.get("q"));
+					search.delete("q");
+			}
+		case "youtu.be":
+			search.append("q", url.pathname.slice(1));
+			url.pathname = "/watch";
+		default:
+			instanceUrl.pathname = instanceUrl.pathname == "/" ? url.pathname : instanceUrl.pathname + url.pathname;
+			instanceUrl.search = search.toString();
+			return instanceUrl;
+	}
+}
 
-	// perform transformation
-	let dstUrlStr = srcUrlStr.replace(pattern, "https://" + replacement.replace("{{instance}}", instance));
-	return dstUrlStr;
+function findInstanceServiceAndFrontend(url, services) {
+	for(let service of services) {
+		for(let frontend of Object.keys(service.frontends)) {
+			let instance = service.frontends[frontend].instances.find(instance => srcUrlStr.startsWith("https://" + instance));
+			if(instance) return [instance, service, frontend];
+		}
+	}
+}
+
+function transformUrlBack(srcUrlStr, services) {
+
+	let [instance, service, frontend] = findInstanceServiceAndFrontend(srcUrlStr, services);
+	let upstreamUrl = new URL("https://" + service.upstream[0]);
+	let instanceUrl = new URL("https://" + instance);
+
+	let url = new URL(srcUrlStr);
+	let search = new URLSearchParams(url.search);
+	switch(upstreamUrl.host) {
+		case "www.google.com":
+			switch(frontend) {
+				case "goo":
+					search.append("q", search.get("MT"));
+					search.delete("MT");
+				case "librex":
+					url.pathname = "search";
+			}
+		default:
+			upstreamUrl.pathname = url.pathname.replace(instanceUrl.pathname, "");
+			upstreamUrl.search = search.toString();
+			return upstreamUrl;
+	}
+
+
 }
 
 function startAutoUpdate(lastUpdated, updateFunction) {
