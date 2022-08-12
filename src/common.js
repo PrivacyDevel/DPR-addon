@@ -2,7 +2,11 @@ const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/maste
 const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
 function flattenInstanceList(frontends) {
-	return Object.keys(frontends).map(frontend => frontends[frontend].instances.map(instance => [instance, frontend]));
+	let instances = [];
+	for(let frontend of Object.keys(frontends)) {
+		instances = instances.concat(frontends[frontend].instances.map(instance => [instance, frontend]));
+	}
+	return instances;
 }
 
 function transformUrl(srcUrlStr, instances) {
@@ -13,9 +17,12 @@ function transformUrl(srcUrlStr, instances) {
 	let url = new URL(srcUrlStr);
 	let search = new URLSearchParams(url.search);
 	switch(url.host) {
+		case "youtu.be":
+			search.append("q", url.pathname.slice(1));
+			url.pathname = "/watch";
 		case "www.google.com":
-			if(url.pathname == "maps")
-				return srcUrlStr;
+			if(url.pathname == "/maps")
+				return;
 			
 			switch(frontend) {
 				case "librex":
@@ -26,20 +33,17 @@ function transformUrl(srcUrlStr, instances) {
 					search.append("MT", search.get("q"));
 					search.delete("q");
 			}
-		case "youtu.be":
-			search.append("q", url.pathname.slice(1));
-			url.pathname = "/watch";
 		default:
 			instanceUrl.pathname = instanceUrl.pathname == "/" ? url.pathname : instanceUrl.pathname + url.pathname;
 			instanceUrl.search = search.toString();
-			return instanceUrl;
+			return instanceUrl.toString();
 	}
 }
 
-function findInstanceServiceAndFrontend(url, services) {
+function findInstanceServiceAndFrontend(urlStr, services) {
 	for(let service of services) {
 		for(let frontend of Object.keys(service.frontends)) {
-			let instance = service.frontends[frontend].instances.find(instance => srcUrlStr.startsWith("https://" + instance));
+			let instance = service.frontends[frontend].instances.find(instance => urlStr.startsWith("https://" + instance));
 			if(instance) return [instance, service, frontend];
 		}
 	}
@@ -65,7 +69,7 @@ function transformUrlBack(srcUrlStr, services) {
 		default:
 			upstreamUrl.pathname = url.pathname.replace(instanceUrl.pathname, "");
 			upstreamUrl.search = search.toString();
-			return upstreamUrl;
+			return upstreamUrl.toString();
 	}
 
 

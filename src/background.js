@@ -32,9 +32,13 @@ function createListeners(services) {
 	});
 
 	let bookmarkListener = (id, bookmark) => {
-		if(bookmark.url) chrome.bookmarks.update(id, {"url": transformUrlBack(bookmark.url, services)});
+		if(bookmark.url) {
+			let newUrl = transformUrlBack(bookmark.url, services);
+			let newTitle = bookmark.title == bookmark.url ? newUrl : bookmark.title;
+			chrome.bookmarks.update(id, {"url": newUrl, "title": newTitle});
+		}
 	};
-	chrome.bookmarks.onCreated.addListener(listener);
+	chrome.bookmarks.onCreated.addListener(bookmarkListener);
 
 	return [beforeRequestListeners, beforeSendHeadersListeners, bookmarkListener];
 }
@@ -83,7 +87,7 @@ chrome.storage.local.get("config", async items => {
 	if(!config) {
 		let services = await (await fetch("services.json")).json();
 		config = {"services": services};
-		chrome.storage.local.set({"config": config}, wrappedUpdateConfig);
+		chrome.storage.local.set({"config": config});
 	}
 	
 	startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
