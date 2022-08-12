@@ -237,7 +237,7 @@
 		"upstream": ["medium.com"],
 		"documentOnly": true,
 		"frontends": {
-			"scribe":
+			"scribe": {
 				"instances": [
 					"scribe.rip",
 					"scribe.nixnet.services",
@@ -246,6 +246,7 @@
 					"scribe.froth.zone",
 					"scribe.vern.cc"
 				]
+			}
 		}
 	},
 	{
