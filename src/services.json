@@ -1,388 +1,359 @@
 [
 	{
-		"transformations": [
-			{
-				"domain": "twitter.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
-			}
-		],
-		"cookies": ["hlsPlayback=on"],
-		"instances": [[
-			"nitter.pussthecat.org",
-			"nitter.namazso.eu",
-			"nitter.esmailelbob.xyz",
-			"tw.artemislena.eu",
-			"nitter.kavin.rocks",
-			"bird.trom.tf",
-			"nitter.it",
-			"n.ramle.be",
-			"nitter.privacydev.net",
-			"tweet.lambda.dance",
-			"twitter.censors.us",
-			"de.nttr.stream",
-			"nitter.cz",
-			"nitter.unixfox.eu",
-			"nitter.grimneko.de",
-			"twitter.076.ne.jp",
-			"nitter.fly.dev",
-			"nitter.weiler.rocks",
-			"nitter.sethforprivacy.com",
-			"nitter.mint.lgbt",
-			"nitter.bus-hit.me",
-			"nitter.privacy.com.de",
-			"nitter.poast.org",
-			"nitter.bird.froth.zone",
-			"nitter.dcs0.hu",
-			"nitter.ebnar.xyz",
-			"nitter.kylrth.com",
-			"nitter.fdn.fr",
-			"nitter.42l.fr",
-			"nitter.ca",
-			"nitter.projectsegfau.lt",
-			"nt.vern.cc",
-			"t.com.sb",
-			"nitter.catalyst.sx",
-			"twitter.elpengu.com",
-			"unofficialbird.com",
-			"singapore.unofficialbird.com",
-			"nitter.foss.wtf",
-			"canada.unofficialbird.com",
-			"india.unofficialbird.com",
-			"nederland.unofficialbird.com",
-			"uk.unofficialbird.com",
-			"n.l5.ca",
-			"nitter.slipfox.xyz",
-			"twitter.jae.su"
-		]]
-	},
-	{
-		"transformations": [
-			{
-				"domain": "youtube.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
-			},
-			{
-				"domain": "youtu.be",
-				"pattern": "{{domain}}/([^?]+)(?:\\?(.*))?",
-				"replacements": ["{{instance}}/watch?v=$1&$2"]
-			}
-		],
-		"instances": [[
-			"il.ax",
-			"yt.jae.fi",
-			"piped.mint.lgbt",
-			"piped.esmailelbob.xyz",
-			"piped.projectsegfau.lt",
-			"piped.privacydev.net",
-
-			"ui-v2.piped.pages.dev",
-
-			"piped-material.xn--17b.net",
-			"piped-material.ftp.sh",
-			"piped-staging.ftp.sh",
-			"ui.piped.xn--17b.net",
-			"piped-nextgen.xn--17b.net",
-
-			"yt.beparanoid.de",
-			"tube.cadence.moe",
-
-			"invidious.sethforprivacy.com",
-			"yewtu.be",
-			"y.com.sb",
-			"vid.puffyan.us",
-			"invidious.namazso.eu",
-			"inv.riverside.rocks",
-			"invidious.osi.kr",
-			"yt.artemislena.eu",
-			"invidious.flokinet.to",
-			"invidious.weblibre.org",
-			"invidio.xamh.de",
-			"ytb.trom.tf",
-			"inv.vern.cc",
-			"invidious.slipfox.xyz",
-			"invidious.fdn.fr",
-			"yt.elpengu.com",
-			"invidious.nerdvpn.de",
-			"tube.foss.wtf"
-		]]
-	},
-	{
-		"transformations": [
-			{
-				"domain": "www.google.com",
-				"pattern": "{{domain}}/search\\?q(=.*)",
-				"replacements": [
-					"{{instance}}/search?q$1",
-					"{{instance}}/search.php?q$1",
-					"{{instance}}/search?q$1",
-					"{{instance}}/web.jsp?MT$1"
-				]
-			},
-			{
-				"domain": "www.google.com",
-				"pattern": "({{domain}}/maps(?:.*))",
-				"replacements": ["$1", "$1", "$1", "$1"]
-			},
-			{
-				"domain": "www.google.com",
-				"pattern": "{{domain}}",
-				"replacements": [
-					"{{instance}}",
-					"{{instance}}",
-					"{{instance}}",
-					"{{instance}}"
+		"upstream": ["twitter.com"],
+		"frontends": {
+			"nitter": {
+				"cookies": "hlsPlayback=on",
+				"instances": [
+					"nitter.pussthecat.org",
+					"nitter.namazso.eu",
+					"nitter.esmailelbob.xyz",
+					"tw.artemislena.eu",
+					"nitter.kavin.rocks",
+					"bird.trom.tf",
+					"nitter.it",
+					"n.ramle.be",
+					"nitter.privacydev.net",
+					"tweet.lambda.dance",
+					"twitter.censors.us",
+					"de.nttr.stream",
+					"nitter.cz",
+					"nitter.unixfox.eu",
+					"nitter.grimneko.de",
+					"twitter.076.ne.jp",
+					"nitter.fly.dev",
+					"nitter.weiler.rocks",
+					"nitter.sethforprivacy.com",
+					"nitter.mint.lgbt",
+					"nitter.bus-hit.me",
+					"nitter.privacy.com.de",
+					"nitter.poast.org",
+					"nitter.bird.froth.zone",
+					"nitter.dcs0.hu",
+					"nitter.ebnar.xyz",
+					"nitter.kylrth.com",
+					"nitter.fdn.fr",
+					"nitter.42l.fr",
+					"nitter.ca",
+					"nitter.projectsegfau.lt",
+					"nt.vern.cc",
+					"t.com.sb",
+					"nitter.catalyst.sx",
+					"twitter.elpengu.com",
+					"unofficialbird.com",
+					"singapore.unofficialbird.com",
+					"nitter.foss.wtf",
+					"canada.unofficialbird.com",
+					"india.unofficialbird.com",
+					"nederland.unofficialbird.com",
+					"uk.unofficialbird.com",
+					"n.l5.ca",
+					"nitter.slipfox.xyz",
+					"twitter.jae.su"
 				]
 			}
-		],
-		"cookies": [
-			"disabled_engines=bing__general; enabled_engines=google__general"
-		],
-		"instances": [
-			[
-				"searx.be",
-				"searx.one",
-				"searx.namejeff.xyz/searx",
-				"etsi.me",
-				"searx.orion-hub.fr",
-				"searx.ppeb.me",
-				"serx.ml",
-				"search.ononoki.org",
-				"search.bus-hit.me",
-				"searx.esmailelbob.xyz",
-				"opnxng.com",
-				"searx.becomesovran.com",
-				"searx.zaggy.nl",
-				"search.chemicals-in-the-water.eu",
-				"searxng.au/searx",
-				"s.frlt.one",
-				"srx.cosmohub.io",
-				"searx.mistli.net/searx",
-				"privatus.live",
-				"search.bingowaves.xyz",
-				"searxng.zackptg5.com",
-				"search.projectsegfau.lt",
-				"xo.wtf",
-				"sh0.it",
-				"search.jae.fi"
-			],
-			[
-				"librex.beparanoid.de",
-				"search.davidovski.xyz",
-				"librex.catalyst.sx",
-				"librex.extravi.dev"
-			],
-			[
-				"www.whoogle.click",
-				"s.kwadrat.pw",
-				"whoogle.privacydev.net",
-				"whoogle.iter.tw",
-				"whoogle.nmare.net",
-				"whoogle.hugfreevikings.wtf",
-				"whoogle.nightmare.haus",
-				"nosetradamus.xyz",
-				"trolsearch.herokuapp.com",
-				"universe-whoogle.herokuapp.com",
-				"g00gl3.herokuapp.com",
-				"gowogle.voring.me",
-				"fvwhoogle.herokuapp.com",
-				"search.jj1lfc.dev",
-				"whoogle121.herokuapp.com",
-				"searchon.herokuapp.com",
-				"yosephwhoogle.fly.dev",
-				"search.home.jeffutter.com",
-				"wooble.herokuapp.com",
-				"whoogleah.herokuapp.com",
-				"pigzy-whoogle-search.herokuapp.com",
-				"whoogle-jayswing.herokuapp.com",
-				"geoffreypin.herokuapp.com",
-				"opengoogle.herokuapp.com",
-				"whoogle-m.herokuapp.com",
-				"molf-whoogle.herokuapp.com",
-				"thezone.herokuapp.com",
-				"whoogle.greeklinux.com",
-				"whoogle.byzero.dev",
-				"cotephio.herokuapp.com",
-				"whooglesrh.herokuapp.com",
-				"x-whoogle.herokuapp.com",
-				"search.estw.net",
-				"whoogle-eur.herokuapp.com"
-			],
-			[
-				"search.goo.ne.jp"
-			]
-		],
-		"documentOnly": true
+		}
 	},
 	{
-		"transformations": [
-			{
-				"domain": "translate.google.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
+
+		"upstream": ["youtube.com", "youtu.be"],
+		"frontends": {
+			"piped": {
+				"instances": [
+					"il.ax",
+					"yt.jae.fi",
+					"piped.mint.lgbt",
+					"piped.esmailelbob.xyz",
+					"piped.projectsegfau.lt",
+					"piped.privacydev.net"
+				]
+			},
+			"pipedv2": {
+				"instances": [
+					"ui-v2.piped.pages.dev"
+				]
+			},
+			"piped-material": {
+				"instances": [
+					"piped-material.xn--17b.net",
+					"piped-material.ftp.sh",
+					"piped-staging.ftp.sh",
+					"ui.piped.xn--17b.net",
+					"piped-nextgen.xn--17b.net"
+				]
+			},
+			"cloudtube": {
+				"instances": [
+					"yt.beparanoid.de",
+					"tube.cadence.moe"
+				]
+			},
+			"invidious": {
+				"instances": [
+					"invidious.sethforprivacy.com",
+					"yewtu.be",
+					"y.com.sb",
+					"vid.puffyan.us",
+					"invidious.namazso.eu",
+					"inv.riverside.rocks",
+					"invidious.osi.kr",
+					"yt.artemislena.eu",
+					"invidious.flokinet.to",
+					"invidious.weblibre.org",
+					"invidio.xamh.de",
+					"ytb.trom.tf",
+					"inv.vern.cc",
+					"invidious.slipfox.xyz",
+					"invidious.fdn.fr",
+					"yt.elpengu.com",
+					"invidious.nerdvpn.de",
+					"tube.foss.wtf"
+				]
 			}
-		],
-		"instances": [[
-			"simplytranslate.org",
-			"translate.riverside.rocks",
-			"translate.namazso.eu",
-			"translate.bus-hit.me",
-			"simplytranslate.pussthecat.org",
-			"translate.northboot.xyz",
-			"translate.tiekoetter.com",
-			"st.manerakai.com",
-			"tl.slipfox.xyz",
-			"tl.vern.cc",
-			"translate.beparanoid.de",
-			"st.privacydev.net",
-			"translate.josias.dev",
-			"translate.mha.fi"
-		]]
+		}
 	},
 	{
-		"transformations": [
-			{
-				"domain": "instagram.com",
-				"pattern": "{{domain}}(/.+)",
-				"replacements": ["{{instance}}$1"]
-			}
-		],
-		"instances": [[
-			"imginn.com"
-		]]
-	},
-	{
-		"transformations": [
-			{
-				"domain": "medium.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["scribe.{{instance}}$1"]
-			}
-		],
+		"upstream": ["www.google.com"],
 		"documentOnly": true,
-		"instances": [[
-			"rip",
-			"nixnet.services",
-			"citizen4.eu",
-			"esmailelbob.xyz",
-			"froth.zone",
-			"vern.cc"
-		]]
+		"frontends": {
+			"searxng": {
+				"cookies": "disabled_engines=bing__general; enabled_engines=google__general",
+				"instances": [
+					"searx.be",
+					"searx.one",
+					"searx.namejeff.xyz/searx",
+					"etsi.me",
+					"searx.orion-hub.fr",
+					"searx.ppeb.me",
+					"serx.ml",
+					"search.ononoki.org",
+					"search.bus-hit.me",
+					"searx.esmailelbob.xyz",
+					"opnxng.com",
+					"searx.becomesovran.com",
+					"searx.zaggy.nl",
+					"search.chemicals-in-the-water.eu",
+					"searxng.au/searx",
+					"s.frlt.one",
+					"srx.cosmohub.io",
+					"searx.mistli.net/searx",
+					"privatus.live",
+					"search.bingowaves.xyz",
+					"searxng.zackptg5.com",
+					"search.projectsegfau.lt",
+					"xo.wtf",
+					"sh0.it",
+					"search.jae.fi"
+				]
+			},
+			"librex": {
+				"instances": [
+					"librex.beparanoid.de",
+					"search.davidovski.xyz",
+					"librex.catalyst.sx",
+					"librex.extravi.dev"
+				]
+			},
+			"whoogle": {
+				"instances": [
+					"www.whoogle.click",
+					"s.kwadrat.pw",
+					"whoogle.privacydev.net",
+					"whoogle.iter.tw",
+					"whoogle.nmare.net",
+					"whoogle.hugfreevikings.wtf",
+					"whoogle.nightmare.haus",
+					"nosetradamus.xyz",
+					"trolsearch.herokuapp.com",
+					"universe-whoogle.herokuapp.com",
+					"g00gl3.herokuapp.com",
+					"gowogle.voring.me",
+					"fvwhoogle.herokuapp.com",
+					"search.jj1lfc.dev",
+					"whoogle121.herokuapp.com",
+					"searchon.herokuapp.com",
+					"yosephwhoogle.fly.dev",
+					"search.home.jeffutter.com",
+					"wooble.herokuapp.com",
+					"whoogleah.herokuapp.com",
+					"pigzy-whoogle-search.herokuapp.com",
+					"whoogle-jayswing.herokuapp.com",
+					"geoffreypin.herokuapp.com",
+					"opengoogle.herokuapp.com",
+					"whoogle-m.herokuapp.com",
+					"molf-whoogle.herokuapp.com",
+					"thezone.herokuapp.com",
+					"whoogle.greeklinux.com",
+					"whoogle.byzero.dev",
+					"cotephio.herokuapp.com",
+					"whooglesrh.herokuapp.com",
+					"x-whoogle.herokuapp.com",
+					"search.estw.net",
+					"whoogle-eur.herokuapp.com"
+				]
+			},
+			"goo": {
+				"instances": [
+					"search.goo.ne.jp"
+				]
+			}
+		}
 	},
 	{
-		"transformations": [
-			{
-				"domain": "reddit.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1", "{{instance}}$1"]
+		"upstream": ["translate.google.com"],
+		"frontends": {
+			"simplytranslate": {
+				"instances": [
+					"simplytranslate.org",
+					"translate.riverside.rocks",
+					"translate.namazso.eu",
+					"translate.bus-hit.me",
+					"simplytranslate.pussthecat.org",
+					"translate.northboot.xyz",
+					"translate.tiekoetter.com",
+					"st.manerakai.com",
+					"tl.slipfox.xyz",
+					"tl.vern.cc",
+					"translate.beparanoid.de",
+					"st.privacydev.net",
+					"translate.josias.dev",
+					"translate.mha.fi",
+					"simplytranslate.esmailelbob.xyz"
+				]
 			}
-		],
-		"cookies": [
-			"theme=dark; layout=card; wide=off; show_nsfw=on",
-			"nsfw_enabled=true"
-		],
-		"instances": [
-			[
-				"reddit.artemislena.eu",
-				"libreddit.nl",
-				"libreddit.dcs0.hu",
-				"libreddit.privacydev.net",
-				"reddit.rtrace.io",
-				"r.ahwx.org",
-				"reddit.beparanoid.de",
-				"rd.jae.su",
-				"libredd.it",
-				"libreddit.spike.codes",
-				"libreddit.dothq.co",
-				"libreddit.kavin.rocks",
-				"reddit.invak.id",
-				"lr.riverside.rocks",
-				"libreddit.strongthany.cc",
-				"libreddit.privacy.com.de",
-				"lr.mint.lgbt",
-				"libreddit.igna.rocks",
-				"libreddit.projectsegfau.lt",
-				"libreddit.northboot.xyz",
-				"leddit.xyz",
-				"de.leddit.xyz",
-				"libreddit.esmailelbob.xyz",
-				"lr.vern.cc",
-				"libreddit.bus-hit.me",
-				"libreddit.kylrth.com",
-				"libreddit.tiekoetter.com",
-				"libreddit.eu.org",
-				"lr.slipfox.xyz",
-				"l.opnxng.com",
-				"reddit.elpengu.com",
-				"rd.funami.tech",
-				"libreddit.stephenson.systems",
-				"libreddit.mha.fi",
-				"lib-red.herokuapp.com",
-				"libreddit.foss.wtf",
-				"reddit.privacy.com.de"
-			],
-			[
-				"teddit.net",
-				"teddit.ggc-project.de",
-				"teddit.namazso.eu",
-				"teddit.sethforprivacy.com",
-				"teddit.adminforge.de",
-				"teddit.froth.zone",
-				"rdt.trom.tf",
-				"i.opnxng.com",
-				"teddit.zaggy.nl",
-				"teddit.httpjames.space",
-				"teddit.pussthecat.org",
-				"teddit.bus-hit.me",
-				"teddit.froth.zone",
-				"teddit.encrypted-data.xyz",
-				"teddit.fprivacy.com",
-				"teddit.foss.wtf"
-			]
-		]
+		}
 	},
 	{
-		"transformations": [
-			{
-				"domain": "imgur.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
+		"upstream": ["instagram.com"],
+		"frontends": {
+			"imginn": {
+				"instances": [
+					"imginn.com"
+				]
 			}
-		],
-		"instances": [[
-			"i.bcow.xyz",
-			"rimgo.pussthecat.org",
-			"rimgo.totaldarkness.net",
-			"rimgo.bus-hit.me",
-			"rimgo.esmailelbob.xyz",
-			"rimgo.privacydev.net",
-			"imgur.artemislena.eu",
-			"rimgo.fprivacy.com",
-			"rimgo.mha.fi",
-			"img.foss.wtf",
-			"imgur.jae.fi",
-			"rimgo.vern.cc"
-		]]
+		}
 	},
 	{
-		"transformations": [
-			{
-				"domain": "odysee.com",
-				"pattern": "{{domain}}(/.*)?",
-				"replacements": ["{{instance}}$1"]
+		"upstream": ["medium.com"],
+		"documentOnly": true,
+		"frontends": {
+			"scribe": {
+				"instances": [
+					"scribe.rip",
+					"scribe.nixnet.services",
+					"scribe.citizen4.eu",
+					"scribe.esmailelbob.xyz",
+					"scribe.froth.zone",
+					"scribe.vern.cc"
+				]
 			}
-		],
-		"instances": [[
-			"lbry.bcow.xyz",
-			"librarian.pussthecat.org",
-			"lbry.mutahar.rocks",
-			"librarian.esmailelbob.xyz",
-			"odysee.076.ne.jp",
-			"lbry.ix.tc",
-			"lbry.vern.cc",
-			"lbry.projectsegfau.lt",
-			"lbry.slipfox.xyz"
-		]]
+		}
+	},
+	{
+		"upstream": ["reddit.com"],
+		"frontends": {
+			"libreddit": {
+				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
+				"instances": [
+					"reddit.artemislena.eu",
+					"libreddit.nl",
+					"libreddit.dcs0.hu",
+					"libreddit.privacydev.net",
+					"reddit.rtrace.io",
+					"r.ahwx.org",
+					"reddit.beparanoid.de",
+					"rd.jae.su",
+					"libredd.it",
+					"libreddit.spike.codes",
+					"libreddit.dothq.co",
+					"libreddit.kavin.rocks",
+					"reddit.invak.id",
+					"lr.riverside.rocks",
+					"libreddit.strongthany.cc",
+					"libreddit.privacy.com.de",
+					"lr.mint.lgbt",
+					"libreddit.igna.rocks",
+					"libreddit.projectsegfau.lt",
+					"libreddit.northboot.xyz",
+					"leddit.xyz",
+					"de.leddit.xyz",
+					"libreddit.esmailelbob.xyz",
+					"lr.vern.cc",
+					"libreddit.bus-hit.me",
+					"libreddit.kylrth.com",
+					"libreddit.tiekoetter.com",
+					"libreddit.eu.org",
+					"lr.slipfox.xyz",
+					"l.opnxng.com",
+					"reddit.elpengu.com",
+					"rd.funami.tech",
+					"libreddit.stephenson.systems",
+					"libreddit.mha.fi",
+					"lib-red.herokuapp.com",
+					"libreddit.foss.wtf",
+					"reddit.privacy.com.de"
+				]
+			},
+			"teddit": {
+				"cookies": "nsfw_enabled=true",
+				"instances": [
+					"teddit.net",
+					"teddit.ggc-project.de",
+					"teddit.namazso.eu",
+					"teddit.sethforprivacy.com",
+					"teddit.adminforge.de",
+					"teddit.froth.zone",
+					"rdt.trom.tf",
+					"i.opnxng.com",
+					"teddit.zaggy.nl",
+					"teddit.httpjames.space",
+					"teddit.pussthecat.org",
+					"teddit.bus-hit.me",
+					"teddit.froth.zone",
+					"teddit.encrypted-data.xyz",
+					"teddit.fprivacy.com",
+					"teddit.foss.wtf"
+				]
+			}
+		}
+	},
+	{
+		"upstream": ["imgur.com"],
+		"frontends": {
+			"rimgo": {
+				"instances": [
+					"i.bcow.xyz",
+					"rimgo.pussthecat.org",
+					"rimgo.totaldarkness.net",
+					"rimgo.bus-hit.me",
+					"rimgo.esmailelbob.xyz",
+					"rimgo.privacydev.net",
+					"imgur.artemislena.eu",
+					"rimgo.fprivacy.com",
+					"rimgo.mha.fi",
+					"img.foss.wtf",
+					"imgur.jae.fi",
+					"rimgo.vern.cc"
+				]
+			}
+		}
+	},
+	{
+		"upstream": ["odysee.com"],
+		"frontends": {
+			"librarian": {
+				"instances": [
+					"lbry.bcow.xyz",
+					"librarian.pussthecat.org",
+					"lbry.mutahar.rocks",
+					"librarian.esmailelbob.xyz",
+					"odysee.076.ne.jp",
+					"lbry.ix.tc",
+					"lbry.vern.cc",
+					"lbry.projectsegfau.lt",
+					"lbry.slipfox.xyz"
+				]
+			}
+		}
 	}
 ]

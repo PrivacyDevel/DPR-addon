@@ -12,6 +12,7 @@
 		"webRequestBlocking",
 		"webRequest",
 		"storage",
-		"alarms"
+		"alarms",
+		"bookmarks"
 	]
 }
