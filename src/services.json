@@ -49,7 +49,9 @@
 					"uk.unofficialbird.com",
 					"n.l5.ca",
 					"nitter.slipfox.xyz",
-					"twitter.jae.su"
+					"twitter.jae.su",
+					"nitter.qwik.space",
+					"nitter.soopy.moe"
 				]
 			}
 		}
@@ -105,7 +107,9 @@
 					"yt.elpengu.com",
 					"invidious.nerdvpn.de",
 					"tube.foss.wtf",
-					"iteroni.com"
+					"iteroni.com",
+					"invidious.qwik.space",
+					"iv.soopy.moe"
 				]
 			}
 		}
@@ -289,7 +293,8 @@
 					"libreddit.mha.fi",
 					"lib-red.herokuapp.com",
 					"libreddit.foss.wtf",
-					"reddit.privacy.com.de"
+					"reddit.privacy.com.de",
+					"libreddit.qwik.space"
 				]
 			},
 			"teddit": {
