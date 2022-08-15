@@ -84,7 +84,6 @@
 			},
 			"cloudtube": {
 				"instances": [
-					"yt.beparanoid.de",
 					"tube.cadence.moe"
 				]
 			},
@@ -109,7 +108,8 @@
 					"tube.foss.wtf",
 					"iteroni.com",
 					"invidious.qwik.space",
-					"iv.soopy.moe"
+					"iv.soopy.moe",
+					"yt.beparanoid.de"
 				]
 			}
 		}
