@@ -68,18 +68,9 @@
 					"piped.esmailelbob.xyz"
 				]
 			},
-			"pipedv2": {
-				"instances": [
-					"ui-v2.piped.pages.dev"
-				]
-			},
 			"piped-material": {
 				"instances": [
-					"piped-material.xn--17b.net",
-					"piped-material.ftp.sh",
-					"piped-staging.ftp.sh",
-					"ui.piped.xn--17b.net",
-					"piped-nextgen.xn--17b.net"
+					"ui.piped.xn--17b.net"
 				]
 			},
 			"cloudtube": {
