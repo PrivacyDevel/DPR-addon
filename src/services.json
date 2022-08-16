@@ -82,7 +82,8 @@
 			},
 			"cloudtube": {
 				"instances": [
-					"tube.cadence.moe"
+					"tube.cadence.moe",
+					"tube.boritsch.de"
 				]
 			},
 			"invidious": {
@@ -292,7 +293,8 @@
 					"lib-red.herokuapp.com",
 					"libreddit.foss.wtf",
 					"reddit.privacy.com.de",
-					"libreddit.qwik.space"
+					"libreddit.qwik.space",
+					"red.boritsch.de"
 				]
 			},
 			"teddit": {
