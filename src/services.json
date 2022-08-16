@@ -359,5 +359,16 @@
 				]
 			}
 		}
+	},
+	{
+		"upstream": ["tiktok.com"],
+		"frontends": {
+			"proxitok": [
+				"proxitok.herokuapp.com",
+				"proxitok.pussthecat.org",
+				"proxitok.esmailelbob.xyz",
+				"proxitok.privacydev.net"
+			]
+		}
 	}
 ]
