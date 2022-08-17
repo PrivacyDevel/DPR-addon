@@ -65,12 +65,8 @@
 					"piped.mint.lgbt",
 					"piped.privacydev.net",
 					"piped.projectsegfau.lt",
-					"piped.esmailelbob.xyz"
-				]
-			},
-			"piped-material": {
-				"instances": [
-					"ui.piped.xn--17b.net"
+					"piped.esmailelbob.xyz",
+					"yt.jae.fi"
 				]
 			},
 			"cloudtube": {
@@ -252,7 +248,6 @@
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
-					"r.ahwx.org",
 					"reddit.beparanoid.de",
 					"rd.jae.su",
 					"libredd.it",
@@ -304,7 +299,6 @@
 					"teddit.bus-hit.me",
 					"teddit.froth.zone",
 					"teddit.encrypted-data.xyz",
-					"teddit.fprivacy.com",
 					"teddit.foss.wtf"
 				]
 			}
