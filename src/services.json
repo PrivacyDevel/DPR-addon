@@ -348,11 +348,10 @@
 		"frontends": {
 			"proxitok": [
 				"proxitok.herokuapp.com",
-				"proxitok.pussthecat.org",
 				"proxitok.esmailelbob.xyz",
 				"proxitok.privacydev.net",
 				"tok.habedieeh.re",
-				"tiktok.odyssey346.dev"
+				"proxitok.odyssey346.dev"
 			]
 		}
 	}
