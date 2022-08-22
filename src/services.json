@@ -346,13 +346,15 @@
 	{
 		"upstream": ["tiktok.com"],
 		"frontends": {
-			"proxitok": [
-				"proxitok.herokuapp.com",
-				"proxitok.esmailelbob.xyz",
-				"proxitok.privacydev.net",
-				"tok.habedieeh.re",
-				"proxitok.odyssey346.dev"
-			]
+			"proxitok": { 
+				"instances": [
+					"proxitok.herokuapp.com",
+					"proxitok.esmailelbob.xyz",
+					"proxitok.privacydev.net",
+					"tok.habedieeh.re",
+					"proxitok.odyssey346.dev"
+				]
+			}
 		}
 	}
 ]
