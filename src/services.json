@@ -214,7 +214,8 @@
 		"frontends": {
 			"imginn": {
 				"instances": [
-					"imginn.com"
+					"imginn.com",
+					"imginn.org"
 				]
 			}
 		}
