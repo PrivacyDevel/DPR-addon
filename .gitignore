@@ -1,3 +1,4 @@
 dist.zip
 config.json
 .*.swp
+node_modules
