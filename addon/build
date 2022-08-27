@@ -1,0 +1,5 @@
+#!/bin/sh
+tsc
+cp src/*.json dist/
+cd dist
+zip ../dist.zip *

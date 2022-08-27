@@ -1,3 +1,5 @@
+import * as common from "./common";
+
 let g_beforeRequestListeners = [];
 let g_beforeSendHeadersListeners = [];
 let g_bookmarkListener;
@@ -7,12 +9,12 @@ function createListeners(services) {
 	let beforeSendHeadersListeners = [];
 	services.forEach(service => {
 
-		let instances = flattenInstanceList(service.frontends);
+		let instances = common.flattenInstanceList(service.frontends);
 
 		let urls = service.upstream.map(domain => "*://*." + domain + "/*");
 		let listener = details => {
 			if(!(service.documentOnly && details.documentUrl))
-				return {"redirectUrl": transformUrl(details.url, instances)};
+				return {"redirectUrl": common.transformUrl(details.url, instances)};
 		};
 		chrome.webRequest.onBeforeRequest.addListener(listener, {"urls": urls}, ["blocking"]);
 		beforeRequestListeners.push(listener);
@@ -20,7 +22,7 @@ function createListeners(services) {
 		Object.keys(service.frontends).forEach(frontend => {
 			let cookies = service.frontends[frontend].cookies;
 			if(cookies) {
-				listener = details => {
+				let listener = details => {
 					let newHeaders = details.requestHeaders.filter(header => header.name.toLowerCase() != "cookies");
 					newHeaders.push({"name": "Cookie", "value": cookies});
 					return {"requestHeaders": newHeaders};
@@ -33,7 +35,7 @@ function createListeners(services) {
 
 	let bookmarkListener = (id, bookmark) => {
 		if(bookmark.url) {
-			let newUrl = transformUrlBack(bookmark.url, services);
+			let newUrl = common.transformUrlBack(bookmark.url, services);
 			let newTitle = bookmark.title == bookmark.url ? newUrl : bookmark.title;
 			chrome.bookmarks.update(id, {"url": newUrl, "title": newTitle});
 		}
@@ -47,7 +49,7 @@ async function updateConfig() {
 	
 	console.log("updating service list...");
 
-	let response = await fetch(SERVICES_URL);
+	let response = await fetch(common.SERVICES_URL);
 	if(!response.ok) {
 		console.error("updating service failed!");
 		return;
@@ -90,9 +92,9 @@ chrome.storage.local.get("config", async items => {
 		chrome.storage.local.set({"config": config});
 	}
 	
-	startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
+	common.startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
 		chrome.alarms.create({
-		"periodInMinutes": UPDATE_INTERVAL_MINUTES,
+		"periodInMinutes": common.UPDATE_INTERVAL_MINUTES,
 		"when": nextUpdateTimestamp
 		});
 	});

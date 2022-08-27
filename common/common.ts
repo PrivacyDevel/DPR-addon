@@ -1,7 +1,7 @@
-const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
-const UPDATE_INTERVAL_MINUTES = 60 * 2;
+export const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
+export const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
-function flattenInstanceList(frontends) {
+export function flattenInstanceList(frontends) {
 	let instances = [];
 	for(let frontend of Object.keys(frontends)) {
 		instances = instances.concat(frontends[frontend].instances.map(instance => [instance, frontend]));
@@ -9,7 +9,7 @@ function flattenInstanceList(frontends) {
 	return instances;
 }
 
-function transformUrl(srcUrlStr, instances) {
+export function transformUrl(srcUrlStr, instances) {
 	// select random instance
 	let [instance, frontend] = instances[Math.floor(Math.random() * instances.length)];
 	let instanceUrl = new URL("https://" + instance);
@@ -40,7 +40,7 @@ function transformUrl(srcUrlStr, instances) {
 	}
 }
 
-function findInstanceServiceAndFrontend(urlStr, services) {
+export function findInstanceServiceAndFrontend(urlStr, services) {
 	for(let service of services) {
 		for(let frontend of Object.keys(service.frontends)) {
 			let instance = service.frontends[frontend].instances.find(instance => urlStr.startsWith("https://" + instance));
@@ -49,7 +49,7 @@ function findInstanceServiceAndFrontend(urlStr, services) {
 	}
 }
 
-function transformUrlBack(srcUrlStr, services) {
+export function transformUrlBack(srcUrlStr, services) {
 
 	let [instance, service, frontend] = findInstanceServiceAndFrontend(srcUrlStr, services);
 	let upstreamUrl = new URL("https://" + service.upstream[0]);
@@ -75,7 +75,7 @@ function transformUrlBack(srcUrlStr, services) {
 
 }
 
-function startAutoUpdate(lastUpdated, updateFunction) {
+export function startAutoUpdate(lastUpdated, updateFunction) {
 	let nextUpdateTimestamp = Math.max((lastUpdated || 0) + (1000 * UPDATE_INTERVAL_MINUTES), Date.now() + (1000 * 30));
 	console.log("next update is scheduled for: " + new Date(nextUpdateTimestamp).toString());
 	updateFunction(nextUpdateTimestamp);
@@ -88,3 +88,4 @@ if(exports) {
 	exports.SERVICES_URL = SERVICES_URL;
 	exports.UPDATE_INTERVAL_MINUTES = UPDATE_INTERVAL_MINUTES;
 }
+

@@ -4,7 +4,7 @@ const http = require("http");
 const https = require("https");
 const fs = require("fs");
 
-const common = require("./src/common");
+const common = require("./common");
 
 
 let config = {};
