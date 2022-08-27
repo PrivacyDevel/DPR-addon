@@ -1,3 +1,5 @@
-dist.zip
-config.json
+addon/dist.zip
+server/config.json
 .*.swp
+node_modules
+dist
