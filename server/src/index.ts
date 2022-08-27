@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-const http = require("http");
-const https = require("https");
-const fs = require("fs");
+import * as http from "http";
+import * as https from "https";
+import * as fs from "fs";
 
-const common = require("./common");
+import * as common from "./common";
 
 
-let config = {};
+let config: {services: common.service[], lastUpdated?: number} = {services: []};
 
 if(fs.existsSync("config.json")) {
-	config = JSON.parse(fs.readFileSync("config.json"));
+	config = JSON.parse(fs.readFileSync("config.json", "utf8"));
 } else {
-	config.services = JSON.parse(fs.readFileSync("src/services.json"));
+	config.services = JSON.parse(fs.readFileSync("src/services.json", "utf8"));
 }
 
-function updateConfig() {
+function updateConfig(): void {
 	https.get(common.SERVICES_URL, res => {
 		let body = "";
 		res.on("data", data => {
@@ -44,7 +44,7 @@ http.createServer((req, res) => {
 	res.setHeader("Content-Type", "text/plain");
 
 	let oldUrl = req.url.slice(1);
-	let url;
+	let url: URL;
 	try {
 		url = new URL(oldUrl);
 	} catch(error) {

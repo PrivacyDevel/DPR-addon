@@ -1,10 +1,15 @@
 import * as common from "./common";
 
-let g_beforeRequestListeners = [];
-let g_beforeSendHeadersListeners = [];
-let g_bookmarkListener;
+type bookmarkListener = (id: string, bookmark: chrome.bookmarks.BookmarkTreeNode) => void;
+type beforeRequestListener = (details: chrome.webRequest.WebRequestBodyDetails) => void | chrome.webRequest.BlockingResponse;
+type beforeSendHeaderListener = (details: chrome.webRequest.WebRequestHeadersDetails) => void | chrome.webRequest.BlockingResponse;
+interface onBeforeRequestListenerDetails extends chrome.webRequest.WebRequestBodyDetails {documentUrl: string};
 
-function createListeners(services) {
+let g_beforeRequestListeners: beforeRequestListener[] = [];
+let g_beforeSendHeadersListeners: beforeSendHeaderListener[] = [];
+let g_bookmarkListener: bookmarkListener;
+
+function createListeners(services : common.service[]): [beforeRequestListener[], beforeSendHeaderListener[], bookmarkListener] {
 	let beforeRequestListeners = [];
 	let beforeSendHeadersListeners = [];
 	services.forEach(service => {
@@ -12,7 +17,7 @@ function createListeners(services) {
 		let instances = common.flattenInstanceList(service.frontends);
 
 		let urls = service.upstream.map(domain => "*://*." + domain + "/*");
-		let listener = details => {
+		let listener = (details: onBeforeRequestListenerDetails) => {
 			if(!(service.documentOnly && details.documentUrl))
 				return {"redirectUrl": common.transformUrl(details.url, instances)};
 		};
@@ -22,7 +27,7 @@ function createListeners(services) {
 		Object.keys(service.frontends).forEach(frontend => {
 			let cookies = service.frontends[frontend].cookies;
 			if(cookies) {
-				let listener = details => {
+				let listener = (details: chrome.webRequest.WebRequestHeadersDetails) => {
 					let newHeaders = details.requestHeaders.filter(header => header.name.toLowerCase() != "cookies");
 					newHeaders.push({"name": "Cookie", "value": cookies});
 					return {"requestHeaders": newHeaders};
@@ -33,7 +38,7 @@ function createListeners(services) {
 		});
 	});
 
-	let bookmarkListener = (id, bookmark) => {
+	let bookmarkListener = (id: string, bookmark: chrome.bookmarks.BookmarkTreeNode) => {
 		if(bookmark.url) {
 			let newUrl = common.transformUrlBack(bookmark.url, services);
 			let newTitle = bookmark.title == bookmark.url ? newUrl : bookmark.title;
@@ -45,7 +50,7 @@ function createListeners(services) {
 	return [beforeRequestListeners, beforeSendHeadersListeners, bookmarkListener];
 }
 
-async function updateConfig() {
+async function updateConfig(): Promise<void> {
 	
 	console.log("updating service list...");
 
@@ -76,7 +81,7 @@ async function updateConfig() {
 	console.log("service list updated successfully!");
 }
 
-function wrappedUpdateConfig() {
+function wrappedUpdateConfig(): void {
 	updateConfig().catch(console.error);
 }
 
@@ -99,7 +104,7 @@ chrome.storage.local.get("config", async items => {
 		});
 	});
 	
-	[g_beforeRequestListeners, g_beforeSendHeadersListener, g_bookmarkListener] = createListeners(config.services);
+	[g_beforeRequestListeners, g_beforeSendHeadersListeners, g_bookmarkListener] = createListeners(config.services);
 
 	console.log("addon initialized successfully!");
 });

@@ -1,15 +1,31 @@
+type frontends = {
+	[frontent: string]: {
+		cookies: string,
+		instances: [string]
+	}
+};
+
+export type service = {
+	upstream: [string],
+	documentOnly: boolean,
+	frontends: frontends
+};
+
+
+type flatInstanceList = [instance: string, frontend: string][];
+
 export const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
 export const UPDATE_INTERVAL_MINUTES = 60 * 2;
 
-export function flattenInstanceList(frontends) {
-	let instances = [];
+export function flattenInstanceList(frontends: frontends): flatInstanceList {
+	let instances: flatInstanceList = [];
 	for(let frontend of Object.keys(frontends)) {
 		instances = instances.concat(frontends[frontend].instances.map(instance => [instance, frontend]));
 	}
 	return instances;
 }
 
-export function transformUrl(srcUrlStr, instances) {
+export function transformUrl(srcUrlStr: string, instances: flatInstanceList): string | undefined {
 	// select random instance
 	let [instance, frontend] = instances[Math.floor(Math.random() * instances.length)];
 	let instanceUrl = new URL("https://" + instance);
@@ -40,7 +56,7 @@ export function transformUrl(srcUrlStr, instances) {
 	}
 }
 
-export function findInstanceServiceAndFrontend(urlStr, services) {
+export function findInstanceServiceAndFrontend(urlStr: string, services: service[]): [instance: string, service: service, frontend: string] | undefined {
 	for(let service of services) {
 		for(let frontend of Object.keys(service.frontends)) {
 			let instance = service.frontends[frontend].instances.find(instance => urlStr.startsWith("https://" + instance));
@@ -49,7 +65,7 @@ export function findInstanceServiceAndFrontend(urlStr, services) {
 	}
 }
 
-export function transformUrlBack(srcUrlStr, services) {
+export function transformUrlBack(srcUrlStr: string, services: service[]): string | undefined {
 
 	let [instance, service, frontend] = findInstanceServiceAndFrontend(srcUrlStr, services);
 	let upstreamUrl = new URL("https://" + service.upstream[0]);
@@ -75,17 +91,8 @@ export function transformUrlBack(srcUrlStr, services) {
 
 }
 
-export function startAutoUpdate(lastUpdated, updateFunction) {
+export function startAutoUpdate(lastUpdated: number | undefined, updateFunction: (nextUpdateTimestamp: number) => void): void {
 	let nextUpdateTimestamp = Math.max((lastUpdated || 0) + (1000 * UPDATE_INTERVAL_MINUTES), Date.now() + (1000 * 30));
 	console.log("next update is scheduled for: " + new Date(nextUpdateTimestamp).toString());
 	updateFunction(nextUpdateTimestamp);
 }
-
-if(exports) {
-	exports.flattenInstanceList = flattenInstanceList;
-	exports.transformUrl = transformUrl;
-	exports.startAutoUpdate = startAutoUpdate;
-	exports.SERVICES_URL = SERVICES_URL;
-	exports.UPDATE_INTERVAL_MINUTES = UPDATE_INTERVAL_MINUTES;
-}
-
