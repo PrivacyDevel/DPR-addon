@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import * as http from "http";
-import * as https from "https";
 import * as fs from "fs";
 
 import * as common from "./common";
@@ -15,27 +14,20 @@ if(fs.existsSync("config.json")) {
 	config.services = JSON.parse(fs.readFileSync("src/services.json", "utf8"));
 }
 
-function updateConfig(): void {
-	https.get(common.SERVICES_URL, res => {
-		let body = "";
-		res.on("data", data => {
-			body += data;
-		});
-		res.on("end", () => {
-			config = {
-				"services": JSON.parse(body),
-				"lastUpdated": Date.now()
-			};
-			fs.writeFileSync("config.json", JSON.stringify(config));
-			console.log("service list updated successfully!");
-		});
-	});
+async function updateConfig(): Promise<void> {
+	let services = await common.fetchServices();
+	config = {
+		"services": services,
+		"lastUpdated": Date.now()
+	};
+	fs.writeFileSync("config.json", JSON.stringify(config));
+	console.log("service list updated successfully!");
 }
 
 common.startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
-	setTimeout(() => {
-		updateConfig();
-		setInterval(updateConfig, common.UPDATE_INTERVAL_MINUTES * 1000 * 60);
+	setTimeout(async () => {
+		await updateConfig();
+		setInterval(common.sync(updateConfig), common.UPDATE_INTERVAL_MINUTES * 1000 * 60);
 	}, nextUpdateTimestamp - Date.now());
 });
 

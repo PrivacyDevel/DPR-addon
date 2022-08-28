@@ -54,12 +54,7 @@ async function updateConfig(): Promise<void> {
 	
 	console.log("updating service list...");
 
-	let response = await fetch(common.SERVICES_URL);
-	if(!response.ok) {
-		console.error("updating service failed!");
-		return;
-	}
-	let services = await response.json();
+	let services = await common.fetchServices();
 	chrome.storage.local.set({"config": {"lastUpdated": Date.now(), "services": services}});
 	
 	let [beforeRequestListeners, beforeSendHeadersListeners, bookmarkListener] = createListeners(services);
@@ -81,11 +76,7 @@ async function updateConfig(): Promise<void> {
 	console.log("service list updated successfully!");
 }
 
-function wrappedUpdateConfig(): void {
-	updateConfig().catch(console.error);
-}
-
-chrome.alarms.onAlarm.addListener(wrappedUpdateConfig);
+chrome.alarms.onAlarm.addListener(common.sync(updateConfig));
 
 console.log("initializing addon...");
 

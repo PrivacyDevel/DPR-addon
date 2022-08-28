@@ -1,16 +1,19 @@
-type frontends = {
-	[frontent: string]: {
-		cookies: string,
-		instances: [string]
-	}
-};
+import { z } from "zod";
 
-export type service = {
-	upstream: [string],
-	documentOnly: boolean,
+const frontends = z.record(z.string(), z.object({
+	cookies: z.string().optional(),
+	instances: z.array(z.string()),
+}));
+
+export type frontends = z.infer<typeof frontends>;
+
+const service = z.object({
+	upstream: z.array(z.string()),
+	documentOnly: z.boolean().optional(),
 	frontends: frontends
-};
+});
 
+export type service = z.infer<typeof service>;
 
 type flatInstanceList = [instance: string, frontend: string][];
 
@@ -95,4 +98,19 @@ export function startAutoUpdate(lastUpdated: number | undefined, updateFunction:
 	let nextUpdateTimestamp = Math.max((lastUpdated || 0) + (1000 * UPDATE_INTERVAL_MINUTES), Date.now() + (1000 * 30));
 	console.log("next update is scheduled for: " + new Date(nextUpdateTimestamp).toString());
 	updateFunction(nextUpdateTimestamp);
+}
+
+export async function fetchServices(): Promise<service[]> {
+	let response = await fetch(SERVICES_URL);
+	if(!response.ok)
+		throw new Error("updating service failed! response is not ok");
+
+	let services = await response.json();
+	return z.array(service).parse(services);
+}
+
+export function sync(func: ((_: void) => Promise<void>)): ((_: any) => void)  {
+	return () => {
+		func().catch(console.error);
+	}
 }
