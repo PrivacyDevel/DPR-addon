@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/chrome": "^0.0.195",
+    "zod": "^3.18.0"
+  }
+}
