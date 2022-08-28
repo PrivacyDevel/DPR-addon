@@ -1,2 +1,3 @@
 #!/bin/sh
-tsc
+
+esbuild src/index.ts --bundle --outfile=dist/index.js

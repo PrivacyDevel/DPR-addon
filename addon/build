@@ -1,5 +1,8 @@
 #!/bin/sh
-tsc
+
+rm -rf dist dist.zip
+
+esbuild src/background.ts --bundle --outfile=dist/bundle.js
 cp src/*.json dist/
 cd dist
 zip ../dist.zip *
