@@ -81,7 +81,7 @@ chrome.alarms.onAlarm.addListener(common.sync(updateConfig));
 console.log("initializing addon...");
 
 chrome.storage.local.get("config", async items => {
-	let config = items.config;
+	let config: common.config = items.config;
 	if(!config) {
 		let services = await (await fetch("services.json")).json();
 		config = {"services": services};
@@ -90,8 +90,8 @@ chrome.storage.local.get("config", async items => {
 	
 	common.startAutoUpdate(config.lastUpdated, nextUpdateTimestamp => {
 		chrome.alarms.create({
-		"periodInMinutes": common.UPDATE_INTERVAL_MINUTES,
-		"when": nextUpdateTimestamp
+			"periodInMinutes": common.UPDATE_INTERVAL_MINUTES,
+			"when": nextUpdateTimestamp
 		});
 	});
 	

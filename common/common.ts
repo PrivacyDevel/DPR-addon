@@ -15,6 +15,8 @@ const service = z.object({
 
 export type service = z.infer<typeof service>;
 
+export type config = {services: service[], lastUpdated?: number};
+
 type flatInstanceList = [instance: string, frontend: string][];
 
 export const SERVICES_URL = "https://codeberg.org/PrivacyDev/DPR-addon/raw/branch/master/src/services.json";
