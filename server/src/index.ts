@@ -10,8 +10,6 @@ let config: common.config = {services: []};
 let client = new pg.Client({"host": "/var/run/postgresql", "database": "dpr"});
 
 
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 async function updateConfig(): Promise<void> {
 	let services = await common.fetchServices();
 	config = {
@@ -118,5 +116,5 @@ http.createServer((req, res) => {
 	}
 
 	res.writeHead(404).end(oldUrl + " not found");
-}).listen(8080);
+}).listen(process.env.PORT || 8080);
 
