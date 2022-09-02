@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@types/chrome": "^0.0.195",
+    "@types/node": "^18.7.14",
+    "@types/pg": "^8.6.5",
+    "pg": "^8.8.0",
     "zod": "^3.18.0"
   }
 }

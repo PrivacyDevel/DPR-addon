@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS upstream(
+	id SMALLSERIAL PRIMARY KEY,
+	url TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS frontend(
+	id SMALLSERIAL PRIMARY KEY,
+	frontend TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS upstream_frontend(
+	upstream_id SMALLINT REFERENCES upstream(id),
+	frontend_id SMALLINT REFERENCES frontend(id),
+	PRIMARY KEY(upstream_id, frontend_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS instance(
+	id SERIAL PRIMARY KEY,
+	url TEXT NOT NULL UNIQUE,
+	frontend_id SMALLINT REFERENCES frontend(id)
+);
+
+CREATE TABLE IF NOT EXISTS up(
+	id BIGSERIAL PRIMARY KEY,
+	timestamp TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+	up BOOLEAN,
+	instance_id INT REFERENCES instance(id)
+);
