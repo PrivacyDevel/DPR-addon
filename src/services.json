@@ -52,7 +52,8 @@
 					"twtr.sndwav.com",
 					"nitter.aosus.org",
 					"nitter.adminforge.de",
-					"nitter.tannhauser.network"
+					"nitter.tannhauser.network",
+					"nitter.smnz.de"
 				]
 			}
 		}
@@ -72,7 +73,8 @@
 					"piped.vern.cc",
 					"piped.aosus.org",
 					"piped.adminforge.de",
-					"piped.zxspectrummail.net"
+					"piped.zxspectrummail.net",
+					"piped.smnz.de"
 				]
 			},
 			"cloudtube": {
@@ -239,7 +241,8 @@
 					"scribe.froth.zone",
 					"scribe.vern.cc",
 					"scribe.privacydev.net",
-					"scribe.aosus.org"
+					"scribe.aosus.org",
+					"scribe.smnz.de"
 				]
 			}
 		}
@@ -286,7 +289,8 @@
 					"red.boritsch.de",
 					"rddt.sndwav.com",
 					"libreddit.aosus.org",
-					"lb.zxspectrummail.net"
+					"lb.zxspectrummail.net",
+					"reddit.smnz.de"
 				]
 			},
 			"teddit": {
