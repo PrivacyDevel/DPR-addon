@@ -55,7 +55,10 @@
 					"nitter.tannhauser.network",
 					"nitter.smnz.de",
 					"tweet.toad.city",
-					"nitter.manasiwibi.com"
+					"nitter.manasiwibi.com",
+					"ntr.odyssey346.dev",
+					"nitter.ir",
+					"nitter.inpt.fr"
 				]
 			}
 		}
@@ -149,7 +152,8 @@
 				"instances": [
 					"librex.beparanoid.de",
 					"search.davidovski.xyz",
-					"librex.catalyst.sx"
+					"librex.catalyst.sx",
+					"search.pabloferreiro.es"
 				]
 			},
 			"whoogle": {
@@ -263,7 +267,6 @@
 					"reddit.rtrace.io",
 					"reddit.beparanoid.de",
 					"rd.jae.su",
-					"libredd.it",
 					"libreddit.spike.codes",
 					"libreddit.kavin.rocks",
 					"reddit.invak.id",
@@ -313,7 +316,10 @@
 					"teddit.froth.zone",
 					"teddit.foss.wtf",
 					"red.toad.city",
-					"teddit.manasiwibi.com"
+					"teddit.manasiwibi.com",
+					"teddit.artemislena.eu",
+					"td.vern.cc",
+					"teddit.tokhmi.xyz"
 				]
 			}
 		}
@@ -355,7 +361,9 @@
 					"lbry.slipfox.xyz",
 					"librarian.privacydev.net",
 					"lbry.sytes.net",
-					"lbry.webhop.me"
+					"lbry.webhop.me",
+					"lbry.ooguy.com",
+					"lbry.mywire.org"
 				]
 			}
 		}
