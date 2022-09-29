@@ -18,6 +18,7 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Imgur](https://imgur.com)                            | [rimgo](https://codeberg.org/video-prize-ranch/rimgo)                                                                                                                                      |
 |[Odysee](https://odysee.com)                          | [Librarian](https://codeberg.org/librarian/librarian)                                                                                                                                      |
 |[TikTok](https://tiktok.com)                          | [ProxiTok](https://github.com/pablouser1/ProxiTok)                                                                                                                                         |
+|[Quora](https://quora.com)                            | [Quetre](https://github.com/zyachel/quetre)                                                                                                                                                |
 
 ## Mirrors
 [Codeberg](https://codeberg.org/PrivacyDev/DPR-addon), [GitHub](https://github.com/PrivacyDevel/DPR-addon)

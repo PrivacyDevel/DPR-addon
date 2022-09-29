@@ -75,7 +75,6 @@
 					"piped.projectsegfau.lt",
 					"yt.jae.fi",
 					"piped.palveluntarjoaja.eu",
-					"piped.vern.cc",
 					"piped.aosus.org",
 					"piped.adminforge.de",
 					"piped.zxspectrummail.net",
@@ -384,6 +383,17 @@
 					"tok.adminforge.de",
 					"proxitok.pabloferreiro.es",
 					"proxitok.manasiwibi.com"
+				]
+			}
+		}
+	},
+	{
+		"upstream": ["quora.com"],
+		"frontends": {
+			"quetre": {
+				"instances": [
+					"quetre.iket.me",
+					"quora.vern.cc"
 				]
 			}
 		}
