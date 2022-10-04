@@ -131,7 +131,9 @@
 					"searxng.zackptg5.com",
 					"xo.wtf",
 					"sh0.it",
-					"search.jae.fi"
+					"search.jae.fi",
+					"search.cronobox.one",
+					"searxng.nicfab.eu/searxng"
 				]
 			},
 			"librex": {
@@ -139,7 +141,10 @@
 					"librex.beparanoid.de",
 					"search.davidovski.xyz",
 					"librex.catalyst.sx",
-					"search.pabloferreiro.es"
+					"search.pabloferreiro.es",
+					"librex.kitscomputer.tk",
+					"lx.vern.cc",
+					"buscar.weblibre.org"
 				]
 			},
 			"whoogle": {
