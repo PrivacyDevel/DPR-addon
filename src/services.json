@@ -214,7 +214,6 @@
 		"frontends": {
 			"simplytranslate": {
 				"instances": [
-					"simplytranslate.org",
 					"translate.riverside.rocks",
 					"translate.bus-hit.me",
 					"simplytranslate.pussthecat.org",
