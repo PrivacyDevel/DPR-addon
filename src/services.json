@@ -310,7 +310,6 @@
 				"cookies": "nsfw_enabled=true",
 				"instances": [
 					"teddit.net",
-					"teddit.ggc-project.de",
 					"teddit.namazso.eu",
 					"teddit.sethforprivacy.com",
 					"teddit.adminforge.de",
@@ -324,8 +323,7 @@
 					"red.toad.city",
 					"teddit.manasiwibi.com",
 					"teddit.artemislena.eu",
-					"td.vern.cc",
-					"tedd.it"
+					"td.vern.cc"
 				]
 			}
 		}
