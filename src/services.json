@@ -83,34 +83,12 @@
 			},
 			"cloudtube": {
 				"instances": [
-					"tube.cadence.moe",
-					"tube.boritsch.de"
+					"tube.cadence.moe"
 				]
 			},
 			"invidious": {
 				"instances": [
-					"yewtu.be",
-					"y.com.sb",
-					"vid.puffyan.us",
-					"invidious.namazso.eu",
-					"invidious.flokinet.to",
-					"invidious.weblibre.org",
-					"invidio.xamh.de",
-					"inv.vern.cc",
-					"invidious.slipfox.xyz",
-					"invidious.fdn.fr",
-					"invidious.nerdvpn.de",
-					"invidious.qwik.space",
-					"tube.sndwav.com",
-					"yt.chocoflan.net",
-					"tube.toad.city",
-					"invidious.manasiwibi.com",
-					"invidious.slackjeff.com.br",
-					"invidious.privacydev.net",
-					"yt.funami.tech",
-					"invidious.drivet.xyz",
-					"yt.wkwkwk.fun",
-					"invidious.servicesforfree.com"
+					"invidious.privacydev.net"
 				]
 			}
 		}
