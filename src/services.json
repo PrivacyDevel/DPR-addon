@@ -124,10 +124,8 @@
 					"librex.beparanoid.de",
 					"search.davidovski.xyz",
 					"librex.catalyst.sx",
-					"search.pabloferreiro.es",
-					"librex.kitscomputer.tk",
-					"lx.vern.cc",
-					"buscar.weblibre.org"
+					"buscar.weblibre.org",
+					"search.ahwx.org"
 				]
 			},
 			"whoogle": {
@@ -381,9 +379,8 @@
 			"quetre": {
 				"instances": [
 					"quetre.iket.me",
-					"quora.vern.cc",
 					"quetre.privacydev.net",
-					"quetre.tokhmi.xyz"
+					"quetre.odyssey346.dev"
 				]
 			}
 		}
