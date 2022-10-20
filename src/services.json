@@ -235,7 +235,6 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"reddit.artemislena.eu",
 					"libreddit.nl",
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
@@ -247,12 +246,10 @@
 					"reddit.invak.id",
 					"lr.riverside.rocks",
 					"libreddit.strongthany.cc",
-					"libreddit.privacy.com.de",
 					"lr.mint.lgbt",
 					"libreddit.igna.rocks",
 					"libreddit.projectsegfau.lt",
 					"libreddit.northboot.xyz",
-					"leddit.xyz",
 					"libreddit.esmailelbob.xyz",
 					"lr.vern.cc",
 					"libreddit.bus-hit.me",
@@ -265,7 +262,6 @@
 					"libreddit.mha.fi",
 					"lib-red.herokuapp.com",
 					"libreddit.foss.wtf",
-					"reddit.privacy.com.de",
 					"libreddit.qwik.space",
 					"red.boritsch.de",
 					"rddt.sndwav.com",
