@@ -113,7 +113,10 @@
 					"searxng.nicfab.eu/searxng",
 					"searx.baczek.me",
 					"search.drivet.xyz",
-					"searx.servicesforfree.com"
+					"searx.servicesforfree.com",
+					"searx.oakleycord.dev",
+					"searx.tuxcloud.net",
+					"searx.chocoflan.net/searx"
 				]
 			},
 			"librex": {
@@ -130,9 +133,6 @@
 					"www.whoogle.click",
 					"whoogle.privacydev.net",
 					"whoogle.iter.tw",
-					"whoogle.nmare.net",
-					"whoogle.hugfreevikings.wtf",
-					"whoogle.nightmare.haus",
 					"nosetradamus.xyz",
 					"trolsearch.herokuapp.com",
 					"universe-whoogle.herokuapp.com",
@@ -161,7 +161,6 @@
 					"search.mj303.live",
 					"cryptic-waters-69104.herokuapp.com",
 					"search.loki.red",
-					"whoogle-dani.fly.dev",
 					"private-search-engine.herokuapp.com",
 					"googleboob.herokuapp.com",
 					"myowngoogle.herokuapp.com",
@@ -174,7 +173,8 @@
 					"g.wsuika.club",
 					"whoogle-unobtanium.herokuapp.com",
 					"rionyan.herokuapp.com",
-					"s.julbet.com.au"
+					"s.julbet.com.au",
+					"tom2199whoogle.fly.dev"
 				]
 			}
 		}
@@ -281,7 +281,9 @@
 					"fr.vern.cc",
 					"fr.matthew.science",
 					"www.futureddit.gq",
-					"reddit.utsav2.dev"
+					"reddit.utsav2.dev",
+					"fr.odyssey346.dev",
+					"ferrit.drivet.xyz"
 				]
 			},
 			"teddit": {
