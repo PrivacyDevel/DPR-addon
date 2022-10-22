@@ -354,9 +354,7 @@
 		"frontends": {
 			"proxitok": { 
 				"instances": [
-					"proxitok.herokuapp.com",
 					"proxitok.privacydev.net",
-					"proxitok.pabloferreiro.es",
 					"proxitok.manasiwibi.com"
 				]
 			}
