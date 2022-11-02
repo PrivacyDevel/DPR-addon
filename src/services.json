@@ -54,7 +54,8 @@
 					"nitter.inpt.fr",
 					"nitter.nicfab.eu",
 					"nitter.at",
-					"nitter.lacontrevoie.fr"
+					"nitter.lacontrevoie.fr",
+					"nitter.hostux.net"
 				]
 			}
 		}
@@ -275,7 +276,8 @@
 					"reddit.utsav2.dev",
 					"fr.odyssey346.dev",
 					"ferrit.drivet.xyz",
-					"lr.4201337.xyz"
+					"lr.4201337.xyz",
+					"libreddit.intent.cool"
 				]
 			},
 			"teddit": {
@@ -295,7 +297,8 @@
 					"red.toad.city",
 					"teddit.manasiwibi.com",
 					"teddit.artemislena.eu",
-					"td.vern.cc"
+					"td.vern.cc",
+					"teddit.hostux.net"
 				]
 			}
 		}
@@ -317,7 +320,8 @@
 					"imgur.jae.fi",
 					"rimgo.vern.cc",
 					"imgr.sndwav.com",
-					"i.habedieeh.re"
+					"i.habedieeh.re",
+					"rimgo.hostux.net"
 				]
 			}
 		}
@@ -363,7 +367,10 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"quetre.odyssey346.dev"
+					"quetre.odyssey346.dev",
+					"ask.habedieeh.re",
+					"quetre.tokhmi.xyz",
+					"qr.vern.cc"
 				]
 			}
 		}
