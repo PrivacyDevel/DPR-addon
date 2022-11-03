@@ -78,7 +78,6 @@
 			},
 			"cloudtube": {
 				"instances": [
-					"tube.cadence.moe"
 				]
 			},
 			"invidious": {
