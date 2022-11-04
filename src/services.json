@@ -76,10 +76,6 @@
 					"tube.habedieeh.re"
 				]
 			},
-			"cloudtube": {
-				"instances": [
-				]
-			},
 			"invidious": {
 				"instances": [
 					"invidious.privacydev.net"
