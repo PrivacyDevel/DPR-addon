@@ -39,21 +39,15 @@ export function transformUrl(srcUrlStr: string, instances: flatInstanceList): st
 	let search = new URLSearchParams(url.search);
 	switch(url.host) {
 		case "youtu.be":
-			search.append("q", url.pathname.slice(1));
+			search.append("v", url.pathname.slice(1));
 			url.pathname = "/watch";
+			break;
 		case "www.google.com":
 			if(url.pathname == "/maps")
 				return;
 			
-			switch(frontend) {
-				case "librex":
-					url.pathname = "search.php";
-					break;
-				case "goo":
-					url.pathname = "web.jsp";
-					search.append("MT", search.get("q"));
-					search.delete("q");
-			}
+			if(frontend == "librex")
+				url.pathname = "search.php";
 		default:
 			instanceUrl.pathname = instanceUrl.pathname == "/" ? url.pathname : instanceUrl.pathname + url.pathname;
 			instanceUrl.search = search.toString();
@@ -80,13 +74,8 @@ export function transformUrlBack(srcUrlStr: string, services: service[]): string
 	let search = new URLSearchParams(url.search);
 	switch(upstreamUrl.host) {
 		case "www.google.com":
-			switch(frontend) {
-				case "goo":
-					search.append("q", search.get("MT"));
-					search.delete("MT");
-				case "librex":
-					url.pathname = "search";
-			}
+			if(frontend == "librex")
+				url.pathname = "search";
 		default:
 			upstreamUrl.pathname = url.pathname.replace(instanceUrl.pathname, "");
 			upstreamUrl.search = search.toString();
