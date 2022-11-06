@@ -54,7 +54,9 @@
 					"nitter.inpt.fr",
 					"nitter.nicfab.eu",
 					"nitter.at",
-					"nitter.hostux.net"
+					"nitter.hostux.net",
+					"nitter.mask.sh",
+					"nitter.platypush.tech"
 				]
 			}
 		}
@@ -70,7 +72,8 @@
 					"piped.projectsegfau.lt",
 					"piped.aosus.org",
 					"watch.whatevertinfoil.de",
-					"tube.habedieeh.re"
+					"tube.habedieeh.re",
+					"piped.platypush.tech"
 				]
 			},
 			"invidious": {
@@ -105,7 +108,9 @@
 					"searx.servicesforfree.com",
 					"searx.oakleycord.dev",
 					"searx.tuxcloud.net",
-					"searx.chocoflan.net/searx"
+					"searx.chocoflan.net/searx",
+					"search.platypush.tech",
+					"searxng.mask.sh"
 				]
 			},
 			"librex": {
@@ -210,7 +215,8 @@
 					"scribe.vern.cc",
 					"scribe.privacydev.net",
 					"scribe.aosus.org",
-					"scribe.smnz.de"
+					"scribe.smnz.de",
+					"scribe.platypush.tech"
 				]
 			}
 		}
@@ -266,7 +272,8 @@
 					"fr.odyssey346.dev",
 					"ferrit.drivet.xyz",
 					"lr.4201337.xyz",
-					"libreddit.intent.cool"
+					"libreddit.intent.cool",
+					"libreddit.mask.sh"
 				]
 			},
 			"teddit": {
