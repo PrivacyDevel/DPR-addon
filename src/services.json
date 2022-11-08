@@ -56,7 +56,8 @@
 					"nitter.at",
 					"nitter.hostux.net",
 					"nitter.mask.sh",
-					"nitter.platypush.tech"
+					"nitter.platypush.tech",
+					"read.whatever.social"
 				]
 			}
 		}
@@ -73,7 +74,8 @@
 					"piped.aosus.org",
 					"watch.whatevertinfoil.de",
 					"tube.habedieeh.re",
-					"piped.platypush.tech"
+					"piped.platypush.tech",
+					"watch.whatever.social"
 				]
 			},
 			"invidious": {
