@@ -104,7 +104,6 @@
 					"xo.wtf",
 					"sh0.it",
 					"search.cronobox.one",
-					"searxng.nicfab.eu/searxng",
 					"searx.baczek.me",
 					"search.drivet.xyz",
 					"searx.servicesforfree.com",
@@ -112,7 +111,8 @@
 					"searx.tuxcloud.net",
 					"searx.chocoflan.net/searx",
 					"search.platypush.tech",
-					"searxng.mask.sh"
+					"searxng.mask.sh",
+					"searx.zaggy.nl"
 				]
 			},
 			"librex": {
