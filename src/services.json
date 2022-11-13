@@ -30,7 +30,6 @@
 					"nitter.42l.fr",
 					"nitter.ca",
 					"nitter.projectsegfau.lt",
-					"nt.vern.cc",
 					"t.com.sb",
 					"twitter.elpengu.com",
 					"unofficialbird.com",
@@ -70,7 +69,6 @@
 				"instances": [
 					"piped.mint.lgbt",
 					"piped.privacydev.net",
-					"piped.projectsegfau.lt",
 					"piped.aosus.org",
 					"watch.whatevertinfoil.de",
 					"tube.habedieeh.re",
@@ -181,7 +179,6 @@
 					"translate.tiekoetter.com",
 					"st.manerakai.com",
 					"tl.slipfox.xyz",
-					"tl.vern.cc",
 					"st.privacydev.net",
 					"translate.mha.fi",
 					"simplytranslate.esmailelbob.xyz"
@@ -211,7 +208,6 @@
 					"scribe.citizen4.eu",
 					"scribe.esmailelbob.xyz",
 					"scribe.froth.zone",
-					"scribe.vern.cc",
 					"scribe.privacydev.net",
 					"scribe.aosus.org",
 					"scribe.smnz.de",
@@ -241,7 +237,6 @@
 					"libreddit.projectsegfau.lt",
 					"libreddit.northboot.xyz",
 					"libreddit.esmailelbob.xyz",
-					"lr.vern.cc",
 					"libreddit.bus-hit.me",
 					"libreddit.kylrth.com",
 					"libreddit.tiekoetter.com",
@@ -264,7 +259,6 @@
 					"libreddit.slackjeff.com.br",
 					"libreddit.drivet.xyz",
 					"snoo.habedieeh.re",
-					"fr.vern.cc",
 					"fr.matthew.science",
 					"www.futureddit.gq",
 					"reddit.utsav2.dev",
@@ -292,7 +286,6 @@
 					"red.toad.city",
 					"teddit.manasiwibi.com",
 					"teddit.artemislena.eu",
-					"td.vern.cc",
 					"teddit.hostux.net"
 				]
 			}
@@ -313,7 +306,6 @@
 					"rimgo.mha.fi",
 					"img.foss.wtf",
 					"imgur.jae.fi",
-					"rimgo.vern.cc",
 					"imgr.sndwav.com",
 					"i.habedieeh.re",
 					"rimgo.hostux.net"
@@ -332,7 +324,6 @@
 					"librarian.esmailelbob.xyz",
 					"odysee.076.ne.jp",
 					"lbry.ix.tc",
-					"lbry.vern.cc",
 					"lbry.projectsegfau.lt",
 					"lbry.slipfox.xyz",
 					"librarian.privacydev.net",
@@ -364,8 +355,7 @@
 					"quetre.privacydev.net",
 					"quetre.odyssey346.dev",
 					"ask.habedieeh.re",
-					"quetre.tokhmi.xyz",
-					"qr.vern.cc"
+					"quetre.tokhmi.xyz"
 				]
 			}
 		}
