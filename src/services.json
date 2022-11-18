@@ -54,7 +54,8 @@
 					"nitter.at",
 					"nitter.hostux.net",
 					"nitter.platypush.tech",
-					"read.whatever.social"
+					"read.whatever.social",
+					"nitter.pufe.org"
 				]
 			}
 		}
@@ -68,7 +69,6 @@
 					"piped.mint.lgbt",
 					"piped.privacydev.net",
 					"piped.aosus.org",
-					"watch.whatevertinfoil.de",
 					"tube.habedieeh.re",
 					"piped.platypush.tech",
 					"watch.whatever.social"
@@ -116,7 +116,8 @@
 					"buscar.weblibre.org",
 					"search.ahwx.org",
 					"librex.smlan.dev",
-					"pufe.org"
+					"pufe.org",
+					"lx.vern.cc"
 				]
 			},
 			"whoogle": {
@@ -178,7 +179,8 @@
 					"st.privacydev.net",
 					"translate.mha.fi",
 					"simplytranslate.esmailelbob.xyz",
-					"simplytranslate.org"
+					"simplytranslate.org",
+					"tl.vern.cc"
 				]
 			}
 		}
@@ -208,7 +210,8 @@
 					"scribe.privacydev.net",
 					"scribe.aosus.org",
 					"scribe.smnz.de",
-					"scribe.platypush.tech"
+					"scribe.platypush.tech",
+					"sc.vern.cc"
 				]
 			}
 		}
@@ -263,7 +266,9 @@
 					"ferrit.drivet.xyz",
 					"lr.4201337.xyz",
 					"libreddit.intent.cool",
-					"libreddit.mask.sh"
+					"libreddit.mask.sh",
+					"reddit.stetsed.xyz",
+					"libreddit.pufe.org"
 				]
 			},
 			"teddit": {
@@ -283,7 +288,8 @@
 					"red.toad.city",
 					"teddit.manasiwibi.com",
 					"teddit.artemislena.eu",
-					"teddit.hostux.net"
+					"teddit.hostux.net",
+					"td.vern.cc"
 				]
 			}
 		}
@@ -303,9 +309,10 @@
 					"rimgo.mha.fi",
 					"img.foss.wtf",
 					"imgur.jae.fi",
-					"imgr.sndwav.com",
 					"i.habedieeh.re",
-					"rimgo.hostux.net"
+					"rimgo.hostux.net",
+					"ri.zzls.xyz",
+					"rg.vern.cc"
 				]
 			}
 		}
@@ -327,7 +334,8 @@
 					"lbry.sytes.net",
 					"lbry.webhop.me",
 					"lbry.ooguy.com",
-					"lbry.mywire.org"
+					"lbry.mywire.org",
+					"lbry.vern.cc"
 				]
 			}
 		}
@@ -345,7 +353,8 @@
 					"proxitok.odyssey346.dev",
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
-					"tik.hostux.net"
+					"tik.hostux.net",
+					"proxitok.pufe.org"
 				]
 			}
 		}
@@ -359,7 +368,8 @@
 					"quetre.privacydev.net",
 					"quetre.odyssey346.dev",
 					"ask.habedieeh.re",
-					"quetre.tokhmi.xyz"
+					"quetre.tokhmi.xyz",
+					"qr.vern.cc"
 				]
 			}
 		}
