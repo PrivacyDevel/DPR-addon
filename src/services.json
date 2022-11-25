@@ -67,7 +67,6 @@
 		"frontends": {
 			"piped": {
 				"instances": [
-					"piped.mint.lgbt",
 					"piped.privacydev.net",
 					"piped.aosus.org",
 					"tube.habedieeh.re",
