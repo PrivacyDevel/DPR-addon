@@ -57,7 +57,8 @@
 					"nitter.net",
 					"nitter.us.projectsegfau.lt",
 					"nitter.marcopisco.com",
-					"nitter.arcticfoxes.net"
+					"nitter.arcticfoxes.net",
+					"nitter.selfhostable.net"
 				]
 			}
 		}
@@ -114,7 +115,8 @@
 					"searx.kavin.rocks",
 					"search.rowie.at",
 					"searx.delicta.pp.ua",
-					"search.uspersec.com"
+					"search.uspersec.com",
+					"search.selfhostable.net"
 				]
 			},
 			"librex": {
