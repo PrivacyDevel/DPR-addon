@@ -84,7 +84,17 @@
 			},
 			"invidious": {
 				"instances": [
-					"invidious.privacydev.net"
+					"invidious.privacydev.net",
+					"invidious.drivet.xyz",
+					"vid.puffyan.us",
+					"inv.riverside.rocks",
+					"inv.bp.projectsegfau.lt",
+					"inv.odyssey346.dev",
+					"invidious.weblibre.org",
+					"invidious.esmailelbob.xyz",
+					"invidious.fdn.fr",
+					"yt.chocoflan.net",
+					"yt.wkwkwk.fun"
 				]
 			}
 		}
