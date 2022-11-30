@@ -85,7 +85,7 @@
 				]
 			},
 			"invidious": {
-				"cookies": "PREFS=%7B%22dark_mode%22%3A%22dark%22%7D",
+				"cookies": "PREFS=%7B%22dark_mode%22%3A%22dark%22%2C%22quality%22%3A%22dash%22%7D",
 				"instances": [
 					"invidious.privacydev.net",
 					"invidious.drivet.xyz",
