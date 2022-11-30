@@ -58,7 +58,8 @@
 					"nitter.marcopisco.com",
 					"nitter.arcticfoxes.net",
 					"nitter.selfhostable.net",
-					"bluebird.codeine.world"
+					"bluebird.codeine.world",
+					"nitter.evil.site"
 				]
 			}
 		}
@@ -79,7 +80,8 @@
 					"piped.qdi.fi",
 					"yt.jae.fi",
 					"piped.sp-codes.de",
-					"piped.hostux.net"
+					"piped.hostux.net",
+					"piped.evil.site"
 				]
 			},
 			"invidious": {
@@ -95,7 +97,8 @@
 					"invidious.esmailelbob.xyz",
 					"invidious.fdn.fr",
 					"yt.chocoflan.net",
-					"yt.wkwkwk.fun"
+					"yt.wkwkwk.fun",
+					"invidious.evil.site"
 				]
 			}
 		}
@@ -383,7 +386,8 @@
 					"tok.adminforge.de",
 					"tik.hostux.net",
 					"proxitok.pufe.org",
-					"proxitok.aosus.org"
+					"proxitok.aosus.org",
+					"tiktok.evil.site"
 				]
 			}
 		}
