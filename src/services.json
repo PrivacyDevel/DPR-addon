@@ -89,12 +89,9 @@
 				"cookies": "PREFS=%7B%22dark_mode%22%3A%22dark%22%2C%22quality%22%3A%22dash%22%7D",
 				"instances": [
 					"invidious.privacydev.net",
-					"vid.puffyan.us",
 					"inv.riverside.rocks",
 					"inv.bp.projectsegfau.lt",
-					"inv.odyssey346.dev",
 					"invidious.esmailelbob.xyz",
-					"invidious.fdn.fr",
 					"yt.chocoflan.net",
 					"yt.wkwkwk.fun"
 				]
