@@ -58,7 +58,8 @@
 					"nitter.selfhostable.net",
 					"bluebird.codeine.world",
 					"nitter.evil.site",
-					"nitter.onthescent.xyz"
+					"nitter.onthescent.xyz",
+					"nitter.batsense.net"
 				]
 			}
 		}
@@ -110,7 +111,8 @@
 					"searx.tuxcloud.net",
 					"searx.zaggy.nl",
 					"searx.kavin.rocks",
-					"searx.delicta.pp.ua"
+					"searx.delicta.pp.ua",
+					"searx.batsense.net"
 				]
 			},
 			"librex": {
@@ -240,7 +242,8 @@
 					"reddit.stetsed.xyz",
 					"libreddit.pufe.org",
 					"libreddit.marcopisco.com",
-					"libreddit.onthescent.xyz"
+					"libreddit.onthescent.xyz",
+					"libreddit.batsense.net"
 				]
 			},
 			"teddit": {
