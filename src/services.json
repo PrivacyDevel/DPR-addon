@@ -112,7 +112,8 @@
 					"searx.delicta.pp.ua",
 					"searx.batsense.net",
 					"search.thekitty.zone",
-					"search.suenram.us/searxng"
+					"search.suenram.us/searxng",
+					"search.leptons.xyz"
 				]
 			},
 			"librex": {
@@ -168,7 +169,8 @@
 					"st.privacydev.net",
 					"simplytranslate.esmailelbob.xyz",
 					"simplytranslate.org",
-					"tl.vern.cc"
+					"tl.vern.cc",
+					"translate.leptons.xyz"
 				]
 			}
 		}
@@ -252,7 +254,8 @@
 					"libreddit.pufe.org",
 					"libreddit.marcopisco.com",
 					"libreddit.onthescent.xyz",
-					"libreddit.batsense.net"
+					"libreddit.batsense.net",
+					"reddit.leptons.xyz"
 				]
 			},
 			"teddit": {
