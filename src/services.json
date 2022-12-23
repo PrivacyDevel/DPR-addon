@@ -172,7 +172,8 @@
 					"simplytranslate.esmailelbob.xyz",
 					"simplytranslate.org",
 					"tl.vern.cc",
-					"translate.leptons.xyz"
+					"translate.leptons.xyz",
+					"tl.slipfox.xyz"
 				]
 			}
 		}
@@ -256,7 +257,8 @@
 					"libreddit.pufe.org",
 					"libreddit.onthescent.xyz",
 					"libreddit.batsense.net",
-					"reddit.leptons.xyz"
+					"reddit.leptons.xyz",
+					"lr.slipfox.xyz"
 				]
 			},
 			"teddit": {
@@ -319,7 +321,8 @@
 					"librarian.privacydev.net",
 					"lbry.ooguy.com",
 					"lbry.mywire.org",
-					"lbry.vern.cc"
+					"lbry.vern.cc",
+					"lbry.slipfox.xyz"
 				]
 			}
 		}
