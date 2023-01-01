@@ -79,7 +79,8 @@
 					"piped.sp-codes.de",
 					"piped.hostux.net",
 					"pd.vern.cc",
-					"piped.yanknil.com"
+					"piped.yanknil.com",
+					"piped.chauvet.pro"
 				]
 			},
 			"invidious": {
@@ -101,7 +102,6 @@
 					"searx.one",
 					"searx.namejeff.xyz/searx",
 					"opnxng.com",
-					"searxng.zackptg5.com",
 					"sh0.it",
 					"search.cronobox.one",
 					"searx.baczek.me",
@@ -115,7 +115,8 @@
 					"searx.batsense.net",
 					"search.thekitty.zone",
 					"search.suenram.us/searxng",
-					"search.leptons.xyz"
+					"search.leptons.xyz",
+					"searx.tincan.ca"
 				]
 			},
 			"librex": {
@@ -151,7 +152,8 @@
 					"search.one37vpn.com",
 					"search.winn.cloud",
 					"whgl.yanknil.com",
-					"search.mint.lgbt"
+					"search.mint.lgbt",
+					"whoogle.tincan.ca"
 				]
 			}
 		}
