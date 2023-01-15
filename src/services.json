@@ -102,16 +102,12 @@
 					"searx.one",
 					"searx.namejeff.xyz/searx",
 					"opnxng.com",
-					"sh0.it",
 					"search.cronobox.one",
-					"searx.baczek.me",
-					"search.drivet.xyz",
 					"searx.servicesforfree.com",
 					"searx.oakleycord.dev",
 					"searx.tuxcloud.net",
 					"searx.zaggy.nl",
 					"searx.kavin.rocks",
-					"searx.delicta.pp.ua",
 					"searx.batsense.net",
 					"search.thekitty.zone",
 					"search.suenram.us/searxng",
@@ -121,7 +117,7 @@
 			},
 			"librex": {
 				"instances": [
-					"librex.beparanoid.de",
+					"search.femboy.hu",
 					"buscar.weblibre.org",
 					"search.ahwx.org",
 					"librex.pufe.org",
@@ -136,7 +132,6 @@
 					"whoogle.privacydev.net",
 					"nosetradamus.xyz",
 					"yosephwhoogle.fly.dev",
-					"search.home.jeffutter.com",
 					"search.estw.net",
 					"search.mj303.live",
 					"tom2199whoogle.fly.dev",
@@ -147,7 +142,6 @@
 					"crabnet.net",
 					"whoogle.hostux.net",
 					"search.beatified.io",
-					"whoogle.simo.website",
 					"search.one37vpn.com",
 					"search.winn.cloud",
 					"whgl.yanknil.com",
@@ -222,7 +216,7 @@
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
-					"reddit.beparanoid.de",
+					"reddit.femboy.hu",
 					"rd.jae.su",
 					"libreddit.spike.codes",
 					"libreddit.kavin.rocks",
@@ -263,7 +257,8 @@
 					"libreddit.batsense.net",
 					"reddit.leptons.xyz",
 					"lr.slipfox.xyz",
-					"snoo.wilbvr.me"
+					"snoo.wilbvr.me",
+					"lr.odyssey346.dev"
 				]
 			},
 			"teddit": {
@@ -342,7 +337,6 @@
 					"proxitok.pabloferreiro.es",
 					"proxitok.pussthecat.org",
 					"proxitok.esmailelbob.xyz",
-					"proxitok.odyssey346.dev",
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
 					"tik.hostux.net",
@@ -360,7 +354,6 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"quetre.odyssey346.dev",
 					"ask.habedieeh.re",
 					"quetre.blackdrgn.nl",
 					"quetre.pufe.org",
