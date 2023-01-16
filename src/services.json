@@ -58,7 +58,8 @@
 					"nitter.yanknil.com",
 					"nitter.ktachibana.party",
 					"nitter.ungovernable.men",
-					"nitter.girlboss.ceo"
+					"nitter.girlboss.ceo",
+					"ntr.frail.duckdns.org"
 				]
 			}
 		}
@@ -170,7 +171,8 @@
 					"tl.vern.cc",
 					"translate.leptons.xyz",
 					"tl.slipfox.xyz",
-					"tl.wilbvr.me"
+					"tl.wilbvr.me",
+					"spt.frail.duckdns.org"
 				]
 			}
 		}
@@ -211,7 +213,6 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"libreddit.nl",
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
@@ -245,8 +246,6 @@
 					"libreddit.slackjeff.com.br",
 					"libreddit.drivet.xyz",
 					"snoo.habedieeh.re",
-					"fr.matthew.science",
-					"www.futureddit.gq",
 					"reddit.utsav2.dev",
 					"lr.4201337.xyz",
 					"libreddit.intent.cool",
@@ -255,8 +254,8 @@
 					"libreddit.onthescent.xyz",
 					"reddit.leptons.xyz",
 					"lr.slipfox.xyz",
-					"snoo.wilbvr.me",
-					"lr.odyssey346.dev"
+					"lr.odyssey346.dev",
+					"lbr.frail.duckdns.org"
 				]
 			},
 			"teddit": {
@@ -320,7 +319,8 @@
 					"lbry.ooguy.com",
 					"lbry.mywire.org",
 					"lbry.vern.cc",
-					"lbry.slipfox.xyz"
+					"lbry.slipfox.xyz",
+					"lbn.frail.duckdns.org"
 				]
 			}
 		}
