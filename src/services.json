@@ -298,7 +298,6 @@
 		"frontends": {
 			"rimgo": {
 				"instances": [
-					"i.bcow.xyz",
 					"rimgo.pussthecat.org",
 					"rimgo.totaldarkness.net",
 					"rimgo.bus-hit.me",
@@ -321,7 +320,6 @@
 		"frontends": {
 			"librarian": {
 				"instances": [
-					"lbry.bcow.xyz",
 					"librarian.pussthecat.org",
 					"lbry.mutahar.rocks",
 					"librarian.esmailelbob.xyz",
