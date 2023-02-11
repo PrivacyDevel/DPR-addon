@@ -23,7 +23,6 @@
 					"nitter.kylrth.com",
 					"nitter.fdn.fr",
 					"nitter.42l.fr",
-					"nitter.projectsegfau.lt",
 					"t.com.sb",
 					"twitter.elpengu.com",
 					"unofficialbird.com",
@@ -47,7 +46,6 @@
 					"read.whatever.social",
 					"nitter.pufe.org",
 					"nitter.net",
-					"nitter.us.projectsegfau.lt",
 					"nitter.arcticfoxes.net",
 					"nitter.selfhostable.net",
 					"bluebird.codeine.world",
@@ -168,7 +166,6 @@
 				"instances": [
 					"translate.riverside.rocks",
 					"translate.bus-hit.me",
-					"simplytranslate.pussthecat.org",
 					"translate.northboot.xyz",
 					"translate.tiekoetter.com",
 					"st.manerakai.com",
@@ -280,7 +277,6 @@
 					"rdt.trom.tf",
 					"i.opnxng.com",
 					"teddit.zaggy.nl",
-					"teddit.pussthecat.org",
 					"teddit.bus-hit.me",
 					"teddit.foss.wtf",
 					"red.toad.city",
@@ -297,7 +293,6 @@
 		"frontends": {
 			"rimgo": {
 				"instances": [
-					"rimgo.pussthecat.org",
 					"rimgo.totaldarkness.net",
 					"rimgo.bus-hit.me",
 					"rimgo.esmailelbob.xyz",
@@ -319,7 +314,6 @@
 		"frontends": {
 			"librarian": {
 				"instances": [
-					"librarian.pussthecat.org",
 					"lbry.mutahar.rocks",
 					"librarian.esmailelbob.xyz",
 					"odysee.076.ne.jp",
@@ -342,7 +336,6 @@
 					"proxitok.privacydev.net",
 					"proxitok.manasiwibi.com",
 					"proxitok.pabloferreiro.es",
-					"proxitok.pussthecat.org",
 					"proxitok.esmailelbob.xyz",
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
