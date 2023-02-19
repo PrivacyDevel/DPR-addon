@@ -5,7 +5,6 @@
 			"nitter": {
 				"cookies": "hlsPlayback=on",
 				"instances": [
-					"nitter.namazso.eu",
 					"tw.artemislena.eu",
 					"nitter.kavin.rocks",
 					"nitter.privacydev.net",
@@ -274,7 +273,6 @@
 				"cookies": "nsfw_enabled=true",
 				"instances": [
 					"teddit.net",
-					"teddit.namazso.eu",
 					"teddit.sethforprivacy.com",
 					"teddit.adminforge.de",
 					"teddit.froth.zone",
@@ -286,7 +284,8 @@
 					"red.toad.city",
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
-					"td.vern.cc"
+					"td.vern.cc",
+					"teddit.pussthecat.org"
 				]
 			}
 		}
