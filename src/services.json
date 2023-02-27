@@ -47,7 +47,6 @@
 					"nitter.arcticfoxes.net",
 					"nitter.selfhostable.net",
 					"bluebird.codeine.world",
-					"nitter.evil.site",
 					"nitter.onthescent.xyz",
 					"nitter.yanknil.com",
 					"nitter.ktachibana.party",
@@ -63,7 +62,8 @@
 					"nitter.projectsegfau.lt",
 					"nitter.eu.projectsegfau.lt",
 					"nitter.us.projectsegfau.lt",
-					"nitter.squirrel.rocks"
+					"nitter.squirrel.rocks",
+					"nitter.privacy.com.de"
 				]
 			}
 		}
@@ -136,7 +136,8 @@
 					"search.milivojevic.in.rs",
 					"lx.drain.win",
 					"librex.bloatcat.tk",
-					"librex.ratakor.com"
+					"librex.ratakor.com",
+					"search.zeroish.xyz"
 				]
 			},
 			"whoogle": {
@@ -271,7 +272,8 @@
 					"libreddit.kutay.dev",
 					"libreddit.bloatcat.tk",
 					"libreddit.plus.st",
-					"reddit.joonas.fi"
+					"reddit.joonas.fi",
+					"libreddit.privacy.com.de"
 				]
 			},
 			"teddit": {
@@ -350,7 +352,8 @@
 					"tik.hostux.net",
 					"proxitok.pufe.org",
 					"proxitok.aosus.org",
-					"cringe.whatever.social"
+					"cringe.whatever.social",
+					"proxitok.privacy.com.de"
 				]
 			}
 		}
