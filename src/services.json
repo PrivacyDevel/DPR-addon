@@ -63,7 +63,8 @@
 					"nitter.eu.projectsegfau.lt",
 					"nitter.us.projectsegfau.lt",
 					"nitter.squirrel.rocks",
-					"nitter.privacy.com.de"
+					"nitter.privacy.com.de",
+					"nitter.revvy.de"
 				]
 			}
 		}
@@ -134,7 +135,8 @@
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
-					"search.sesu.cc"
+					"search.sesu.cc",
+					"librex.revvy.de"
 				]
 			},
 			"whoogle": {
@@ -330,7 +332,8 @@
 					"lbry.mywire.org",
 					"lbry.vern.cc",
 					"lbry.slipfox.xyz",
-					"lbn.frail.duckdns.org"
+					"lbn.frail.duckdns.org",
+					"librarian.revvy.de"
 				]
 			}
 		}
