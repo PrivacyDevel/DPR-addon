@@ -129,7 +129,6 @@
 					"search.ahwx.org",
 					"librex.pufe.org",
 					"lx.vern.cc",
-					"librex.mikata.ru",
 					"search.milivojevic.in.rs",
 					"lx.drain.win",
 					"librex.bloatcat.tk",
@@ -146,22 +145,21 @@
 					"yosephwhoogle.fly.dev",
 					"search.estw.net",
 					"s.spits.au",
-					"search.srijan.site",
 					"onthescent.xyz",
 					"crabnet.net",
 					"search.winn.cloud",
 					"whgl.yanknil.com",
 					"search.mint.lgbt",
-					"whoogle.tincan.ca",
 					"agile-brushlands-22781.herokuapp.com",
 					"go.shimul.me",
 					"gus.shimul.me",
 					"whoogle.fronttiercomputers.com",
 					"google.allpurposem.at",
 					"search.sethforprivacy.com",
-					"search.dcentral.systems",
 					"find.fly.dev",
-					"search.joonas.fi"
+					"search.joonas.fi",
+					"search.dnet.me.uk",
+					"busca.files.casa.ruizlara.com"
 				]
 			}
 		}
@@ -291,7 +289,8 @@
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
 					"td.vern.cc",
-					"teddit.pussthecat.org"
+					"teddit.pussthecat.org",
+					"teddit.dnet.me.uk"
 				]
 			}
 		}
@@ -365,7 +364,6 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"ask.habedieeh.re",
 					"quetre.pufe.org",
 					"quora.femboy.hu"
 				]
