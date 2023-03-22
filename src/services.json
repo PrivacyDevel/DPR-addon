@@ -362,15 +362,5 @@
 				]
 			}
 		}
-	},
-	{
-		"upstream": ["pastebin.com"],
-		"frontends": {
-			"pastebinp": {
-				"instances": [
-					"pastebinp.com"
-				]
-			}
-		}
 	}
 ]
