@@ -85,7 +85,6 @@
 					"piped.hostux.net",
 					"piped.yanknil.com",
 					"piped.chauvet.pro",
-					"piped.bloatcat.tk",
 					"piped.berryez.xyz",
 					"piped.in.projectsegfau.lt"
 				]
@@ -117,9 +116,7 @@
 					"search.leptons.xyz",
 					"search.projectsegfau.lt",
 					"search.exarius.org",
-					"baresearch.org",
-					"vpsburti.com",
-					"searx.bloatcat.tk"
+					"baresearch.org"
 				]
 			},
 			"librex": {
@@ -129,7 +126,6 @@
 					"librex.pufe.org",
 					"lx.vern.cc",
 					"search.milivojevic.in.rs",
-					"lx.drain.win",
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
