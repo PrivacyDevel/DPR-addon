@@ -44,7 +44,6 @@
 					"nitter.pufe.org",
 					"nitter.net",
 					"nitter.arcticfoxes.net",
-					"nitter.selfhostable.net",
 					"bluebird.codeine.world",
 					"nitter.onthescent.xyz",
 					"nitter.yanknil.com",
@@ -101,7 +100,7 @@
 		"documentOnly": true,
 		"frontends": {
 			"searxng": {
-				"cookies": "disabled_engines=bing__general\054qwant__general; enabled_engines=google__general",
+				"cookies": "disabled_engines=bing__general\\054qwant__general; enabled_engines=google__general",
 				"instances": [
 					"searx.be",
 					"searx.one",
