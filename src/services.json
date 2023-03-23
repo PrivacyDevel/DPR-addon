@@ -101,7 +101,7 @@
 		"documentOnly": true,
 		"frontends": {
 			"searxng": {
-				"cookies": "disabled_engines=bing__general; enabled_engines=google__general",
+				"cookies": "disabled_engines=bing__general\054qwant__general; enabled_engines=google__general",
 				"instances": [
 					"searx.be",
 					"searx.one",
