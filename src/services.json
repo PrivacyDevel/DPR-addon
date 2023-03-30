@@ -203,6 +203,12 @@
 					"scribe.smnz.de",
 					"sc.vern.cc"
 				]
+			},
+			"libmedium": {
+				"instances": [
+					"libmedium.batsense.net",
+					"medium.hostux.net"
+				]
 			}
 		}
 	},
