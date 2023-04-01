@@ -280,7 +280,8 @@
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
 					"teddit.pussthecat.org",
-					"teddit.revvy.de"
+					"teddit.revvy.de",
+					"teddit.nunosempere.com"
 				]
 			}
 		}
@@ -355,6 +356,19 @@
 					"quetre.privacydev.net",
 					"quetre.pufe.org",
 					"quora.femboy.hu"
+				]
+			}
+		}
+	},
+	{
+		"upstream": ["genius.com"],
+		"frontends": {
+			"dumb": {
+				"instances": [
+					"dm.vern.cc",
+					"dumb.nunosempere.com",
+					"sing.whatever.social",
+					"dumb.lunar.icu"
 				]
 			}
 		}
