@@ -118,7 +118,6 @@
 			},
 			"librex": {
 				"instances": [
-					"search.femboy.hu",
 					"librex.pufe.org",
 					"search.milivojevic.in.rs",
 					"librex.bloatcat.tk",
@@ -217,7 +216,6 @@
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
-					"reddit.femboy.hu",
 					"rd.jae.su",
 					"libreddit.spike.codes",
 					"libreddit.kavin.rocks",
@@ -354,8 +352,7 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"quetre.pufe.org",
-					"quora.femboy.hu"
+					"quetre.pufe.org"
 				]
 			}
 		}
@@ -368,7 +365,8 @@
 					"dm.vern.cc",
 					"dumb.nunosempere.com",
 					"sing.whatever.social",
-					"dumb.lunar.icu"
+					"dumb.lunar.icu",
+					"dumb.privacydev.net"
 				]
 			}
 		}
