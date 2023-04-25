@@ -31,5 +31,6 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |Redirector       |[GitHub](https://github.com/einaregilsson/Redirector)                                                           |
 
 ## Donations
-[Monero (XMR)](https://www.getmonero.org/): `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f`
+[Monero (XMR)](https://www.getmonero.org/): `8BeJfxYQejnAuXPmqgbopd5FC4HmAgEV58c29BKYp1CUFLEVRfCjUD3Y4TYV8Peq6xCUAFtE3YYiKNuF6bzVijokF7zFe9f` \
+[Bitcoin (BTC)](https://bitcoin.org/): `bc1qnduk9ccxagufjs4apa4txhqr5pgeh092te9htd`
 
