@@ -28,7 +28,9 @@
 					"piped.chauvet.pro",
 					"piped.in.projectsegfau.lt",
 					"piped.cronyakatsuki.xyz",
-					"piped.jotoma.de"
+					"piped.jotoma.de",
+					"piped.pfcd.me",
+					"piped.frontendfriendly.xyz"
 				]
 			},
 			"invidious": {
@@ -55,7 +57,9 @@
 					"search.leptons.xyz",
 					"search.projectsegfau.lt",
 					"search.exarius.org",
-					"baresearch.org"
+					"baresearch.org",
+					"search.pfcd.me",
+					"searxng.no-logs.com"
 				]
 			},
 			"librex": {
@@ -90,7 +94,9 @@
 					"search.joonas.fi",
 					"busca.files.casa.ruizlara.com",
 					"whoogle.qyk.be",
-					"www.whoogle.click"
+					"www.whoogle.click",
+					"search.rubberverse.xyz",
+					"whoogle.no-logs.com"
 				]
 			}
 		}
@@ -203,7 +209,9 @@
 					"libreddit.privacy.com.de",
 					"libreddit.billbert.co",
 					"libreddit.cronyakatsuki.xyz",
-					"reddit.catvibers.me"
+					"reddit.catvibers.me",
+					"reddit.pfcd.me",
+					"libreddit.no-logs.com"
 				]
 			},
 			"teddit": {
@@ -266,7 +274,8 @@
 					"lbry.mywire.org",
 					"lbry.slipfox.xyz",
 					"lbn.frail.duckdns.org",
-					"librarian.revvy.de"
+					"librarian.revvy.de",
+					"bry.ramondia.net"
 				]
 			}
 		}
