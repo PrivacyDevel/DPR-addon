@@ -7,6 +7,11 @@
 				"instances": [
 					"nitter.privacydev.net"
 				]
+			},
+			"yitter": {
+				"instances": [
+					"yitter.privacydev.net"
+				]
 			}
 		}
 	},
@@ -56,16 +61,13 @@
 					"searx.kavin.rocks",
 					"search.leptons.xyz",
 					"search.projectsegfau.lt",
-					"search.exarius.org",
 					"baresearch.org",
-					"search.pfcd.me",
-					"searxng.no-logs.com"
+					"search.pfcd.me"
 				]
 			},
 			"librex": {
 				"instances": [
 					"librex.pufe.org",
-					"search.milivojevic.in.rs",
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
@@ -80,8 +82,6 @@
 					"search.estw.net",
 					"s.spits.au",
 					"onthescent.xyz",
-					"crabnet.net",
-					"search.winn.cloud",
 					"whgl.yanknil.com",
 					"search.mint.lgbt",
 					"agile-brushlands-22781.herokuapp.com",
@@ -94,9 +94,7 @@
 					"search.joonas.fi",
 					"busca.files.casa.ruizlara.com",
 					"whoogle.qyk.be",
-					"www.whoogle.click",
-					"search.rubberverse.xyz",
-					"whoogle.no-logs.com"
+					"www.whoogle.click"
 				]
 			}
 		}
@@ -107,15 +105,11 @@
 			"simplytranslate": {
 				"instances": [
 					"translate.riverside.rocks",
-					"translate.bus-hit.me",
 					"translate.northboot.xyz",
 					"translate.tiekoetter.com",
 					"st.privacydev.net",
 					"simplytranslate.esmailelbob.xyz",
-					"simplytranslate.org",
 					"translate.leptons.xyz",
-					"tl.slipfox.xyz",
-					"spt.frail.duckdns.org",
 					"translate.catvibers.me"
 				]
 			}
@@ -231,7 +225,9 @@
 					"teddit.hostux.net",
 					"teddit.pussthecat.org",
 					"teddit.revvy.de",
-					"teddit.nunosempere.com"
+					"teddit.nunosempere.com",
+					"teddit.projectsegfau.lt",
+					"teddit.no-logs.com"
 				]
 			}
 		}
