@@ -24,7 +24,6 @@
 					"piped.privacydev.net",
 					"piped.aosus.org",
 					"watch.whatever.social",
-					"piped.esmailelbob.xyz",
 					"piped.smnz.de",
 					"piped.qdi.fi",
 					"piped.sp-codes.de",
@@ -84,7 +83,6 @@
 					"onthescent.xyz",
 					"whgl.yanknil.com",
 					"search.mint.lgbt",
-					"agile-brushlands-22781.herokuapp.com",
 					"go.shimul.me",
 					"gus.shimul.me",
 					"whoogle.fronttiercomputers.com",
@@ -136,7 +134,6 @@
 					"scribe.rip",
 					"scribe.nixnet.services",
 					"scribe.citizen4.eu",
-					"scribe.esmailelbob.xyz",
 					"scribe.froth.zone",
 					"scribe.privacydev.net",
 					"scribe.aosus.org",
@@ -146,7 +143,8 @@
 			"libmedium": {
 				"instances": [
 					"libmedium.batsense.net",
-					"medium.hostux.net"
+					"medium.hostux.net",
+					"libmedium.esmailelbob.xyz"
 				]
 			}
 		}
@@ -169,7 +167,6 @@
 					"lr.mint.lgbt",
 					"libreddit.projectsegfau.lt",
 					"libreddit.northboot.xyz",
-					"libreddit.esmailelbob.xyz",
 					"libreddit.bus-hit.me",
 					"libreddit.kylrth.com",
 					"libreddit.tiekoetter.com",
