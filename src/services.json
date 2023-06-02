@@ -34,7 +34,8 @@
 					"piped.cronyakatsuki.xyz",
 					"piped.jotoma.de",
 					"piped.pfcd.me",
-					"piped.frontendfriendly.xyz"
+					"piped.frontendfriendly.xyz",
+					"piped.yt"
 				]
 			},
 			"invidious": {
@@ -70,7 +71,8 @@
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
-					"librex.yogeshlamichhane.com.np"
+					"librex.yogeshlamichhane.com.np",
+					"s.dyox.in"
 				]
 			},
 			"whoogle": {
@@ -158,7 +160,6 @@
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
-					"rd.jae.su",
 					"libreddit.spike.codes",
 					"libreddit.kavin.rocks",
 					"reddit.invak.id",
@@ -241,7 +242,6 @@
 					"rimgo.privacydev.net",
 					"imgur.artemislena.eu",
 					"img.foss.wtf",
-					"imgur.jae.fi",
 					"i.habedieeh.re",
 					"rimgo.hostux.net",
 					"ri.zzls.xyz",
@@ -249,7 +249,8 @@
 					"rimgo.projectsegfau.lt",
 					"rimgo.in.projectsegfau.lt",
 					"rimgo.eu.projectsegfau.lt",
-					"rimgo.us.projectsegfau.lt"
+					"rimgo.us.projectsegfau.lt",
+					"rimgo.nohost.network"
 				]
 			}
 		}
