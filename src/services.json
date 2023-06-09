@@ -52,7 +52,6 @@
 					"searx.zaggy.nl",
 					"searx.kavin.rocks",
 					"search.leptons.xyz",
-					"search.projectsegfau.lt",
 					"baresearch.org",
 					"search.pfcd.me"
 				]
@@ -63,7 +62,6 @@
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
-					"librex.yogeshlamichhane.com.np",
 					"s.dyox.in"
 				]
 			},
@@ -152,7 +150,6 @@
 					"libreddit.dcs0.hu",
 					"libreddit.privacydev.net",
 					"reddit.rtrace.io",
-					"libreddit.spike.codes",
 					"libreddit.kavin.rocks",
 					"reddit.invak.id",
 					"lr.riverside.rocks",
@@ -183,7 +180,6 @@
 					"reddit.leptons.xyz",
 					"lr.slipfox.xyz",
 					"lr.odyssey346.dev",
-					"lbr.frail.duckdns.org",
 					"libreddit.albr.to",
 					"rd.shimul.me",
 					"libreddit.librenode.org",
@@ -192,11 +188,11 @@
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
 					"libreddit.privacy.com.de",
-					"libreddit.billbert.co",
 					"libreddit.cronyakatsuki.xyz",
 					"reddit.catvibers.me",
 					"reddit.pfcd.me",
-					"libreddit.no-logs.com"
+					"libreddit.no-logs.com",
+					"reddit.adminforge.de"
 				]
 			},
 			"teddit": {
@@ -215,10 +211,7 @@
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
 					"teddit.pussthecat.org",
-					"teddit.revvy.de",
-					"teddit.nunosempere.com",
-					"teddit.projectsegfau.lt",
-					"teddit.no-logs.com"
+					"teddit.nunosempere.com"
 				]
 			}
 		}
@@ -239,7 +232,6 @@
 					"ri.zzls.xyz",
 					"rimgo.kling.gg",
 					"rimgo.projectsegfau.lt",
-					"rimgo.in.projectsegfau.lt",
 					"rimgo.eu.projectsegfau.lt",
 					"rimgo.us.projectsegfau.lt",
 					"rimgo.nohost.network"
@@ -260,7 +252,6 @@
 					"lbry.ooguy.com",
 					"lbry.mywire.org",
 					"lbry.slipfox.xyz",
-					"lbn.frail.duckdns.org",
 					"librarian.revvy.de",
 					"bry.ramondia.net"
 				]
