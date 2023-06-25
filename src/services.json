@@ -123,19 +123,16 @@
 			"scribe": {
 				"instances": [
 					"scribe.rip",
-					"scribe.nixnet.services",
 					"scribe.citizen4.eu",
 					"scribe.froth.zone",
 					"scribe.privacydev.net",
-					"scribe.aosus.org",
 					"scribe.smnz.de"
 				]
 			},
 			"libmedium": {
 				"instances": [
 					"libmedium.batsense.net",
-					"medium.hostux.net",
-					"libmedium.esmailelbob.xyz"
+					"medium.hostux.net"
 				]
 			}
 		}
