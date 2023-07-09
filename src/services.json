@@ -26,7 +26,8 @@
 					"piped.yanknil.com",
 					"piped.cronyakatsuki.xyz",
 					"piped.pfcd.me",
-					"piped.yt"
+					"piped.yt",
+					"piped.frontendfriendly.xyz"
 				]
 			},
 			"invidious": {
@@ -52,7 +53,8 @@
 					"searx.kavin.rocks",
 					"search.leptons.xyz",
 					"baresearch.org",
-					"search.pfcd.me"
+					"search.pfcd.me",
+					"searx.pro"
 				]
 			},
 			"librex": {
@@ -62,7 +64,8 @@
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
 					"s.dyox.in",
-					"search.decentrala.org"
+					"search.decentrala.org",
+					"lx.articexploit.xyz"
 				]
 			},
 			"whoogle": {
@@ -132,7 +135,8 @@
 			"libmedium": {
 				"instances": [
 					"libmedium.batsense.net",
-					"medium.hostux.net"
+					"medium.hostux.net",
+					"libmedium.frontendfriendly.xyz"
 				]
 			}
 		}
@@ -187,7 +191,8 @@
 					"reddit.pfcd.me",
 					"libreddit.no-logs.com",
 					"reddit.adminforge.de",
-					"libreddit.baczek.me"
+					"libreddit.baczek.me",
+					"libreddit.frontendfriendly.xyz"
 				]
 			},
 			"teddit": {
@@ -229,7 +234,9 @@
 					"rimgo.projectsegfau.lt",
 					"rimgo.eu.projectsegfau.lt",
 					"rimgo.us.projectsegfau.lt",
-					"rimgo.nohost.network"
+					"rimgo.nohost.network",
+					"imgur.010032.xyz",
+					"rimgo.frontendfriendly.xyz"
 				]
 			}
 		}
@@ -278,7 +285,8 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"quetre.pufe.org"
+					"quetre.pufe.org",
+					"quetre.frontendfriendly.xyz"
 				]
 			}
 		}
