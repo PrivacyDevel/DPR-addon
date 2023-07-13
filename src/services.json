@@ -7,11 +7,6 @@
 				"instances": [
 					"nitter.privacydev.net"
 				]
-			},
-			"yitter": {
-				"instances": [
-					"yitter.privacydev.net"
-				]
 			}
 		}
 	},
@@ -59,13 +54,11 @@
 			},
 			"librex": {
 				"instances": [
-					"librex.pufe.org",
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
 					"s.dyox.in",
-					"search.decentrala.org",
-					"lx.articexploit.xyz"
+					"search.decentrala.org"
 				]
 			},
 			"whoogle": {
@@ -174,7 +167,6 @@
 					"snoo.habedieeh.re",
 					"reddit.utsav2.dev",
 					"lr.4201337.xyz",
-					"libreddit.pufe.org",
 					"libreddit.onthescent.xyz",
 					"reddit.leptons.xyz",
 					"lr.slipfox.xyz",
@@ -228,7 +220,6 @@
 					"rimgo.privacydev.net",
 					"imgur.artemislena.eu",
 					"img.foss.wtf",
-					"i.habedieeh.re",
 					"rimgo.hostux.net",
 					"ri.zzls.xyz",
 					"rimgo.kling.gg",
@@ -271,7 +262,6 @@
 					"proxitok.esmailelbob.xyz",
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
-					"proxitok.pufe.org",
 					"proxitok.aosus.org",
 					"tok.habedieeh.re",
 					"proxytok.cronyakatsuki.xyz"
@@ -286,7 +276,6 @@
 				"instances": [
 					"quetre.iket.me",
 					"quetre.privacydev.net",
-					"quetre.pufe.org",
 					"quetre.frontendfriendly.xyz"
 				]
 			}
