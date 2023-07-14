@@ -90,11 +90,9 @@
 		"frontends": {
 			"simplytranslate": {
 				"instances": [
-					"translate.riverside.rocks",
 					"translate.northboot.xyz",
 					"translate.tiekoetter.com",
 					"st.privacydev.net",
-					"translate.leptons.xyz",
 					"translate.catvibers.me",
 					"t.opnxng.com"
 				]
@@ -145,7 +143,6 @@
 					"reddit.rtrace.io",
 					"libreddit.kavin.rocks",
 					"reddit.invak.id",
-					"lr.riverside.rocks",
 					"libreddit.strongthany.cc",
 					"lr.mint.lgbt",
 					"libreddit.projectsegfau.lt",
