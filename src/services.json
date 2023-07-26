@@ -19,8 +19,6 @@
 					"piped.privacydev.net",
 					"piped.aosus.org",
 					"piped.yanknil.com",
-					"piped.cronyakatsuki.xyz",
-					"piped.pfcd.me",
 					"piped.yt",
 					"piped.frontendfriendly.xyz"
 				]
@@ -80,7 +78,8 @@
 					"search.joonas.fi",
 					"busca.files.casa.ruizlara.com",
 					"whoogle.qyk.be",
-					"www.whoogle.click"
+					"www.whoogle.click",
+					"search.notrustverify.ch"
 				]
 			}
 		}
@@ -147,8 +146,7 @@
 					"rd.funami.tech",
 					"libreddit.mha.fi",
 					"red.boritsch.de",
-					"libreddit.aosus.org",
-					"reddit.smnz.de",
+					"libreddit.aosus.link",
 					"reddit.raphaelmilliere.com",
 					"libreddit.slackjeff.com.br",
 					"snoo.habedieeh.re",
@@ -157,31 +155,19 @@
 					"libreddit.onthescent.xyz",
 					"reddit.leptons.xyz",
 					"rd.shimul.me",
-					"libreddit.librenode.org",
 					"libreddit.kutay.dev",
 					"libreddit.bloatcat.tk",
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
-					"libreddit.cronyakatsuki.xyz",
-					"reddit.pfcd.me",
-					"libreddit.baczek.me",
-					"libreddit.frontendfriendly.xyz",
-					"libreddit.private.coffee"
+					"reddit.pfcd.me"
 				]
 			},
 			"teddit": {
 				"cookies": "nsfw_enabled=true",
 				"instances": [
-					"teddit.sethforprivacy.com",
-					"teddit.froth.zone",
-					"rdt.trom.tf",
-					"i.opnxng.com",
 					"teddit.zaggy.nl",
-					"teddit.bus-hit.me",
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
-					"teddit.pussthecat.org",
-					"teddit.nunosempere.com",
 					"teddit.datura.network"
 				]
 			}
@@ -240,8 +226,7 @@
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
-					"tok.habedieeh.re",
-					"proxytok.cronyakatsuki.xyz"
+					"tok.habedieeh.re"
 				]
 			}
 		}
