@@ -48,7 +48,8 @@
 					"search.leptons.xyz",
 					"baresearch.org",
 					"search.pfcd.me",
-					"searx.pro"
+					"searx.pro",
+					"searx.perennialte.ch"
 				]
 			},
 			"librex": {
@@ -56,7 +57,6 @@
 					"librex.bloatcat.tk",
 					"librex.ratakor.com",
 					"search.zeroish.xyz",
-					"s.dyox.in",
 					"search.decentrala.org"
 				]
 			},
@@ -72,7 +72,6 @@
 					"search.mint.lgbt",
 					"go.shimul.me",
 					"gus.shimul.me",
-					"whoogle.fronttiercomputers.com",
 					"google.allpurposem.at",
 					"search.sethforprivacy.com",
 					"find.fly.dev",
@@ -156,7 +155,8 @@
 					"libreddit.bloatcat.tk",
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
-					"reddit.pfcd.me"
+					"reddit.pfcd.me",
+					"libreddit.perennialte.ch"
 				]
 			},
 			"teddit": {
@@ -165,7 +165,8 @@
 					"teddit.zaggy.nl",
 					"teddit.artemislena.eu",
 					"teddit.hostux.net",
-					"teddit.datura.network"
+					"teddit.datura.network",
+					"teddit.laserdisc.tokyo"
 				]
 			}
 		}
