@@ -79,10 +79,7 @@
 					"search.joonas.fi",
 					"busca.files.casa.ruizlara.com",
 					"whoogle.qyk.be",
-					"www.whoogle.click",
-					"search.notrustverify.ch",
 					"search.wdas.io",
-					"whoogle-mac.fly.dev",
 					"search.zydou.me",
 					"search.jakepi.net",
 					"whoogle.xicoms.synology.me",
@@ -101,7 +98,6 @@
 					"translate.northboot.xyz",
 					"translate.tiekoetter.com",
 					"st.privacydev.net",
-					"translate.catvibers.me",
 					"t.opnxng.com"
 				]
 			}
@@ -147,20 +143,13 @@
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
 					"libreddit.privacydev.net",
-					"libreddit.northboot.xyz",
-					"libreddit.bus-hit.me",
 					"l.opnxng.com",
-					"rd.funami.tech",
 					"red.boritsch.de",
-					"libreddit.aosus.link",
 					"reddit.raphaelmilliere.com",
 					"snoo.habedieeh.re",
 					"reddit.utsav2.dev",
-					"lr.4201337.xyz",
 					"libreddit.onthescent.xyz",
-					"reddit.leptons.xyz",
 					"rd.shimul.me",
-					"libreddit.kutay.dev",
 					"libreddit.bloatcat.tk",
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
@@ -256,7 +245,6 @@
 			"dumb": {
 				"instances": [
 					"dm.vern.cc",
-					"dumb.nunosempere.com",
 					"sing.whatever.social",
 					"dumb.lunar.icu",
 					"dumb.privacydev.net"
