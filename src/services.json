@@ -22,7 +22,9 @@
 					"piped.privacydev.net",
 					"piped.yanknil.com",
 					"piped.frontendfriendly.xyz",
-					"piped.drgns.space"
+					"piped.drgns.space",
+					"pi.ggtyler.dev",
+					"yt.benike.monster"
 				]
 			},
 			"invidious": {
@@ -51,15 +53,15 @@
 					"search.pfcd.me",
 					"searx.pro",
 					"searx.perennialte.ch",
-					"searx.wdas.io"
+					"searx.wdas.io",
+					"search.decentrala.org",
+					"searx.pqpera.xyz"
 				]
 			},
 			"librex": {
 				"instances": [
-					"librex.bloatcat.tk",
-					"librex.ratakor.com",
-					"search.zeroish.xyz",
-					"search.decentrala.org"
+					"search.ahwx.org",
+					"librex.pqpera.xyz"
 				]
 			},
 			"whoogle": {
@@ -85,7 +87,8 @@
 					"whoogle.shameempk.xyz",
 					"whoogle.mcbelisle.synology.me",
 					"whgl.yanknil.com",
-					"search-dani.fly.dev"
+					"search-dani.fly.dev",
+					"search.cwa.fyi"
 				]
 			}
 		}
@@ -154,7 +157,9 @@
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
 					"reddit.pfcd.me",
-					"libreddit.perennialte.ch"
+					"libreddit.perennialte.ch",
+					"sea1.lr.ggtyler.dev",
+					"par1.lr.ggtyler.dev"
 				]
 			},
 			"teddit": {
@@ -162,8 +167,6 @@
 				"instances": [
 					"teddit.zaggy.nl",
 					"teddit.artemislena.eu",
-					"teddit.hostux.net",
-					"teddit.datura.network",
 					"teddit.laserdisc.tokyo"
 				]
 			}
