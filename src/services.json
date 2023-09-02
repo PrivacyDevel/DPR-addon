@@ -100,7 +100,8 @@
 					"translate.northboot.xyz",
 					"translate.tiekoetter.com",
 					"st.privacydev.net",
-					"t.opnxng.com"
+					"t.opnxng.com",
+					"simplytranslate.leemoon.network"
 				]
 			}
 		}
@@ -249,7 +250,19 @@
 					"dm.vern.cc",
 					"sing.whatever.social",
 					"dumb.lunar.icu",
-					"dumb.privacydev.net"
+					"dumb.privacydev.net",
+					"lyrics.leemoon.network"
+				]
+			}
+		}
+	},
+	{
+		"upstream": ["yandex.com", "yandex.ru"],
+		"frontends": {
+			"4get": {
+				"instances": [
+					"4get.ca",
+					"4get.zzls.xyz"
 				]
 			}
 		}
