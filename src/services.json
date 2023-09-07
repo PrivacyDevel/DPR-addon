@@ -25,7 +25,7 @@
 					"piped.frontendfriendly.xyz",
 					"piped.drgns.space",
 					"pi.ggtyler.dev",
-					"yt.benike.monster"
+					"watch.pluto.lat"
 				]
 			},
 			"invidious": {
@@ -56,14 +56,21 @@
 					"searx.perennialte.ch",
 					"searx.wdas.io",
 					"search.decentrala.org",
-					"searx.pqpera.xyz"
+					"searx.pqpera.xyz",
+					"searx.baczek.me",
+					"searx.shota.services/searx"
 				]
 			},
 			"librex": {
 				"instances": [
 					"search.ahwx.org",
 					"librex.pqpera.xyz",
-					"librey.nohost.network"
+					"librey.nohost.network",
+					"librex.retro-hax.net",
+					"search.funami.tech",
+					"search.ratakor.com",
+					"librey.baczek.me",
+					"search.zeroish.xyz"
 				]
 			},
 			"whoogle": {
@@ -169,7 +176,8 @@
 				"instances": [
 					"teddit.zaggy.nl",
 					"teddit.artemislena.eu",
-					"teddit.laserdisc.tokyo"
+					"teddit.laserdisc.tokyo",
+					"t.sneed.network"
 				]
 			}
 		}
@@ -227,7 +235,8 @@
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
-					"tok.habedieeh.re"
+					"tok.habedieeh.re",
+					"proxitok.kyun.li"
 				]
 			}
 		}
