@@ -99,6 +99,12 @@
 					"wgl.potat.fun",
 					"search.quangthang.me"
 				]
+			},
+			"tailsx": {
+				"cookies": "safe=",
+				"instances": [
+					"tailsx.com"
+				]
 			}
 		}
 	},
