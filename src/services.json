@@ -6,7 +6,6 @@
 				"cookies": "hlsPlayback=on",
 				"instances": [
 					"nitter.privacydev.net",
-					"nitter.cz",
 					"nitter.poast.org"
 				]
 			}
@@ -162,7 +161,6 @@
 					"libreddit.privacydev.net",
 					"l.opnxng.com",
 					"red.boritsch.de",
-					"reddit.raphaelmilliere.com",
 					"snoo.habedieeh.re",
 					"reddit.utsav2.dev",
 					"libreddit.onthescent.xyz",
@@ -171,7 +169,6 @@
 					"libreddit.plus.st",
 					"reddit.joonas.fi",
 					"reddit.pfcd.me",
-					"libreddit.perennialte.ch",
 					"sea1.lr.ggtyler.dev",
 					"par1.lr.ggtyler.dev",
 					"libreddit.nohost.network"
@@ -240,7 +237,6 @@
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
-					"tok.habedieeh.re",
 					"proxitok.kyun.li"
 				]
 			}
