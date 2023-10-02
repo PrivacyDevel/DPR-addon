@@ -7,7 +7,8 @@
 				"instances": [
 					"nitter.privacydev.net",
 					"nitter.poast.org",
-					"nitter.hyperreal.coffee"
+					"nitter.hyperreal.coffee",
+					"nitter.ktachibana.party"
 				]
 			}
 		}
@@ -54,7 +55,6 @@
 					"searx.pro",
 					"searx.perennialte.ch",
 					"searx.wdas.io",
-					"search.decentrala.org",
 					"searx.pqpera.xyz",
 					"searx.baczek.me",
 					"searx.shota.services/searx",
@@ -65,9 +65,7 @@
 				"instances": [
 					"search.ahwx.org",
 					"librex.pqpera.xyz",
-					"librey.nohost.network",
 					"librex.retro-hax.net",
-					"search.funami.tech",
 					"search.ratakor.com",
 					"librey.baczek.me",
 					"search.zeroish.xyz",
@@ -94,7 +92,6 @@
 					"search.jakepi.net",
 					"whoogle.xicoms.synology.me",
 					"whoogle.shameempk.xyz",
-					"whoogle.mcbelisle.synology.me",
 					"whgl.yanknil.com",
 					"search-dani.fly.dev",
 					"wgl.potat.fun",
