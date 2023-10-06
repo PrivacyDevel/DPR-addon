@@ -23,8 +23,6 @@
 					"piped.yanknil.com",
 					"piped.frontendfriendly.xyz",
 					"piped.drgns.space",
-					"pi.ggtyler.dev",
-					"watch.pluto.lat",
 					"piped.seitan-ayoub.lol"
 				]
 			},
@@ -65,8 +63,6 @@
 				"instances": [
 					"search.ahwx.org",
 					"librex.pqpera.xyz",
-					"librex.retro-hax.net",
-					"search.ratakor.com",
 					"librey.baczek.me",
 					"search.zeroish.xyz",
 					"librex.supernets.org"
@@ -112,7 +108,6 @@
 			"simplytranslate": {
 				"instances": [
 					"translate.northboot.xyz",
-					"translate.tiekoetter.com",
 					"st.privacydev.net",
 					"t.opnxng.com",
 					"simplytranslate.leemoon.network"
@@ -173,15 +168,14 @@
 					"sea1.lr.ggtyler.dev",
 					"par1.lr.ggtyler.dev",
 					"libreddit.nohost.network",
-					"lr.seitan-ayoub.lol"
+					"lr.seitan-ayoub.lol",
+					"lr.artemislena.eu"
 				]
 			},
 			"teddit": {
 				"cookies": "nsfw_enabled=true",
 				"instances": [
-					"teddit.zaggy.nl",
-					"teddit.artemislena.eu",
-					"teddit.laserdisc.tokyo"
+					"teddit.zaggy.nl"
 				]
 			}
 		}
