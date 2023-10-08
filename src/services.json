@@ -169,7 +169,8 @@
 					"par1.lr.ggtyler.dev",
 					"libreddit.nohost.network",
 					"lr.seitan-ayoub.lol",
-					"lr.artemislena.eu"
+					"lr.artemislena.eu",
+					"plebbit.tinfoil-hat.net"
 				]
 			},
 			"teddit": {
@@ -234,7 +235,8 @@
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
 					"proxitok.kyun.li",
-					"cringe.seitan-ayoub.lol"
+					"cringe.seitan-ayoub.lol",
+					"proxitok.tinfoil-hat.net"
 				]
 			}
 		}
@@ -271,8 +273,7 @@
 		"frontends": {
 			"4get": {
 				"instances": [
-					"4get.ca",
-					"4get.zzls.xyz"
+					"4get.ca"
 				]
 			}
 		}
