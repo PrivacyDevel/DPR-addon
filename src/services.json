@@ -64,8 +64,6 @@
 				"instances": [
 					"search.ahwx.org",
 					"librex.pqpera.xyz",
-					"librey.baczek.me",
-					"search.zeroish.xyz",
 					"librex.supernets.org"
 				]
 			},
@@ -98,7 +96,6 @@
 			"tailsx": {
 				"cookies": "safe=",
 				"instances": [
-					"tailsx.com"
 				]
 			}
 		}
@@ -144,7 +141,8 @@
 				"instances": [
 					"libmedium.batsense.net",
 					"medium.hostux.net",
-					"libmedium.frontendfriendly.xyz"
+					"libmedium.frontendfriendly.xyz",
+					"libmedium.privacyfucking.rocks"
 				]
 			}
 		}
@@ -237,7 +235,8 @@
 					"proxitok.aosus.org",
 					"proxitok.kyun.li",
 					"cringe.seitan-ayoub.lol",
-					"proxitok.tinfoil-hat.net"
+					"proxitok.tinfoil-hat.net",
+					"proxitok.privacyfucking.rocks"
 				]
 			}
 		}
@@ -250,7 +249,8 @@
 					"quetre.iket.me",
 					"quetre.privacydev.net",
 					"quetre.frontendfriendly.xyz",
-					"quora.seitan-ayoub.lol"
+					"quora.seitan-ayoub.lol",
+					"quetre.privacyfucking.rocks"
 				]
 			}
 		}
@@ -264,7 +264,8 @@
 					"sing.whatever.social",
 					"dumb.lunar.icu",
 					"dumb.privacydev.net",
-					"lyrics.leemoon.network"
+					"lyrics.leemoon.network",
+					"dumb.privacyfucking.rocks"
 				]
 			}
 		}
