@@ -6,11 +6,9 @@
 				"cookies": "hlsPlayback=on",
 				"instances": [
 					"nitter.privacydev.net",
-					"nitter.poast.org",
 					"nitter.ktachibana.party",
 					"n.opnxng.com",
-					"nitter.freedit.eu",
-					"nitter.cz"
+					"nitter.freedit.eu"
 				]
 			}
 		}
@@ -85,7 +83,6 @@
 					"search.joonas.fi",
 					"whoogle.qyk.be",
 					"search.zydou.me",
-					"search.jakepi.net",
 					"whoogle.xicoms.synology.me",
 					"whoogle.shameempk.xyz",
 					"whgl.yanknil.com",
