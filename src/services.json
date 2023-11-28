@@ -268,7 +268,10 @@
 		"frontends": {
 			"4get": {
 				"instances": [
-					"4get.ca"
+					"4get.konakona.moe",
+					"4get.lvkaszus.pl",
+					"4g.ggtyler.dev",
+					"4get.seitan-ayoub.lol"
 				]
 			}
 		}
