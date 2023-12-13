@@ -5,10 +5,7 @@
 			"nitter": {
 				"cookies": "hlsPlayback=on",
 				"instances": [
-					"nitter.privacydev.net",
-					"nitter.ktachibana.party",
-					"n.opnxng.com",
-					"nitter.freedit.eu"
+					"nitter.privacydev.net"
 				]
 			}
 		}
@@ -62,8 +59,7 @@
 			},
 			"librex": {
 				"instances": [
-					"search.ahwx.org",
-					"librex.supernets.org"
+					"search.ahwx.org"
 				]
 			},
 			"whoogle": {
@@ -242,8 +238,7 @@
 					"quetre.iket.me",
 					"quetre.privacydev.net",
 					"quetre.frontendfriendly.xyz",
-					"quora.seitan-ayoub.lol",
-					"quetre.privacyfucking.rocks"
+					"quora.seitan-ayoub.lol"
 				]
 			}
 		}
