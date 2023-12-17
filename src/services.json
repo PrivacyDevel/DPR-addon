@@ -270,5 +270,22 @@
 				]
 			}
 		}
+	},
+	{
+		"upstream": ["imdb.com"],
+		"frontends": {
+			"libremdb": {
+				"instances": [
+					"libremdb.iket.me",
+					"libremdb.pussthecat.org",
+					"ld.vern.cc",
+					"libremdb.lunar.icu",
+					"libremdb.tux.pizza",
+					"libremdb.frontendfriendly.xyz",
+					"d.opnxng.com",
+					"libremdb.privacydev.net"
+				]
+			}
+		}
 	}
 ]

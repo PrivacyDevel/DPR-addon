@@ -21,6 +21,7 @@ This add-on was strongly inspired by the [Privacy Redirect](https://github.com/S
 |[Quora](https://quora.com)                            | [Quetre](https://github.com/zyachel/quetre)                                                                                                                                                             |
 |[Genius](https://genius.com)                          | dumb ([GitHub](https://github.com/rramiachraf/dumb), [Codeberg](https://codeberg.org/rramiachraf/dumb))                                                                                                 |
 |[Yandex](https://yandex.com)                          | [4get](https://git.lolcat.ca/lolcat/4get)                                                                                                                                                               |
+|[IMDb](https://imdb.com)                              | libremdb ([GitHub](https://github.com/zyachel/libremdb), [Codeberg](https://codeberg.org/zyachel/libremdb))                                                                                             |
 
 ## Mirrors
 [Codeberg](https://codeberg.org/PrivacyDev/DPR-addon), [GitHub](https://github.com/PrivacyDevel/DPR-addon)
