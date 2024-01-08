@@ -60,7 +60,8 @@
 			},
 			"librex": {
 				"instances": [
-					"search.ahwx.org"
+					"search.ahwx.org",
+					"search.idevicehacked.com"
 				]
 			},
 			"whoogle": {
@@ -144,10 +145,12 @@
 				"instances": [
 					"libreddit.privacydev.net",
 					"l.opnxng.com",
-					"l.bloat.cat",
-					"sea1.lr.ggtyler.dev",
-					"libreddit.nohost.network",
-					"lr.artemislena.eu"
+					"lr.artemislena.eu",
+					"libreddit.projectsegfau.lt",
+					"libreddit.bus-hit.me",
+					"redlib.catsarch.com",
+					"reddit.idevicehacked.com",
+					"redlib.matthew.science"
 				]
 			},
 			"teddit": {
