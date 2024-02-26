@@ -54,7 +54,8 @@
 					"searx.shota.services/searx",
 					"331221.xyz",
 					"sex.finaltek.net",
-					"searx.daetalytica.io"
+					"searx.daetalytica.io",
+					"search.privacyredirect.com"
 				]
 			},
 			"librex": {
@@ -76,7 +77,8 @@
 					"search.joonas.fi",
 					"whoogle.qyk.be",
 					"search.zydou.me",
-					"whgl.yanknil.com"
+					"whgl.yanknil.com",
+					"whoogle.copyriot.xyz"
 				]
 			}
 		}
@@ -115,7 +117,8 @@
 					"scribe.citizen4.eu",
 					"scribe.froth.zone",
 					"scribe.privacydev.net",
-					"scribe.smnz.de"
+					"scribe.smnz.de",
+					"scribe.privacyredirect.com"
 				]
 			},
 			"libmedium": {
@@ -140,13 +143,19 @@
 					"libreddit.bus-hit.me",
 					"redlib.catsarch.com",
 					"reddit.idevicehacked.com",
-					"redlib.tux.pizza"
+					"redlib.tux.pizza",
+					"redlib.privacyredirect.com"
 				]
 			},
-			"teddit": {
-				"cookies": "nsfw_enabled=true",
+			"kddit": {
 				"instances": [
-					"teddit.zaggy.nl"
+					"kddit.kalli.st"
+				]
+			},
+			"eddrit": {
+				"cookies": "over18=1",
+				"instances": [
+					"eddrit.com"
 				]
 			}
 		}
@@ -170,7 +179,8 @@
 					"rimgo.nohost.network",
 					"imgur.010032.xyz",
 					"rimgo.frontendfriendly.xyz",
-					"rimgo.ducks.party"
+					"rimgo.ducks.party",
+					"rimgo.privacyredirect.com"
 				]
 			}
 		}
