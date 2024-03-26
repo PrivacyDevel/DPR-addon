@@ -77,7 +77,8 @@
 					"search.joonas.fi",
 					"whoogle.qyk.be",
 					"search.zydou.me",
-					"whgl.yanknil.com"
+					"whgl.yanknil.com",
+					"whoogle.copyriot.xyz"
 				]
 			}
 		}
@@ -146,10 +147,15 @@
 					"redlib.privacyredirect.com"
 				]
 			},
-			"teddit": {
-				"cookies": "nsfw_enabled=true",
+			"kddit": {
 				"instances": [
-					"teddit.zaggy.nl"
+					"kddit.kalli.st"
+				]
+			},
+			"eddrit": {
+				"cookies": "over18=1",
+				"instances": [
+					"eddrit.com"
 				]
 			}
 		}
