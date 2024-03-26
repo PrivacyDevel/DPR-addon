@@ -19,8 +19,7 @@
 					"piped.privacydev.net",
 					"piped.yanknil.com",
 					"piped.frontendfriendly.xyz",
-					"piped.drgns.space",
-					"piped.seitan-ayoub.lol"
+					"piped.drgns.space"
 				]
 			},
 			"invidious": {
@@ -58,12 +57,6 @@
 					"search.privacyredirect.com"
 				]
 			},
-			"librex": {
-				"instances": [
-					"search.ahwx.org",
-					"search.idevicehacked.com"
-				]
-			},
 			"whoogle": {
 				"instances": [
 					"whoogle.privacydev.net",
@@ -96,7 +89,8 @@
 					"translate.bus-hit.me",
 					"nyc1.mz.ggtyler.dev",
 					"translate.projectsegfau.lt",
-					"simplytranslate.pussthecat.org"
+					"simplytranslate.pussthecat.org",
+					"simplytranslate.org"
 				]
 			}
 		}
@@ -119,10 +113,7 @@
 			"scribe": {
 				"instances": [
 					"scribe.rip",
-					"scribe.citizen4.eu",
-					"scribe.froth.zone",
 					"scribe.privacydev.net",
-					"scribe.smnz.de",
 					"scribe.privacyredirect.com"
 				]
 			},
@@ -155,12 +146,6 @@
 			"kddit": {
 				"instances": [
 					"kddit.kalli.st"
-				]
-			},
-			"eddrit": {
-				"cookies": "over18=1",
-				"instances": [
-					"eddrit.com"
 				]
 			}
 		}
@@ -221,7 +206,6 @@
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
 					"proxitok.kyun.li",
-					"cringe.seitan-ayoub.lol",
 					"proxitok.tinfoil-hat.net",
 					"proxitok.privacyfucking.rocks"
 				]
@@ -236,7 +220,6 @@
 					"quetre.iket.me",
 					"quetre.privacydev.net",
 					"quetre.frontendfriendly.xyz",
-					"quora.seitan-ayoub.lol",
 					"quetre.ducks.party"
 				]
 			}
@@ -264,8 +247,7 @@
 				"instances": [
 					"4get.konakona.moe",
 					"4get.lvkaszus.pl",
-					"4g.ggtyler.dev",
-					"4get.seitan-ayoub.lol"
+					"4g.ggtyler.dev"
 				]
 			}
 		}
