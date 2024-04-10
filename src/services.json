@@ -39,7 +39,6 @@
 					"searx.be",
 					"searx.one",
 					"searx.namejeff.xyz/searx",
-					"search.cronobox.one",
 					"searx.oakleycord.dev",
 					"searx.zaggy.nl",
 					"searx.kavin.rocks",
@@ -54,7 +53,8 @@
 					"331221.xyz",
 					"sex.finaltek.net",
 					"searx.daetalytica.io",
-					"search.privacyredirect.com"
+					"search.privacyredirect.com",
+					"searx.chameleon.to"
 				]
 			},
 			"whoogle": {
@@ -133,7 +133,6 @@
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
 					"libreddit.privacydev.net",
-					"l.opnxng.com",
 					"lr.artemislena.eu",
 					"libreddit.projectsegfau.lt",
 					"libreddit.bus-hit.me",
@@ -141,11 +140,6 @@
 					"reddit.idevicehacked.com",
 					"redlib.tux.pizza",
 					"redlib.privacyredirect.com"
-				]
-			},
-			"kddit": {
-				"instances": [
-					"kddit.kalli.st"
 				]
 			}
 		}
