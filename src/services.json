@@ -5,7 +5,8 @@
 			"nitter": {
 				"cookies": "hlsPlayback=on",
 				"instances": [
-					"nitter.privacydev.net"
+					"nitter.privacydev.net",
+					"nitter.lucabased.xyz"
 				]
 			}
 		}
