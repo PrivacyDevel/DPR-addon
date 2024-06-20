@@ -54,8 +54,7 @@
 					"331221.xyz",
 					"sex.finaltek.net",
 					"searx.daetalytica.io",
-					"search.privacyredirect.com",
-					"searx.chameleon.to"
+					"search.privacyredirect.com"
 				]
 			},
 			"whoogle": {
@@ -149,9 +148,7 @@
 		"frontends": {
 			"rimgo": {
 				"instances": [
-					"rimgo.totaldarkness.net",
 					"rimgo.bus-hit.me",
-					"rimgo.esmailelbob.xyz",
 					"rimgo.privacydev.net",
 					"imgur.artemislena.eu",
 					"rimgo.hostux.net",
@@ -175,7 +172,6 @@
 			"librarian": {
 				"instances": [
 					"lbry.mutahar.rocks",
-					"librarian.esmailelbob.xyz",
 					"odysee.076.ne.jp",
 					"lbry.projectsegfau.lt",
 					"librarian.privacydev.net",
@@ -195,7 +191,6 @@
 				"instances": [
 					"proxitok.privacydev.net",
 					"proxitok.pabloferreiro.es",
-					"proxitok.esmailelbob.xyz",
 					"tok.artemislena.eu",
 					"tok.adminforge.de",
 					"proxitok.aosus.org",
