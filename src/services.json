@@ -5,8 +5,7 @@
 			"nitter": {
 				"cookies": "hlsPlayback=on",
 				"instances": [
-					"nitter.privacydev.net",
-					"nitter.lucabased.xyz"
+					"nitter.privacydev.net"
 				]
 			}
 		}
@@ -65,13 +64,11 @@
 					"search.estw.net",
 					"onthescent.xyz",
 					"whgl.yanknil.com",
-					"search.mint.lgbt",
 					"go.shimul.me",
 					"search.joonas.fi",
 					"whoogle.qyk.be",
 					"search.zydou.me",
-					"whgl.yanknil.com",
-					"whoogle.copyriot.xyz"
+					"whgl.yanknil.com"
 				]
 			}
 		}
