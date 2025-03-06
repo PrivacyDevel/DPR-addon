@@ -5,7 +5,8 @@
 			"nitter": {
 				"cookies": "hlsPlayback=on",
 				"instances": [
-					"nitter.privacydev.net"
+					"nitter.privacydev.net",
+					"xcancel.com"
 				]
 			}
 		}
@@ -16,15 +17,12 @@
 		"frontends": {
 			"piped": {
 				"instances": [
-					"piped.privacydev.net",
-					"piped.yanknil.com",
-					"piped.frontendfriendly.xyz",
 					"piped.drgns.space"
 				]
 			},
 			"invidious": {
 				"instances": [
-					"invidious.privacydev.net"
+					"inv.nadeko.net"
 				]
 			}
 		}
@@ -83,7 +81,6 @@
 					"t.opnxng.com",
 					"simplytranslate.leemoon.network",
 					"mozhi.aryak.me",
-					"translate.bus-hit.me",
 					"nyc1.mz.ggtyler.dev",
 					"translate.projectsegfau.lt",
 					"simplytranslate.pussthecat.org",
@@ -132,10 +129,7 @@
 				"instances": [
 					"libreddit.privacydev.net",
 					"lr.artemislena.eu",
-					"libreddit.projectsegfau.lt",
-					"libreddit.bus-hit.me",
 					"redlib.catsarch.com",
-					"redlib.tux.pizza",
 					"redlib.privacyredirect.com"
 				]
 			}
@@ -146,7 +140,6 @@
 		"frontends": {
 			"rimgo": {
 				"instances": [
-					"rimgo.bus-hit.me",
 					"rimgo.privacydev.net",
 					"imgur.artemislena.eu",
 					"rimgo.hostux.net",
