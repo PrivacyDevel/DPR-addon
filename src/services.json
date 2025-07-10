@@ -126,9 +126,7 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"libreddit.privacydev.net",
-					"lr.artemislena.eu",
-					"redlib.catsarch.com"
+					"libreddit.privacydev.net"
 				]
 			}
 		}
@@ -160,15 +158,9 @@
 		"frontends": {
 			"librarian": {
 				"instances": [
-					"lbry.mutahar.rocks",
-					"odysee.076.ne.jp",
 					"lbry.projectsegfau.lt",
 					"librarian.privacydev.net",
-					"lbry.ooguy.com",
-					"lbry.mywire.org",
-					"lbry.slipfox.xyz",
-					"librarian.revvy.de",
-					"bry.ramondia.net"
+					"lbry.ooguy.com"
 				]
 			}
 		}
