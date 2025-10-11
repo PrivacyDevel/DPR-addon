@@ -11,61 +11,17 @@
 		}
 	},
 	{
-
-		"upstream": ["youtube.com", "youtu.be"],
-		"frontends": {
-			"piped": {
-				"instances": [
-					"piped.drgns.space"
-				]
-			},
-			"invidious": {
-				"instances": [
-					"inv.nadeko.net"
-				]
-			}
-		}
-	},
-	{
 		"upstream": ["www.google.com"],
 		"documentOnly": true,
 		"frontends": {
 			"searxng": {
 				"cookies": "disabled_engines=bing__general\\054qwant__general; enabled_engines=google__general",
 				"instances": [
-					"searx.be",
-					"searx.one",
-					"searx.namejeff.xyz/searx",
-					"searx.oakleycord.dev",
 					"searx.zaggy.nl",
 					"searx.kavin.rocks",
-					"search.leptons.xyz",
-					"baresearch.org",
-					"search.pfcd.me",
-					"searx.pro",
-					"searx.perennialte.ch",
 					"searx.wdas.io",
-					"searx.baczek.me",
 					"searx.shota.services/searx",
-					"331221.xyz",
-					"sex.finaltek.net",
-					"searx.daetalytica.io",
-					"search.privacyredirect.com"
-				]
-			},
-			"whoogle": {
-				"instances": [
-					"whoogle.privacydev.net",
-					"nosetradamus.xyz",
-					"yosephwhoogle.fly.dev",
-					"search.estw.net",
-					"onthescent.xyz",
-					"whgl.yanknil.com",
-					"go.shimul.me",
-					"search.joonas.fi",
-					"whoogle.qyk.be",
-					"search.zydou.me",
-					"whgl.yanknil.com"
+					"search.whatever.social"
 				]
 			}
 		}
@@ -79,9 +35,6 @@
 					"st.privacydev.net",
 					"t.opnxng.com",
 					"simplytranslate.leemoon.network",
-					"mozhi.aryak.me",
-					"nyc1.mz.ggtyler.dev",
-					"translate.projectsegfau.lt",
 					"simplytranslate.pussthecat.org",
 					"simplytranslate.org",
 					"translate.privhub.space"
@@ -94,8 +47,7 @@
 		"frontends": {
 			"imginn": {
 				"instances": [
-					"imginn.com",
-					"imginn.org"
+					"imginn.com"
 				]
 			}
 		}
@@ -107,15 +59,12 @@
 			"scribe": {
 				"instances": [
 					"scribe.rip",
-					"scribe.privacydev.net",
 					"scribe.privacyredirect.com"
 				]
 			},
 			"libmedium": {
 				"instances": [
-					"libmedium.batsense.net",
-					"medium.hostux.net",
-					"libmedium.frontendfriendly.xyz"
+					"libmedium.batsense.net"
 				]
 			}
 		}
@@ -126,7 +75,16 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"libreddit.privacydev.net"
+					"libreddit.privacydev.net",
+					"l.opnxng.com",
+					"redlib.perennialte.ch",
+					"red.artemislena.eu",
+					"redlib.privacyredirect.com",
+					"redlib.4o1x5.dev",
+					"redlib.frontendfriendly.xyz",
+					"lr.ptr.moe",
+					"redlib.orangenet.cc",
+					"redlib.tux.pizza"
 				]
 			}
 		}
@@ -136,18 +94,10 @@
 		"frontends": {
 			"rimgo": {
 				"instances": [
-					"rimgo.privacydev.net",
 					"imgur.artemislena.eu",
-					"rimgo.hostux.net",
-					"ri.zzls.xyz",
-					"rimgo.kling.gg",
-					"rimgo.projectsegfau.lt",
+					"ri.nadeko.net",
 					"rimgo.eu.projectsegfau.lt",
-					"rimgo.us.projectsegfau.lt",
 					"rimgo.nohost.network",
-					"imgur.010032.xyz",
-					"rimgo.frontendfriendly.xyz",
-					"rimgo.ducks.party",
 					"rimgo.privacyredirect.com"
 				]
 			}
@@ -158,39 +108,7 @@
 		"frontends": {
 			"librarian": {
 				"instances": [
-					"lbry.projectsegfau.lt",
-					"librarian.privacydev.net",
-					"lbry.ooguy.com"
-				]
-			}
-		}
-	},
-	{
-		"upstream": ["tiktok.com"],
-		"frontends": {
-			"proxitok": { 
-				"instances": [
-					"proxitok.privacydev.net",
-					"proxitok.pabloferreiro.es",
-					"tok.artemislena.eu",
-					"tok.adminforge.de",
-					"proxitok.aosus.org",
-					"proxitok.kyun.li",
-					"proxitok.tinfoil-hat.net",
-					"proxitok.privacyfucking.rocks"
-				]
-			}
-		}
-	},
-	{
-		"upstream": ["quora.com"],
-		"frontends": {
-			"quetre": {
-				"instances": [
-					"quetre.iket.me",
-					"quetre.privacydev.net",
-					"quetre.frontendfriendly.xyz",
-					"quetre.ducks.party"
+					"librarian.privacydev.net"
 				]
 			}
 		}
@@ -201,41 +119,8 @@
 			"dumb": {
 				"instances": [
 					"dm.vern.cc",
-					"sing.whatever.social",
 					"dumb.lunar.icu",
-					"dumb.privacydev.net",
-					"lyrics.leemoon.network",
-					"dumb.ducks.party"
-				]
-			}
-		}
-	},
-	{
-		"upstream": ["yandex.com", "yandex.ru"],
-		"frontends": {
-			"4get": {
-				"instances": [
-					"4get.konakona.moe",
-					"4get.lvkaszus.pl",
-					"4g.ggtyler.dev"
-				]
-			}
-		}
-	},
-	{
-		"upstream": ["imdb.com"],
-		"frontends": {
-			"libremdb": {
-				"instances": [
-					"libremdb.iket.me",
-					"libremdb.pussthecat.org",
-					"ld.vern.cc",
-					"libremdb.lunar.icu",
-					"libremdb.tux.pizza",
-					"libremdb.frontendfriendly.xyz",
-					"d.opnxng.com",
-					"libremdb.privacydev.net",
-					"libremdb.ducks.party"
+					"lyrics.leemoon.network"
 				]
 			}
 		}
