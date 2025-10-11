@@ -75,16 +75,7 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"libreddit.privacydev.net",
-					"l.opnxng.com",
-					"redlib.perennialte.ch",
-					"red.artemislena.eu",
-					"redlib.privacyredirect.com",
-					"redlib.4o1x5.dev",
-					"redlib.frontendfriendly.xyz",
-					"lr.ptr.moe",
-					"redlib.orangenet.cc",
-					"redlib.tux.pizza"
+					"libreddit.privacydev.net"
 				]
 			}
 		}
