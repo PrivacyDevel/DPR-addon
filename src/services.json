@@ -17,11 +17,7 @@
 			"searxng": {
 				"cookies": "disabled_engines=bing__general\\054qwant__general; enabled_engines=google__general",
 				"instances": [
-					"searx.zaggy.nl",
-					"searx.kavin.rocks",
-					"searx.wdas.io",
-					"searx.shota.services/searx",
-					"search.whatever.social"
+					"searx.zaggy.nl"
 				]
 			}
 		}
@@ -31,7 +27,6 @@
 		"frontends": {
 			"simplytranslate": {
 				"instances": [
-					"translate.northboot.xyz",
 					"st.privacydev.net",
 					"t.opnxng.com",
 					"simplytranslate.leemoon.network",
@@ -58,13 +53,15 @@
 		"frontends": {
 			"scribe": {
 				"instances": [
-					"scribe.rip",
-					"scribe.privacyredirect.com"
+					"scribe.rawbit.ninja",
+					"m.opnxng.com",
+					"scribe.r4fo.com"
 				]
 			},
 			"libmedium": {
 				"instances": [
-					"libmedium.batsense.net"
+					"libmedium.batsense.net",
+					"libmedium.ducks.party"
 				]
 			}
 		}
@@ -75,7 +72,8 @@
 			"libreddit": {
 				"cookies": "theme=dark; layout=card; wide=off; show_nsfw=on",
 				"instances": [
-					"libreddit.privacydev.net"
+					"redlib.catsarch.com",
+					"redlib.perennialte.ch"
 				]
 			}
 		}
@@ -87,19 +85,7 @@
 				"instances": [
 					"imgur.artemislena.eu",
 					"ri.nadeko.net",
-					"rimgo.eu.projectsegfau.lt",
-					"rimgo.nohost.network",
-					"rimgo.privacyredirect.com"
-				]
-			}
-		}
-	},
-	{
-		"upstream": ["odysee.com"],
-		"frontends": {
-			"librarian": {
-				"instances": [
-					"librarian.privacydev.net"
+					"rimgo.nohost.network"
 				]
 			}
 		}
@@ -109,9 +95,11 @@
 		"frontends": {
 			"dumb": {
 				"instances": [
-					"dm.vern.cc",
 					"dumb.lunar.icu",
-					"lyrics.leemoon.network"
+					"lyrics.leemoon.network",
+					"dumb.ducks.party",
+					"dumb.bloat.cat",
+					"genius.fsky.io"
 				]
 			}
 		}
